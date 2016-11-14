@@ -1,0 +1,14 @@
+/**
+ * Makes the top line to be of the same background as the rest of header
+ * i.e., no shade but just the image
+ */
+.info-title { color:#3a3a3a; }
+.p { color:#4c4c4c; }
+.home .top-bar.solid-bg:before {
+  background: transparent !important;
+}
+.items-grid .alignleft img,
+.recent-posts .alignleft img {
+  width: 60px !important;
+  height: 60px !important;
+}
