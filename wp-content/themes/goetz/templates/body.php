@@ -33,9 +33,9 @@
             <div
                 class="branding">
                 <a
-                    href="https://www.fachwerk4.de/"><img
-                        class=" preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2016/02/FW4-60x60.png" srcset="https://www.fachwerk4.de/wp-content/uploads/2016/02/FW4-60x60.png 60w, https://www.fachwerk4.de/wp-content/uploads/2016/02/FW4-120x120.png 120w" width="60" height="60"   sizes="60px" alt="Fachwerk4" /><img
-                        class="mobile-logo preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2016/02/FW4-60x60.png" srcset="https://www.fachwerk4.de/wp-content/uploads/2016/02/FW4-60x60.png 60w, https://www.fachwerk4.de/wp-content/uploads/2016/02/FW4-120x120.png 120w" width="60" height="60"   sizes="60px" alt="Fachwerk4" /></a>
+                    href="/"><img
+                        class=" preload-me" src="/wp-content/uploads/2016/02/FW4-60x60.png" srcset="/wp-content/uploads/2016/02/FW4-60x60.png 60w, /wp-content/uploads/2016/02/FW4-120x120.png 120w" width="60" height="60"   sizes="60px" alt="Fachwerk4" /><img
+                        class="mobile-logo preload-me" src="/wp-content/uploads/2016/02/FW4-60x60.png" srcset="/wp-content/uploads/2016/02/FW4-60x60.png 60w, /wp-content/uploads/2016/02/FW4-120x120.png 120w" width="60" height="60"   sizes="60px" alt="Fachwerk4" /></a>
                 <div
                     id="site-title" class="assistive-text">Fachwerk4</div>
                 <div
@@ -45,7 +45,7 @@
                 id="primary-menu" class="main-nav underline-decoration from-centre-line outside-item-remove-margin" role="menu">
                 <li
                     class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-22 act first"><a
-                        href='https://www.fachwerk4.de/' data-level='1'><span
+                        href='/' data-level='1'><span
                             class="menu-item-text"><span
                                 class="menu-text">Home</span></span></a></li>
                 <li
@@ -60,12 +60,12 @@
                                 class="menu-text">Leistungen</span></span></a></li>
                 <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15951 dt-mega-menu mega-auto-width mega-column-3"><a
-                        href='https://www.fachwerk4.de/portfolio/' data-level='1'><span
+                        href='/portfolio/' data-level='1'><span
                             class="menu-item-text"><span
                                 class="menu-text">Realisierte Projekte</span></span></a></li>
                 <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15952 dt-mega-menu mega-auto-width mega-column-3"><a
-                        href='https://www.fachwerk4.de/publikationen/' data-level='1'><span
+                        href='/publikationen/' data-level='1'><span
                             class="menu-item-text"><span
                                 class="menu-text">Publikationen</span></span></a></li>
                 <li
@@ -75,7 +75,7 @@
                                 class="menu-text">Team</span></span></a></li>
                 <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17775"><a
-                        href='https://www.fachwerk4.de/presse/' data-level='1'><span
+                        href='/presse/' data-level='1'><span
                             class="menu-item-text"><span
                                 class="menu-text">Presse</span></span></a></li>
                 <li
@@ -89,7 +89,7 @@
                 <div
                     class="mini-search show-on-desktop near-logo-first-switch in-menu-second-switch">
                     <form
-                        class="searchform" role="search" method="get" action="https://www.fachwerk4.de/">
+                        class="searchform" role="search" method="get" action="/">
                         <input
                             type="text" class="field searchform-s" name="s" value="" placeholder="Type and hit enter &hellip;" />
                         <input
@@ -109,7 +109,7 @@
             id="mobile-menu" class="mobile-main-nav" role="menu">
             <li
                 class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-22 act first"><a
-                    href='https://www.fachwerk4.de/' data-level='1'><span
+                    href='/' data-level='1'><span
                         class="menu-item-text"><span
                             class="menu-text">Home</span></span></a></li>
             <li
@@ -124,12 +124,12 @@
                             class="menu-text">Leistungen</span></span></a></li>
             <li
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15951 dt-mega-menu mega-auto-width mega-column-3"><a
-                    href='https://www.fachwerk4.de/portfolio/' data-level='1'><span
+                    href='/portfolio/' data-level='1'><span
                         class="menu-item-text"><span
                             class="menu-text">Realisierte Projekte</span></span></a></li>
             <li
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15952 dt-mega-menu mega-auto-width mega-column-3"><a
-                    href='https://www.fachwerk4.de/publikationen/' data-level='1'><span
+                    href='/publikationen/' data-level='1'><span
                         class="menu-item-text"><span
                             class="menu-text">Publikationen</span></span></a></li>
             <li
@@ -139,7 +139,7 @@
                             class="menu-text">Team</span></span></a></li>
             <li
                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17775"><a
-                    href='https://www.fachwerk4.de/presse/' data-level='1'><span
+                    href='/presse/' data-level='1'><span
                         class="menu-item-text"><span
                             class="menu-text">Presse</span></span></a></li>
             <li
@@ -211,7 +211,7 @@
                                                             class="wpb_wrapper vc_figure">
                                                             <div
                                                                 class="vc_single_image-wrapper   vc_box_border_grey"><img
-                                                                    class="vc_single_image-img " src="https://www.fachwerk4.de/wp-content/uploads/2015/02/Kleinigkeiten-Perfektion-Architekt-Fw4-e1429352500773.png" width="738" height="150" alt="Unser Leitbild | Fachwerk4 | Architekten BDA" title="Unser Leitbild | Fachwerk4 | Architekten BDA" /></div>
+                                                                    class="vc_single_image-img " src="/wp-content/uploads/2015/02/Kleinigkeiten-Perfektion-Architekt-Fw4-e1429352500773.png" width="738" height="150" alt="Unser Leitbild | Fachwerk4 | Architekten BDA" title="Unser Leitbild | Fachwerk4 | Architekten BDA" /></div>
                                                         </figure>
                                                     </div>
                                                     <div
@@ -225,7 +225,7 @@
                                                                     style="color: #2d2d2d;"><strong>Mit viel Engagement und Liebe zum Detail widmet sich das Team von Fachwerk4 der Architektur.</strong></span></p>
                                                             <p><span
                                                                     style="color: #4c4c4c;">Moderne Einfamilienhäuser, Mehrfamilienhäuser, aber auch Industrie- und Verwaltungsbauten sowie Innenausbau stehen dabei im Zentrum unserer Arbeit. In unserem <a
-                                                                        style="color: #4c4c4c;" title="Projektübersicht" href="https://www.fachwerk4.de/portfolio/">Portfolio</a> stellen wir Ihnen eine <a
+                                                                        style="color: #4c4c4c;" title="Projektübersicht" href="/portfolio/">Portfolio</a> stellen wir Ihnen eine <a
                                                                         style="color: #4c4c4c;" href="#Portfolio">Auswahl unserer Projekte</a> vor.</span></p>
                                                             <p><span
                                                                     style="color: #4c4c4c;">Neben Neubauten planen und realisieren wir Gebäudesanierungen, Umbauten und Anbauten für unsere Kunden. Dabei ist die Berücksichtigung von aktuellen Anforderungen an energie- und ressourcenschonendes Bauen ebenso selbstverständlich für uns, wie die adäquate Gestaltung der Räume.</span></p>
@@ -268,11 +268,11 @@
                                                                     class="post-format-standard">
                                                                     <div
                                                                         class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/gartendesigner-des-jahres-ausgezeichnet/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-120x120.jpg 120w" width="60" height="60"  alt="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de" /></a></div>
+                                                                            class="alignleft post-rollover layzr-bg" href="/gartendesigner-des-jahres-ausgezeichnet/" ><img
+                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg" data-srcset="/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg 60w, /wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-120x120.jpg 120w" width="60" height="60"  alt="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de" /></a></div>
                                                                     <div
                                                                         class="post-content"><a
-                                                                            href="https://www.fachwerk4.de/gartendesigner-des-jahres-ausgezeichnet/">&#8222;Gartendesigner des Jahres&#8220; ausgezeichnet</a><br
+                                                                            href="/gartendesigner-des-jahres-ausgezeichnet/">&#8222;Gartendesigner des Jahres&#8220; ausgezeichnet</a><br
                                                                         /><time
                                                                             class="text-secondary" datetime="2016-11-07T17:24:01+00:00">7. November 2016</time></div>
                                                                 </article>
@@ -286,11 +286,11 @@
                                                                     class="post-format-standard">
                                                                     <div
                                                                         class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
+                                                                            class="alignleft post-rollover layzr-bg" href="/azubi-blog-baustellenpraktikum/" ><img
+                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="/wp-content/uploads/2016/10/baustelle-60x60.jpg" data-srcset="/wp-content/uploads/2016/10/baustelle-60x60.jpg 60w, /wp-content/uploads/2016/10/baustelle-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
                                                                     <div
                                                                         class="post-content"><a
-                                                                            href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/">Azubi-Blog: Baustellenpraktikum oder &#8222;Stein auf Stein&#8220;</a><br
+                                                                            href="/azubi-blog-baustellenpraktikum/">Azubi-Blog: Baustellenpraktikum oder &#8222;Stein auf Stein&#8220;</a><br
                                                                         /><time
                                                                             class="text-secondary" datetime="2016-10-12T12:38:17+00:00">12. Oktober 2016</time></div>
                                                                 </article>
@@ -304,11 +304,11 @@
                                                                     class="post-format-standard">
                                                                     <div
                                                                         class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/ein-weiteres-jubilaeum/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
+                                                                            class="alignleft post-rollover layzr-bg" href="/ein-weiteres-jubilaeum/" ><img
+                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg" data-srcset="/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg 60w, /wp-content/uploads/2016/10/10jahre-ik-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
                                                                     <div
                                                                         class="post-content"><a
-                                                                            href="https://www.fachwerk4.de/ein-weiteres-jubilaeum/">Ein weiteres Jubiläum, das wir gefeiert haben</a><br
+                                                                            href="/ein-weiteres-jubilaeum/">Ein weiteres Jubiläum, das wir gefeiert haben</a><br
                                                                         /><time
                                                                             class="text-secondary" datetime="2016-10-10T09:17:03+00:00">10. Oktober 2016</time></div>
                                                                 </article>
@@ -322,11 +322,11 @@
                                                                     class="post-format-standard">
                                                                     <div
                                                                         class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/architektur-buch-15-jahre/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
+                                                                            class="alignleft post-rollover layzr-bg" href="/architektur-buch-15-jahre/" ><img
+                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg" data-srcset="/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg 60w, /wp-content/uploads/2016/09/architekturbuch-fachwerk4-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
                                                                     <div
                                                                         class="post-content"><a
-                                                                            href="https://www.fachwerk4.de/architektur-buch-15-jahre/">15 Jahre Fachwerk4 auf 190 Seiten</a><br
+                                                                            href="/architektur-buch-15-jahre/">15 Jahre Fachwerk4 auf 190 Seiten</a><br
                                                                         /><time
                                                                             class="text-secondary" datetime="2016-09-27T07:30:37+00:00">27. September 2016</time></div>
                                                                 </article>
@@ -340,11 +340,11 @@
                                                                     class="post-format-aside">
                                                                     <div
                                                                         class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/video-spaetsommerfest-2016/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-60x60.png" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-60x60.png 60w, https://www.fachwerk4.de/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-120x120.png 120w" width="60" height="60"  alt="Spätsommerfest 2016 | Fachwerk4.de" /></a></div>
+                                                                            class="alignleft post-rollover layzr-bg" href="/video-spaetsommerfest-2016/" ><img
+                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-60x60.png" data-srcset="/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-60x60.png 60w, /wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-120x120.png 120w" width="60" height="60"  alt="Spätsommerfest 2016 | Fachwerk4.de" /></a></div>
                                                                     <div
                                                                         class="post-content"><a
-                                                                            href="https://www.fachwerk4.de/video-spaetsommerfest-2016/">Video Spätsommerfest 2016</a><br
+                                                                            href="/video-spaetsommerfest-2016/">Video Spätsommerfest 2016</a><br
                                                                         /><time
                                                                             class="text-secondary" datetime="2016-09-22T14:32:26+00:00">22. September 2016</time></div>
                                                                 </article>
@@ -443,7 +443,7 @@
                                                     <div
                                                         class="vc_grid-container-wrapper vc_clearfix">
                                                         <div
-                                                            class="vc_grid-container vc_clearfix wpb_content_element vc_media_grid" data-initial-loading-animation="fadeIn" data-vc-grid-settings="{&quot;page_id&quot;:8,&quot;style&quot;:&quot;all&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1477858760024-193a818f-cd32-9&quot;,&quot;tag&quot;:&quot;vc_media_grid&quot;}" data-vc-request="https://www.fachwerk4.de/wp-admin/admin-ajax.php" data-vc-post-id="8" data-vc-public-nonce="01f24c3ac0"></div>
+                                                            class="vc_grid-container vc_clearfix wpb_content_element vc_media_grid" data-initial-loading-animation="fadeIn" data-vc-grid-settings="{&quot;page_id&quot;:8,&quot;style&quot;:&quot;all&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1477858760024-193a818f-cd32-9&quot;,&quot;tag&quot;:&quot;vc_media_grid&quot;}" data-vc-request="/wp-admin/admin-ajax.php" data-vc-post-id="8" data-vc-public-nonce="01f24c3ac0"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -595,8 +595,8 @@
                                                                     />
                                                                     <span
                                                                         style="color: #4c4c4c;"><a
-                                                                            style="color: #4c4c4c;" title="Projektübersicht" href="https://www.fachwerk4.de/portfolio/"> Weitere Projekte</a> finden Sie in unserem<a
-                                                                            style="color: #4c4c4c;" title="Projektübersicht" href="https://www.fachwerk4.de/portfolio/"> Projektarchiv</a>.</span>
+                                                                            style="color: #4c4c4c;" title="Projektübersicht" href="/portfolio/"> Weitere Projekte</a> finden Sie in unserem<a
+                                                                            style="color: #4c4c4c;" title="Projektübersicht" href="/portfolio/"> Projektarchiv</a>.</span>
                                                                 </p>
                                                                 <p><span
                                                                         style="color: #4c4c4c;">Wenn Sie weitere Informationen zu <a
@@ -624,17 +624,17 @@
                                                             <figure
                                                                 class="rollover-project rollover-active">
                                                                 <a
-                                                                    href="https://www.fachwerk4.de/projekt/haus-eifel/" class="layzr-bg" title="Haus Eifel | Fachwerk4 | Architekten BDA" ><img
-                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 449 300'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-G-14-449x300.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-G-14-449x300.jpg 449w, https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-G-14-898x600.jpg 898w" alt="Fachwerk4 | Architekten BDA, Haus Eifel, Bad Münstereifel, Winterstimmung, Ansicht Nordseite" width="449" height="300"  /></a>
+                                                                    href="/projekt/haus-eifel/" class="layzr-bg" title="Haus Eifel | Fachwerk4 | Architekten BDA" ><img
+                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 449 300'%2F%3E" data-src="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-G-14-449x300.jpg" data-srcset="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-G-14-449x300.jpg 449w, /wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-G-14-898x600.jpg 898w" alt="Fachwerk4 | Architekten BDA, Haus Eifel, Bad Münstereifel, Winterstimmung, Ansicht Nordseite" width="449" height="300"  /></a>
                                                                 <figcaption
                                                                     class="rollover-content">
                                                                     <div
                                                                         class="links-container"><a
-                                                                            href="https://www.fachwerk4.de/projekt/haus-eifel/" class="project-details">Details</a></div>
+                                                                            href="/projekt/haus-eifel/" class="project-details">Details</a></div>
                                                                     <div
                                                                         class="rollover-content-container">
                                                                         <h3 class="entry-title"><a
-                                                                                href="https://www.fachwerk4.de/projekt/haus-eifel/" title="Haus Eifel" rel="bookmark">Haus Eifel</a></h3>
+                                                                                href="/projekt/haus-eifel/" title="Haus Eifel" rel="bookmark">Haus Eifel</a></h3>
                                                                         <p>Klar strukturiertes Wohnhaus, Bad Münstereifel, 2014</p>
                                                                     </div>
                                                                 </figcaption>
@@ -648,17 +648,17 @@
                                                             <figure
                                                                 class="rollover-project rollover-active">
                                                                 <a
-                                                                    href="https://www.fachwerk4.de/projekt/wohnhaus-s/" class="layzr-bg" title="Wohnhaus S |Fachwerk4 | Architekten BDA" ><img
-                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 300'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2014/03/moderne-architektur-fw4-02-200x300.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2014/03/moderne-architektur-fw4-02-200x300.jpg 200w, https://www.fachwerk4.de/wp-content/uploads/2014/03/moderne-architektur-fw4-02-400x600.jpg 400w" alt="Fachwerk4 | Architekten BDA, Wohnhaus S, Montabaur, Straßenansicht / Eingang" width="200" height="300"  /></a>
+                                                                    href="/projekt/wohnhaus-s/" class="layzr-bg" title="Wohnhaus S |Fachwerk4 | Architekten BDA" ><img
+                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 300'%2F%3E" data-src="/wp-content/uploads/2014/03/moderne-architektur-fw4-02-200x300.jpg" data-srcset="/wp-content/uploads/2014/03/moderne-architektur-fw4-02-200x300.jpg 200w, /wp-content/uploads/2014/03/moderne-architektur-fw4-02-400x600.jpg 400w" alt="Fachwerk4 | Architekten BDA, Wohnhaus S, Montabaur, Straßenansicht / Eingang" width="200" height="300"  /></a>
                                                                 <figcaption
                                                                     class="rollover-content">
                                                                     <div
                                                                         class="links-container"><a
-                                                                            href="https://www.fachwerk4.de/projekt/wohnhaus-s/" class="project-details">Details</a></div>
+                                                                            href="/projekt/wohnhaus-s/" class="project-details">Details</a></div>
                                                                     <div
                                                                         class="rollover-content-container">
                                                                         <h3 class="entry-title"><a
-                                                                                href="https://www.fachwerk4.de/projekt/wohnhaus-s/" title="Wohnhaus S" rel="bookmark">Wohnhaus S</a></h3>
+                                                                                href="/projekt/wohnhaus-s/" title="Wohnhaus S" rel="bookmark">Wohnhaus S</a></h3>
                                                                         <p>Schlichte Eleganz, Montabaur, 2012</p>
                                                                     </div>
                                                                 </figcaption>
@@ -672,17 +672,17 @@
                                                             <figure
                                                                 class="rollover-project rollover-active">
                                                                 <a
-                                                                    href="https://www.fachwerk4.de/projekt/reisebuero-montabaur/" class="layzr-bg" title="Reisebüro | Fachwerk4 | Architekten BDA" ><img
-                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 450 300'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-450x300.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-450x300.jpg 450w, https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-900x600.jpg 900w" alt="Fachwerk4 | Architekten BDA, Reisebüro, Montabaur, Wartebereich" width="450" height="300"  /></a>
+                                                                    href="/projekt/reisebuero-montabaur/" class="layzr-bg" title="Reisebüro | Fachwerk4 | Architekten BDA" ><img
+                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 450 300'%2F%3E" data-src="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-450x300.jpg" data-srcset="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-450x300.jpg 450w, /wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-900x600.jpg 900w" alt="Fachwerk4 | Architekten BDA, Reisebüro, Montabaur, Wartebereich" width="450" height="300"  /></a>
                                                                 <figcaption
                                                                     class="rollover-content">
                                                                     <div
                                                                         class="links-container"><a
-                                                                            href="https://www.fachwerk4.de/projekt/reisebuero-montabaur/" class="project-details">Details</a></div>
+                                                                            href="/projekt/reisebuero-montabaur/" class="project-details">Details</a></div>
                                                                     <div
                                                                         class="rollover-content-container">
                                                                         <h3 class="entry-title"><a
-                                                                                href="https://www.fachwerk4.de/projekt/reisebuero-montabaur/" title="Reisebüro" rel="bookmark">Reisebüro</a></h3>
+                                                                                href="/projekt/reisebuero-montabaur/" title="Reisebüro" rel="bookmark">Reisebüro</a></h3>
                                                                         <p>Lichtdurchflutete Räume, Montabaur, 2013</p>
                                                                     </div>
                                                                 </figcaption>
@@ -696,17 +696,17 @@
                                                             <figure
                                                                 class="rollover-project rollover-active">
                                                                 <a
-                                                                    href="https://www.fachwerk4.de/projekt/haus-w/" class="layzr-bg" title="Haus W | Fachwerk4 | Architekten BDA" ><img
-                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 198 300'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-W-13-198x300.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-W-13-198x300.jpg 198w, https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-W-13-396x600.jpg 396w" alt="Haus W | Fachwerk4 | Architekten BDA" width="198" height="300"  /></a>
+                                                                    href="/projekt/haus-w/" class="layzr-bg" title="Haus W | Fachwerk4 | Architekten BDA" ><img
+                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 198 300'%2F%3E" data-src="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-W-13-198x300.jpg" data-srcset="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-W-13-198x300.jpg 198w, /wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Haus-W-13-396x600.jpg 396w" alt="Haus W | Fachwerk4 | Architekten BDA" width="198" height="300"  /></a>
                                                                 <figcaption
                                                                     class="rollover-content">
                                                                     <div
                                                                         class="links-container"><a
-                                                                            href="https://www.fachwerk4.de/projekt/haus-w/" class="project-details">Details</a></div>
+                                                                            href="/projekt/haus-w/" class="project-details">Details</a></div>
                                                                     <div
                                                                         class="rollover-content-container">
                                                                         <h3 class="entry-title"><a
-                                                                                href="https://www.fachwerk4.de/projekt/haus-w/" title="Haus W" rel="bookmark">Haus W</a></h3>
+                                                                                href="/projekt/haus-w/" title="Haus W" rel="bookmark">Haus W</a></h3>
                                                                         <p>Moderne Villa in Montabaur – präsentiert im CUBE–Magazin 01|2014</p>
                                                                     </div>
                                                                 </figcaption>
@@ -720,17 +720,17 @@
                                                             <figure
                                                                 class="rollover-project rollover-active">
                                                                 <a
-                                                                    href="https://www.fachwerk4.de/projekt/anbau-und-sanierung-fachwerkhaus/" class="layzr-bg" title="Ausbau und Sanierung Fachwerkhaus | Fachwerk4 | Architekten BDA" ><img
-                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 198 300'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Umbau-Fachwerkhaus-24-198x300.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Umbau-Fachwerkhaus-24-198x300.jpg 198w, https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Umbau-Fachwerkhaus-24-396x600.jpg 396w" alt="Fachwerk4 | Architekten BDA, Ausbau und Sanierung Fachwerkhaus, Siershahn, Gebäudefuge Alt / Neu" width="198" height="300"  /></a>
+                                                                    href="/projekt/anbau-und-sanierung-fachwerkhaus/" class="layzr-bg" title="Ausbau und Sanierung Fachwerkhaus | Fachwerk4 | Architekten BDA" ><img
+                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 198 300'%2F%3E" data-src="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Umbau-Fachwerkhaus-24-198x300.jpg" data-srcset="/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Umbau-Fachwerkhaus-24-198x300.jpg 198w, /wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Umbau-Fachwerkhaus-24-396x600.jpg 396w" alt="Fachwerk4 | Architekten BDA, Ausbau und Sanierung Fachwerkhaus, Siershahn, Gebäudefuge Alt / Neu" width="198" height="300"  /></a>
                                                                 <figcaption
                                                                     class="rollover-content">
                                                                     <div
                                                                         class="links-container"><a
-                                                                            href="https://www.fachwerk4.de/projekt/anbau-und-sanierung-fachwerkhaus/" class="project-details">Details</a></div>
+                                                                            href="/projekt/anbau-und-sanierung-fachwerkhaus/" class="project-details">Details</a></div>
                                                                     <div
                                                                         class="rollover-content-container">
                                                                         <h3 class="entry-title"><a
-                                                                                href="https://www.fachwerk4.de/projekt/anbau-und-sanierung-fachwerkhaus/" title="Anbau und Sanierung Fachwerkhaus" rel="bookmark">Anbau und Sanierung Fachwerkhaus</a></h3>
+                                                                                href="/projekt/anbau-und-sanierung-fachwerkhaus/" title="Anbau und Sanierung Fachwerkhaus" rel="bookmark">Anbau und Sanierung Fachwerkhaus</a></h3>
                                                                         <p>Ausgezeichnet mit dem Holzbaupreis &#8222;Bauen im Bestand&#8220; Rheinland-Pfalz 2011</p>
                                                                     </div>
                                                                 </figcaption>
@@ -744,17 +744,17 @@
                                                             <figure
                                                                 class="rollover-project rollover-active">
                                                                 <a
-                                                                    href="https://www.fachwerk4.de/projekt/mehrfamilienhaus-h/" class="layzr-bg" title="Fachwerk4 | Architekten BDA | MFH Himmelfeld | Montabaur" ><img
-                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 543 300'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/04/34-Mehrfamilienhaus-Montabaur-Fachwerk4-543x300.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/34-Mehrfamilienhaus-Montabaur-Fachwerk4-543x300.jpg 543w, https://www.fachwerk4.de/wp-content/uploads/2015/04/34-Mehrfamilienhaus-Montabaur-Fachwerk4-1086x600.jpg 1086w" alt="Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="543" height="300"  /></a>
+                                                                    href="/projekt/mehrfamilienhaus-h/" class="layzr-bg" title="Fachwerk4 | Architekten BDA | MFH Himmelfeld | Montabaur" ><img
+                                                                        class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 543 300'%2F%3E" data-src="/wp-content/uploads/2015/04/34-Mehrfamilienhaus-Montabaur-Fachwerk4-543x300.jpg" data-srcset="/wp-content/uploads/2015/04/34-Mehrfamilienhaus-Montabaur-Fachwerk4-543x300.jpg 543w, /wp-content/uploads/2015/04/34-Mehrfamilienhaus-Montabaur-Fachwerk4-1086x600.jpg 1086w" alt="Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="543" height="300"  /></a>
                                                                 <figcaption
                                                                     class="rollover-content">
                                                                     <div
                                                                         class="links-container"><a
-                                                                            href="https://www.fachwerk4.de/projekt/mehrfamilienhaus-h/" class="project-details">Details</a></div>
+                                                                            href="/projekt/mehrfamilienhaus-h/" class="project-details">Details</a></div>
                                                                     <div
                                                                         class="rollover-content-container">
                                                                         <h3 class="entry-title"><a
-                                                                                href="https://www.fachwerk4.de/projekt/mehrfamilienhaus-h/" title="Mehrfamilienhaus H" rel="bookmark">Mehrfamilienhaus H</a></h3>
+                                                                                href="/projekt/mehrfamilienhaus-h/" title="Mehrfamilienhaus H" rel="bookmark">Mehrfamilienhaus H</a></h3>
                                                                         <p>Exklusives Mehrfamilienhaus, Montabaur, 2009</p>
                                                                     </div>
                                                                 </figcaption>
@@ -838,8 +838,8 @@
                                                                 class="team-container post-28 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-inhaber bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/andreas-maria-schwickert/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/02/architekt-schwickert-e1429208783810-469x469.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/02/architekt-schwickert-e1429208783810-469x469.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2015/02/architekt-schwickert-e1429208783810-800x800.jpg 800w" width="469" height="469"  title="Architekt Andreas M. Schwickert | Fachwerk4 | Architekten BDA" alt="Architekt Andreas M. Schwickert | Fachwerk4 | Architekten BDA" /></a></div>
+                                                                        href="/team/andreas-maria-schwickert/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="/wp-content/uploads/2015/02/architekt-schwickert-e1429208783810-469x469.jpg" data-srcset="/wp-content/uploads/2015/02/architekt-schwickert-e1429208783810-469x469.jpg 469w, /wp-content/uploads/2015/02/architekt-schwickert-e1429208783810-800x800.jpg 800w" width="469" height="469"  title="Architekt Andreas M. Schwickert | Fachwerk4 | Architekten BDA" alt="Architekt Andreas M. Schwickert | Fachwerk4 | Architekten BDA" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -869,8 +869,8 @@
                                                                 class="team-container post-29 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-mitarbeiter bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/barbara-korte/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 470'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/02/BArbara-Korte1-e1429208905353-469x470.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/02/BArbara-Korte1-e1429208905353-469x470.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2015/02/BArbara-Korte1-e1429208905353-799x801.jpg 799w" width="469" height="470"   alt="Barbara Korte | Fachwerk4 | Architekten BDA" /></a></div>
+                                                                        href="/team/barbara-korte/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 470'%2F%3E" data-src="/wp-content/uploads/2015/02/BArbara-Korte1-e1429208905353-469x470.jpg" data-srcset="/wp-content/uploads/2015/02/BArbara-Korte1-e1429208905353-469x470.jpg 469w, /wp-content/uploads/2015/02/BArbara-Korte1-e1429208905353-799x801.jpg 799w" width="469" height="470"   alt="Barbara Korte | Fachwerk4 | Architekten BDA" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -894,8 +894,8 @@
                                                                 class="team-container post-14860 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-mitarbeiter bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/inge-krueger/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2011/10/inge_krueger-469x469.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2011/10/inge_krueger-469x469.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2011/10/inge_krueger-938x938.jpg 938w" width="469" height="469"  title="Inge Krüger | Fachwerk4 | Architekten BDA" alt="Inge Krüger | Fachwerk4 | Architekten BDA" /></a></div>
+                                                                        href="/team/inge-krueger/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="/wp-content/uploads/2011/10/inge_krueger-469x469.jpg" data-srcset="/wp-content/uploads/2011/10/inge_krueger-469x469.jpg 469w, /wp-content/uploads/2011/10/inge_krueger-938x938.jpg 938w" width="469" height="469"  title="Inge Krüger | Fachwerk4 | Architekten BDA" alt="Inge Krüger | Fachwerk4 | Architekten BDA" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -919,8 +919,8 @@
                                                                 class="team-container post-15080 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-mitarbeiter bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/sandra-poetz/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2009/03/sandra_pötz1-469x469.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2009/03/sandra_pötz1-469x469.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2009/03/sandra_pötz1-612x612.jpg 612w" width="469" height="469"   alt="Sandra Pötz | Fachwerk 4 | Architekten BDA" /></a></div>
+                                                                        href="/team/sandra-poetz/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="/wp-content/uploads/2009/03/sandra_pötz1-469x469.jpg" data-srcset="/wp-content/uploads/2009/03/sandra_pötz1-469x469.jpg 469w, /wp-content/uploads/2009/03/sandra_pötz1-612x612.jpg 612w" width="469" height="469"   alt="Sandra Pötz | Fachwerk 4 | Architekten BDA" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -944,8 +944,8 @@
                                                                 class="team-container post-17025 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-mitarbeiter bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/julia-vohl/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2009/03/julia_vohl-469x469.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2009/03/julia_vohl-469x469.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2009/03/julia_vohl-938x938.jpg 938w" width="469" height="469"  title="Julia Vohl | Fachwerk4 | Architekten BDA" alt="" /></a></div>
+                                                                        href="/team/julia-vohl/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="/wp-content/uploads/2009/03/julia_vohl-469x469.jpg" data-srcset="/wp-content/uploads/2009/03/julia_vohl-469x469.jpg 469w, /wp-content/uploads/2009/03/julia_vohl-938x938.jpg 938w" width="469" height="469"  title="Julia Vohl | Fachwerk4 | Architekten BDA" alt="" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -969,8 +969,8 @@
                                                                 class="team-container post-17372 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-mitarbeiter bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/kristin-lorenz/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/04/kristin-lorenz-e1460317879518-469x469.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/04/kristin-lorenz-e1460317879518-469x469.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2016/04/kristin-lorenz-e1460317879518-938x938.jpg 938w" width="469" height="469"  title="Kristin Lorenz | Fachwerk4 | Architekten BDA" alt="Kristin Lorenz | Fachwerk4 | Architekten BDA" /></a></div>
+                                                                        href="/team/kristin-lorenz/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="/wp-content/uploads/2016/04/kristin-lorenz-e1460317879518-469x469.jpg" data-srcset="/wp-content/uploads/2016/04/kristin-lorenz-e1460317879518-469x469.jpg 469w, /wp-content/uploads/2016/04/kristin-lorenz-e1460317879518-938x938.jpg 938w" width="469" height="469"  title="Kristin Lorenz | Fachwerk4 | Architekten BDA" alt="Kristin Lorenz | Fachwerk4 | Architekten BDA" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -994,8 +994,8 @@
                                                                 class="team-container post-17427 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-mitarbeiter bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/shalin-normann/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/05/shalin-normann-469x469.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/05/shalin-normann-469x469.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2016/05/shalin-normann-938x938.jpg 938w" width="469" height="469"  title="Shalin Normann | Auszubildende bei Fachwerk4 | Architekten BDA" alt="Shalin Normann | Auszubildende bei Fachwerk4 | Architekten BDA" /></a></div>
+                                                                        href="/team/shalin-normann/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 469'%2F%3E" data-src="/wp-content/uploads/2016/05/shalin-normann-469x469.jpg" data-srcset="/wp-content/uploads/2016/05/shalin-normann-469x469.jpg 469w, /wp-content/uploads/2016/05/shalin-normann-938x938.jpg 938w" width="469" height="469"  title="Shalin Normann | Auszubildende bei Fachwerk4 | Architekten BDA" alt="Shalin Normann | Auszubildende bei Fachwerk4 | Architekten BDA" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -1019,8 +1019,8 @@
                                                                 class="team-container post-17424 dt_team type-dt_team status-publish has-post-thumbnail hentry dt_team_category-mitarbeiter bg-on description-off">
                                                                 <div
                                                                     class="team-media"><a
-                                                                        href="https://www.fachwerk4.de/team/lucas-trapa/" class="rollover layzr-bg"><img
-                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 470'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2002/06/lucas-469x470.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2002/06/lucas-469x470.jpg 469w, https://www.fachwerk4.de/wp-content/uploads/2002/06/lucas-938x940.jpg 938w" width="469" height="470"  title="Lucas Trapa | Architekt bei Fachwerk4 | Architekten BDA" alt="Lucas Trapa | Architekt bei Fachwerk4 | Architekten BDA" /></a></div>
+                                                                        href="/team/lucas-trapa/" class="rollover layzr-bg"><img
+                                                                            class="iso-lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 469 470'%2F%3E" data-src="/wp-content/uploads/2002/06/lucas-469x470.jpg" data-srcset="/wp-content/uploads/2002/06/lucas-469x470.jpg 469w, /wp-content/uploads/2002/06/lucas-938x940.jpg 938w" width="469" height="470"  title="Lucas Trapa | Architekt bei Fachwerk4 | Architekten BDA" alt="Lucas Trapa | Architekt bei Fachwerk4 | Architekten BDA" /></a></div>
                                                                 <div
                                                                     class="team-desc">
                                                                     <div
@@ -1113,7 +1113,7 @@
                                                                 <p><span
                                                                         style="color: #4c4c4c;">Die Projekte von Fachwerk4 sind bereits in zahlreichen Fachbüchern und Fachzeitschriften, aber auch in Tageszeitungen veröffentlicht worden. Diese Berichte sowie eigene Publikationen möchten wir Ihnen hier zum Download zur Verfügung stellen.</span></p>
                                                                 <p>Weitere Veröffentlichungen finden Sie <a
-                                                                        href="https://www.fachwerk4.de/publikationen/">in unserem Archiv</a>.</p>
+                                                                        href="/publikationen/">in unserem Archiv</a>.</p>
                                                             </div>
                                                         </div>
                                                         <div
@@ -1749,8 +1749,8 @@
                     class="wf-table wf-mobile-collapsed">
                     <div
                         id="branding-bottom" class="wf-td"><a
-                            href="https://www.fachwerk4.de/"><img
-                                class=" preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/Fachwerk4-384x64-C-white.png" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/Fachwerk4-384x64-C-white.png 384w, https://www.fachwerk4.de/wp-content/uploads/2015/04/Fachwerk4-768x128-C-white.png 768w" width="384" height="64"   sizes="384px" alt="Fachwerk4" /></a></div>
+                            href="/"><img
+                                class=" preload-me" src="/wp-content/uploads/2015/04/Fachwerk4-384x64-C-white.png" srcset="/wp-content/uploads/2015/04/Fachwerk4-384x64-C-white.png 384w, /wp-content/uploads/2015/04/Fachwerk4-768x128-C-white.png 768w" width="384" height="64"   sizes="384px" alt="Fachwerk4" /></a></div>
                     <div
                         class="wf-td"></div>
                     <div
@@ -1821,47 +1821,47 @@
 <ul
     id="main-slideshow-content" class="rsHomePorthole">
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/10/Fachwerk4-Haus-Eifel-Eingang.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/10/Fachwerk4-Haus-Eifel-Eingang.jpg 1280w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/10/Fachwerk4-Haus-Eifel-Eingang-150x150.jpg" alt="Haus Eifel | Fachwerk4" width="1280" height="640"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/10/Fachwerk4-Haus-Eifel-Eingang.jpg" srcset="/wp-content/uploads/2015/10/Fachwerk4-Haus-Eifel-Eingang.jpg 1280w" data-rsTmb="/wp-content/uploads/2015/10/Fachwerk4-Haus-Eifel-Eingang-150x150.jpg" alt="Haus Eifel | Fachwerk4" width="1280" height="640"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/01-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383026258.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/01-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383026258.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/01-Mehrfamilienhaus-Montabaur-Fachwerk4-150x150.jpg" alt="01 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/01-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383026258.jpg" srcset="/wp-content/uploads/2015/04/01-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383026258.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/01-Mehrfamilienhaus-Montabaur-Fachwerk4-150x150.jpg" alt="01 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/03/20_06.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/03/20_06.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/03/20_06-150x150.jpg" alt="" width="1150" height="768"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/03/20_06.jpg" srcset="/wp-content/uploads/2015/03/20_06.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/03/20_06-150x150.jpg" alt="" width="1150" height="768"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/36-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383178127.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/36-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383178127.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/36-Mehrfamilienhaus-Montabaur-Fachwerk4-150x150.jpg" alt="36 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/36-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383178127.jpg" srcset="/wp-content/uploads/2015/04/36-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383178127.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/36-Mehrfamilienhaus-Montabaur-Fachwerk4-150x150.jpg" alt="36 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/03/20_03.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/03/20_03.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/03/20_03-150x150.jpg" alt="" width="1150" height="765"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/03/20_03.jpg" srcset="/wp-content/uploads/2015/03/20_03.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/03/20_03-150x150.jpg" alt="" width="1150" height="765"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/13-Reisebuero-Montabaur-Fachwerk4-e1429383341650.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/13-Reisebuero-Montabaur-Fachwerk4-e1429383341650.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/13-Reisebuero-Montabaur-Fachwerk4-150x150.jpg" alt="Fachwerk4 | Architekten BDA, Reisebüro, Montabaur, Eingangsbereich" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/13-Reisebuero-Montabaur-Fachwerk4-e1429383341650.jpg" srcset="/wp-content/uploads/2015/04/13-Reisebuero-Montabaur-Fachwerk4-e1429383341650.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/13-Reisebuero-Montabaur-Fachwerk4-150x150.jpg" alt="Fachwerk4 | Architekten BDA, Reisebüro, Montabaur, Eingangsbereich" width="1150" height="635"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/104-Wohnhaus-Moderne-Architektur-Fachwerk4.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/104-Wohnhaus-Moderne-Architektur-Fachwerk4.jpg 1250w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/104-Wohnhaus-Moderne-Architektur-Fachwerk4-150x150.jpg" alt="104 | Wohnhaus Moderne Architektur | Fachwerk4 | Architekten BDA" width="1250" height="690"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/104-Wohnhaus-Moderne-Architektur-Fachwerk4.jpg" srcset="/wp-content/uploads/2015/04/104-Wohnhaus-Moderne-Architektur-Fachwerk4.jpg 1250w" data-rsTmb="/wp-content/uploads/2015/04/104-Wohnhaus-Moderne-Architektur-Fachwerk4-150x150.jpg" alt="104 | Wohnhaus Moderne Architektur | Fachwerk4 | Architekten BDA" width="1250" height="690"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/20-Mehrfamilienhaus-Montabaur-Atrium-Fachwerk4-e1429383339495.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/20-Mehrfamilienhaus-Montabaur-Atrium-Fachwerk4-e1429383339495.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/20-Mehrfamilienhaus-Montabaur-Atrium-Fachwerk4-150x150.jpg" alt="20 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/20-Mehrfamilienhaus-Montabaur-Atrium-Fachwerk4-e1429383339495.jpg" srcset="/wp-content/uploads/2015/04/20-Mehrfamilienhaus-Montabaur-Atrium-Fachwerk4-e1429383339495.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/20-Mehrfamilienhaus-Montabaur-Atrium-Fachwerk4-150x150.jpg" alt="20 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/05-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383208806.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/05-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383208806.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/05-Mehrfamilienhaus-Montabaur-Fachwerk4-150x150.jpg" alt="05 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/05-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383208806.jpg" srcset="/wp-content/uploads/2015/04/05-Mehrfamilienhaus-Montabaur-Fachwerk4-e1429383208806.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/05-Mehrfamilienhaus-Montabaur-Fachwerk4-150x150.jpg" alt="05 | Mehrfamilienhaus Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/02-Einfamilienhaus-Kadenbach-Kamin-Fachwerk4-e1429383334361.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/02-Einfamilienhaus-Kadenbach-Kamin-Fachwerk4-e1429383334361.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/02-Einfamilienhaus-Kadenbach-Kamin-Fachwerk4-150x150.jpg" alt="02 | Einfamilienhaus K | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/02-Einfamilienhaus-Kadenbach-Kamin-Fachwerk4-e1429383334361.jpg" srcset="/wp-content/uploads/2015/04/02-Einfamilienhaus-Kadenbach-Kamin-Fachwerk4-e1429383334361.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/02-Einfamilienhaus-Kadenbach-Kamin-Fachwerk4-150x150.jpg" alt="02 | Einfamilienhaus K | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/111-Villa-Fachwerk4-Eifel-e1429383082334.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/111-Villa-Fachwerk4-Eifel-e1429383082334.jpg 1024w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/111-Villa-Fachwerk4-Eifel-150x150.jpg" alt="111 | Villa in der Eifel | Fachwerk4 | Architekten BDA" width="1024" height="565"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/111-Villa-Fachwerk4-Eifel-e1429383082334.jpg" srcset="/wp-content/uploads/2015/04/111-Villa-Fachwerk4-Eifel-e1429383082334.jpg 1024w" data-rsTmb="/wp-content/uploads/2015/04/111-Villa-Fachwerk4-Eifel-150x150.jpg" alt="111 | Villa in der Eifel | Fachwerk4 | Architekten BDA" width="1024" height="565"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/06-Einfamilienhaus-Atrium-Fachwerk4-e1429383332908.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/06-Einfamilienhaus-Atrium-Fachwerk4-e1429383332908.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/06-Einfamilienhaus-Atrium-Fachwerk4-150x150.jpg" alt="06 | Einfamilienhaus Atrium | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/06-Einfamilienhaus-Atrium-Fachwerk4-e1429383332908.jpg" srcset="/wp-content/uploads/2015/04/06-Einfamilienhaus-Atrium-Fachwerk4-e1429383332908.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/06-Einfamilienhaus-Atrium-Fachwerk4-150x150.jpg" alt="06 | Einfamilienhaus Atrium | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
     <li><img
-            class="preload-me" src="https://www.fachwerk4.de/wp-content/uploads/2015/04/07-Villa-Montabaur-Fachwerk4-e1429383138349.jpg" srcset="https://www.fachwerk4.de/wp-content/uploads/2015/04/07-Villa-Montabaur-Fachwerk4-e1429383138349.jpg 1150w" data-rsTmb="https://www.fachwerk4.de/wp-content/uploads/2015/04/07-Villa-Montabaur-Fachwerk4-150x150.jpg" alt="07 | Villa Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
+            class="preload-me" src="/wp-content/uploads/2015/04/07-Villa-Montabaur-Fachwerk4-e1429383138349.jpg" srcset="/wp-content/uploads/2015/04/07-Villa-Montabaur-Fachwerk4-e1429383138349.jpg 1150w" data-rsTmb="/wp-content/uploads/2015/04/07-Villa-Montabaur-Fachwerk4-150x150.jpg" alt="07 | Villa Montabaur | Fachwerk4 | Architekten BDA" width="1150" height="635"  /></li>
 </ul>
 <link
-    rel='stylesheet' id='ultimate-tooltip-css'  href='https://www.fachwerk4.de/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/tooltip.min.css?ver=3.16.1' type='text/css' media='all' />
+    rel='stylesheet' id='ultimate-tooltip-css'  href='/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/tooltip.min.css?ver=3.16.1' type='text/css' media='all' />
 <link
-    rel='stylesheet' id='prettyphoto-css'  href='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=4.11.2.1' type='text/css' media='all' />
+    rel='stylesheet' id='prettyphoto-css'  href='/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=4.11.2.1' type='text/css' media='all' />
 <link
-    rel='stylesheet' id='vc_pageable_owl-carousel-css-css'  href='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=4.11.2.1' type='text/css' media='' />
+    rel='stylesheet' id='vc_pageable_owl-carousel-css-css'  href='/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=4.11.2.1' type='text/css' media='' />
 <link
-    rel='stylesheet' id='animate-css-css'  href='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=4.11.2.1' type='text/css' media='' />
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/themes/dt-the7/js/main.min.js?ver=1.0.0'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script> <script type='text/javascript'>/*  */
+    rel='stylesheet' id='animate-css-css'  href='/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=4.11.2.1' type='text/css' media='' />
+<script type='text/javascript' src='/wp-content/themes/dt-the7/js/main.min.js?ver=1.0.0'></script> <script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script> <script type='text/javascript'>/*  */
     var _wpcf7 = {"loaderUrl":"https:\/\/www.fachwerk4.de\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Bitte best\u00e4tige, dass du nicht eine Maschine bist."}},"sending":"Senden ...","cached":"1"};
     /*  */
-</script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script> <script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201646'></script> <script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2016Novaa'></script> <script type='text/javascript'>/*  */
+</script> <script type='text/javascript' src='/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script> <script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201646'></script> <script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2016Novaa'></script> <script type='text/javascript'>/*  */
     var WPGroHo = {"my_hash":""};
     /*  */
-</script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.6.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/themes/dt-the7/js/post-type.js?ver=1.0.0'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/tooltip.min.js?ver=3.16.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=4.6.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-includes/js/underscore.min.js?ver=1.8.3'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&#038;render=explicit&#038;ver=2.0'></script> <script type='text/javascript' src='https://stats.wp.com/e-201646.js' async defer></script> <script type='text/javascript'>_stq = window._stq || [];
+</script> <script type='text/javascript' src='/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.6.1'></script> <script type='text/javascript' src='/wp-content/themes/dt-the7/js/post-type.js?ver=1.0.0'></script> <script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script> <script type='text/javascript' src='/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/tooltip.min.js?ver=3.16.1'></script> <script type='text/javascript' src='/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=4.6.1'></script> <script type='text/javascript' src='/wp-includes/js/underscore.min.js?ver=1.8.3'></script> <script type='text/javascript' src='/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=4.11.2.1'></script> <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&#038;render=explicit&#038;ver=2.0'></script> <script type='text/javascript' src='https://stats.wp.com/e-201646.js' async defer></script> <script type='text/javascript'>_stq = window._stq || [];
     _stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'103843918',post:'8',tz:'1',srv:'www.fachwerk4.de'} ]);
     _stq.push([ 'clickTrackerInit', '103843918', '8' ]);
 </script>
