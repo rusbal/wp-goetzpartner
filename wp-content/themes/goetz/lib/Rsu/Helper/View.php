@@ -64,7 +64,7 @@ class View
                         </div>
                         <div class="team-desc">
                             <div class="team-author">
-                                <div class="team-author-name"><?php the_title(); ?></div>
+                                <div class="team-author-name">' . get_the_title() . '</div>
                                 <p>' . get_field('title_line_1') . '</p>
                             </div>
                             <div class="soc-ico">'
