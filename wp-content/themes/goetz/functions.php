@@ -28,3 +28,5 @@ foreach ($sage_includes as $file) {
 unset($file, $filepath);
 
 add_filter('show_admin_bar', '__return_false');
+
+require 'vendor/autoload.php';
