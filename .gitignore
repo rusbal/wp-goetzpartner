@@ -2,3 +2,5 @@ wp-config.php
 REF.styles
 sagegoetz
 .idea
+wp-content/uploads
+fakerpress
