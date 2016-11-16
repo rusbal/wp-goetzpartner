@@ -38,6 +38,14 @@
             background-color: rgba(58,58,58,0.6) !important;
         }
     </style>
+    <script>
+        jQuery(function($){
+            var pathname = window.location.pathname;
+            if (pathname == '/') {
+                $('#primary-menu').find('li:first').addClass('act');
+            }
+        });
+    </script>
 </head>
 <?php
 
