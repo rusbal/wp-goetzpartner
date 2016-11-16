@@ -98,4 +98,46 @@ class View
 
         return $outHtml;
     }
+
+    public static function vita()
+    {
+        $outHtml = '';
+        if( have_rows('vita') ):
+            $outHtml .= '<ul>';
+            while ( have_rows('vita') ) : the_row();
+                $outHtml .= '<li><strong>' . get_sub_field('date_info') . '</strong> ' . get_sub_field('description') . '</li>';
+            endwhile;
+            $outHtml .= '</ul>';
+        endif;
+        return $outHtml;
+    }
+
+    public static function kontakt()
+    {
+        $phone = get_field('phone');
+        $fax = get_field('fax');
+        $email = get_field('email');
+        $twitter = get_field('twitter');
+        $facebook = get_field('facebook');
+        $google = get_field('google');
+
+        echo '
+            <div class="wpb_wrapper">
+                <p><strong><span class="color-title">Telefonnummer:</span></strong>&nbsp;' . $phone . '</p>
+                <p><strong><span class="color-title">Fax:</span></strong>&nbsp;' . $fax . '</p>
+                <p><strong><span class="color-title">E-Mail:</span></strong>&nbsp;' . $email . '</p>
+                <p><span class="color-title"><strong>Soziale Netzwerke:</strong></span></p>
+                <div class="soc-ico">
+                    <a title="Twitter" href="' . $twitter . '" target="_blank" class="twitter" style="visibility: visible;">
+                        <svg class="icon" viewBox="0 0 24 24"> <use xlink:href="#twitter"/> </svg>
+                    </a>
+                    <a title="Facebook" href="' . $facebook . '" target="_blank" class="facebook" style="visibility: visible;">
+                        <svg class="icon" viewBox="0 0 24 24"> <use xlink:href="#facebook"/> </svg>
+                    </a>
+                    <a title="Google+" href="' . $google . '" target="_blank" class="google" style="visibility: visible;">
+                        <svg class="icon" viewBox="0 0 24 24"> <use xlink:href="#google"/> </svg>
+                    </a>
+                </div>
+            </div>';
+    }
 }
