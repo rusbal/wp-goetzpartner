@@ -1395,40 +1395,9 @@ use Rsu\Helper\View;
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div
-                                                class="vc_column-inner ">
-                                                <div
-                                                    class="wpb_wrapper">
-                                                    <div
-                                                        class="ult-spacer spacer-5829113ba8410" data-id="5829113ba8410" data-height="0" data-height-mobile="32" data-height-tab="" data-height-tab-portrait="" data-height-mobile-landscape="32" style="clear:both;display:block;"></div>
-                                                    <div
-                                                        class="wpb_text_column wpb_content_element ">
-                                                        <div
-                                                            class="wpb_wrapper">
-                                                            <h4>Kontaktdaten:</h4>
-                                                        </div>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p><span class="color-title">Fachwerk4 | Architekten BDA</span><br /> Andreas M. Schwickert<br /> Nikolausstraße 4<br /> 56422 Wirges </p>
-                                                            <p>Telefonnummer:<br /> 02602 959730 </p>
-                                                            <p><span class="color-title">Fax:<br /> </span>02602 959731 </p>
-                                                            <p><span class="color-title">E-Mail:</span><br /> info@fachwerk4.de </p>
-                                                            <p> <span class="color-title"> Soziale Netzwerke:
-                                                        <div class="soc-ico"><a
-                                                              title="Rss" href="http://feeds.feedburner.com/Fachwerk4" target="_blank" class="rss"><span
-                                                                  class="assistive-text">Rss</span></a></span><a
-                                                                    title="Twitter" href="https://twitter.com/fachwerk4" target="_blank" class="twitter"><span
-                                                                        class="assistive-text">Twitter</span></a><a
-                                                                    title="Facebook" href="https://www.facebook.com/fachwerk4" target="_blank" class="facebook"><span
-                                                                        class="assistive-text">Facebook</span></a><a
-                                                                    title="Google+" href="https://plus.google.com/+Fachwerk4DeArchitektenBDA" target="_blank" class="google"><span
-                                                                        class="assistive-text">Google+</span></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <?php get_template_part('templates/kontaktdaten'); ?>
                                                 <div class="ult-spacer spacer-5829113ba8912" data-id="5829113ba8912" data-height="0" data-height-mobile="32" data-height-tab="" data-height-tab-portrait="" data-height-mobile-landscape="32" style="clear:both;display:block;"></div>
                                             </div>
                                         </div>
@@ -1441,9 +1410,8 @@ use Rsu\Helper\View;
             </div>
         </div>
     </div>
-</div>
-<?php get_template_part('templates/footer'); ?>
-<a href="#" class="scroll-top"></a>
+    <?php get_template_part('templates/footer'); ?>
+    <a href="#" class="scroll-top"></a>
 </div>
 <div id="cookie-law-info-bar"><span>Diese Website verwendet Cookies. Indem Sie weiter auf dieser Website navigieren, stimmen Sie unserer Verwendung von Cookies zu. <a
             href="#" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button" >Ok</a> <a
