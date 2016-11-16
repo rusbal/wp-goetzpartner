@@ -64,7 +64,12 @@ class Register
                 [
                     'tab_title' => 'Logo',
                     'fields' => [
-                        'footer_logo' => [ 'type' => 'image', 'title' => 'Footer Logo', 'description' => 'This logo shows on the footer' ],
+                        'header_logo' => [
+                            'type' => 'image',
+                            'title' => 'Header Logo',
+                            'description' => 'This logo shows on the header. Size: 60x60'
+                        ],
+                        'footer_logo' => [ 'type' => 'image', 'title' => 'Footer Logo', 'description' => 'This logo shows on the footer. Size: 384x64' ],
                         'description' => [ 'type' => 'tinymce', 'title' => 'Description' ],
                     ],
                 ],
