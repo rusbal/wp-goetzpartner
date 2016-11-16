@@ -49,19 +49,23 @@ class Register
                 [
                     'tab_title' => 'General',
                     'fields' => [
-                        'footer_logo' => [
-                            'type' => 'image',
-                            'title' => 'Footer Logo',
-                            'description' => 'This logo shows on the footer'
-                        ],
-                        'company_name' => [
-                            'type' => 'text',
-                            'title' => 'Company Name'
-                        ],
-                        'description' => [
-                            'type' => 'tinymce',
-                            'title' => 'Description'
-                        ],
+                        'company_name' => [ 'type' => 'text', 'title' => 'Company Name' ],
+                        'address_line_1' => [ 'type' => 'text', 'title' => 'Address Line 1' ],
+                        'address_line_2' => [ 'type' => 'text', 'title' => 'Address Line 2' ],
+                        'telephone' => [ 'type' => 'text', 'title' => 'Telephone' ],
+                        'fax' => [ 'type' => 'text', 'title' => 'Fax' ],
+                        'email' => [ 'type' => 'text', 'title' => 'Email' ],
+                        'rss' => [ 'type' => 'text', 'title' => 'RSS' ],
+                        'twitter' => [ 'type' => 'text', 'title' => 'Twitter' ],
+                        'facebook' => [ 'type' => 'text', 'title' => 'Facebook' ],
+                        'google' => [ 'type' => 'text', 'title' => 'Google' ],
+                    ],
+                ],
+                [
+                    'tab_title' => 'Logo',
+                    'fields' => [
+                        'footer_logo' => [ 'type' => 'image', 'title' => 'Footer Logo', 'description' => 'This logo shows on the footer' ],
+                        'description' => [ 'type' => 'tinymce', 'title' => 'Description' ],
                     ],
                 ],
             ]
