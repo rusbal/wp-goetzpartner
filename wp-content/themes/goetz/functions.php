@@ -9,13 +9,17 @@
  *
  * @link https://github.com/roots/sage/pull/1042
  */
+
+require 'vendor/autoload.php';
+
 $sage_includes = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
   'lib/setup.php',     // Theme setup
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
+  'lib/customizer.php', // Theme customizer
+  'lib/settings.php',   // Theme settings
 ];
 
 foreach ($sage_includes as $file) {
@@ -28,8 +32,6 @@ foreach ($sage_includes as $file) {
 unset($file, $filepath);
 
 add_filter('show_admin_bar', '__return_false');
-
-require 'vendor/autoload.php';
 
 /**
  * Custom Post Types
