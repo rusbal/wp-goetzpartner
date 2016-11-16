@@ -10,35 +10,9 @@ use Rsu\Helper\View;
 <div id="load" class="ring-loader">
     <div class="load-wrap"></div>
 </div>
-<div
-    id="page" class="boxed">
-    <a
-        class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <div
-        class="masthead inline-header right widgets full-height surround shadow-decoration show-device-logo show-mobile-logo" style="background-color: rgba(58,58,58,0.6);" role="banner">
-        <div
-            class="top-bar solid-bg">
-            <div
-                class="mini-widgets"><span
-                    class="mini-contacts address icon-off show-on-desktop near-logo-first-switch in-menu-second-switch">FACHWERK4 | ARCHITEKTEN BDA</span><span
-                    class="mini-contacts email show-on-desktop near-logo-first-switch in-menu-second-switch">info@fachwerk4.de</span><span
-                    class="mini-contacts phone show-on-desktop near-logo-first-switch in-menu-second-switch">02602 959730</span></div>
-            <div
-                class="mini-widgets">
-                <div
-                    class="soc-ico show-on-desktop near-logo-first-switch in-menu-second-switch disabled-bg hover-accent-bg"><a
-                        title="Facebook" href="https://www.facebook.com/fachwerk4" target="_blank" class="facebook"><span
-                            class="assistive-text">Facebook</span></a><a
-                        title="Twitter" href="https://twitter.com/fachwerk4" target="_blank" class="twitter"><span
-                            class="assistive-text">Twitter</span></a><a
-                        title="Google+" href="https://plus.google.com/+Fachwerk4DeArchitektenBDA" target="_blank" class="google"><span
-                            class="assistive-text">Google+</span></a><a
-                        title="Rss" href="http://feeds.feedburner.com/Fachwerk4" target="_blank" class="rss"><span
-                            class="assistive-text">Rss</span></a></div>
-            </div>
-        </div>
-        <?php get_template_part('templates/header'); ?>
-    </div>
+<div id="page" class="boxed">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <?php get_template_part('templates/header'); ?>
     <div
         class='dt-close-mobile-menu-icon'><span></span></div>
     <div

@@ -33,6 +33,11 @@
     get_template_part('templates/head_52'); /* the loading of images */
     get_template_part('templates/head_53'); /* the loading of images also */
     ?>
+    <style>
+        body.home div.masthead {
+            background-color: rgba(58,58,58,0.6) !important;
+        }
+    </style>
 </head>
 <?php
 

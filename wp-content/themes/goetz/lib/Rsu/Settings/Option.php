@@ -5,14 +5,21 @@ namespace Rsu\Settings;
 
 class Option
 {
+    protected static $settings;
+
     public static function get_fields()
     {
-        return get_option('goetz_settings');
+        if (! isset(self::$settings)) {
+            self::$settings = get_option('goetz_settings');
+        }
+        return self::$settings;
     }
 
     public static function get($key)
     {
-        $options = get_option('goetz_settings');
-        return $options[$key];
+        if (! isset(self::$settings)) {
+            self::$settings = get_option('goetz_settings');
+        }
+        return self::$settings[$key];
     }
 }

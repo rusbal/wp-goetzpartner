@@ -50,6 +50,7 @@ class Register
                     'tab_title' => 'General',
                     'fields' => [
                         'company_name' => [ 'type' => 'text', 'title' => 'Company Name' ],
+                        'company_description' => [ 'type' => 'text', 'title' => 'Company Description' ],
                         'address_line_1' => [ 'type' => 'text', 'title' => 'Address Line 1' ],
                         'address_line_2' => [ 'type' => 'text', 'title' => 'Address Line 2' ],
                         'telephone' => [ 'type' => 'text', 'title' => 'Telephone' ],
