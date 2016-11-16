@@ -10,6 +10,8 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 
+use Rsu\Settings\Register;
+
 require 'vendor/autoload.php';
 
 $sage_includes = [
@@ -19,7 +21,6 @@ $sage_includes = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
-  'lib/settings.php',   // Theme settings
 ];
 
 foreach ($sage_includes as $file) {
@@ -37,3 +38,9 @@ add_filter('show_admin_bar', '__return_false');
  * Custom Post Types
  */
 new Rsu\PostType\Team;
+
+/**
+ * Register Settings
+ */
+new Rsu\Settings\Register;
+
