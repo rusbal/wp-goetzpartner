@@ -102,27 +102,7 @@ use Rsu\Helper\View;
                                                                                                                                                                                                                                                                                                                                                                                                     #benefits-grid-1.custom-icon-hover-color a.benefits-grid-ico:hover > .fa:before { color: #ffffff; -webkit-text-fill-color: #ffffff; }
                                                         </style>
 
-                                                        <?php
-                                                        $my_query = (new Publication)->own();
-                                                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                                        ?>
-                                                        <div class="wf-cell">
-                                                            <div>
-                                                                <div class="text-big">
-                                                                    <div class="wf-table">
-                                                                        <div class="wf-td"><a href="<?= the_field('pdf_file') ?>" class="benefits-grid-ico" target="_blank"><i class="<?= the_field('icon') ?>"></i></a></div>
-                                                                        <div class="wf-td benefits-inner">
-                                                                            <h5 class="benefit-title"> <a href="<?= the_field('pdf_file') ?>" target="_blank"><?= the_title() ?></a> </h5>
-                                                                            <p><?= the_field('detail') ?></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <?php
-                                                        endwhile;
-                                                        wp_reset_query();
-                                                        ?>
+                                                        <?= View::wfCell((new Publication)->own(), 'h5', 'text-big') ?>
 
                                                     </section>
                                                     <div
@@ -148,27 +128,7 @@ use Rsu\Helper\View;
                                                                                                                                                                                                                                                                                                                                                                                                     #benefits-grid-2.custom-icon-hover-color a.benefits-grid-ico:hover > .fa:before { color: #ffffff; -webkit-text-fill-color: #ffffff; }
                                                         </style>
 
-                                                        <?php
-                                                        $my_query = (new Publication)->newspaper();
-                                                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                                            ?>
-                                                            <div class="wf-cell">
-                                                                <div>
-                                                                    <div class="text-big">
-                                                                        <div class="wf-table">
-                                                                            <div class="wf-td"><a href="<?= the_field('pdf_file') ?>" class="benefits-grid-ico" target="_blank"><i class="<?= the_field('icon') ?>"></i></a></div>
-                                                                            <div class="wf-td benefits-inner">
-                                                                                <h5 class="benefit-title"> <a href="<?= the_field('pdf_file') ?>" target="_blank"><?= the_title() ?></a> </h5>
-                                                                                <p><?= the_field('detail') ?></p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <?php
-                                                        endwhile;
-                                                        wp_reset_query();
-                                                        ?>
+                                                        <?= View::wfCell((new Publication)->newspaper(), 'h5', 'text-big') ?>
 
                                                     </section>
                                                 </div>
@@ -197,27 +157,7 @@ use Rsu\Helper\View;
                                                                                                                                                                                                                                                                                                                                                                                                     #benefits-grid-3.custom-icon-hover-color a.benefits-grid-ico:hover > .fa:before { color: #ffffff; -webkit-text-fill-color: #ffffff; }
                                                         </style>
 
-                                                        <?php
-                                                        $my_query = (new Publication)->special();
-                                                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                                            ?>
-                                                            <div class="wf-cell">
-                                                                <div>
-                                                                    <div class="text-big">
-                                                                        <div class="wf-table">
-                                                                            <div class="wf-td"><a href="<?= the_field('pdf_file') ?>" class="benefits-grid-ico" target="_blank"><i class="<?= the_field('icon') ?>"></i></a></div>
-                                                                            <div class="wf-td benefits-inner">
-                                                                                <h5 class="benefit-title"> <a href="<?= the_field('pdf_file') ?>" target="_blank"><?= the_title() ?></a> </h5>
-                                                                                <p><?= the_field('detail') ?></p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <?php
-                                                        endwhile;
-                                                        wp_reset_query();
-                                                        ?>
+                                                        <?= View::wfCell((new Publication)->special(), 'h5', 'text-big') ?>
 
                                                     </section>
                                                 </div>
@@ -229,163 +169,8 @@ use Rsu\Helper\View;
                         </div>
                     </div>
                 </div>
-                <aside
-                    id="sidebar" class="sidebar">
-                    <div
-                        class="sidebar-content">
-                        <section
-                            id="presscore-contact-info-widget-16" class="widget widget_presscore-contact-info-widget">
-                            <div
-                                class="widget-title">Fachwerk4 | Architekten BDA</div>
-                            <ul
-                                class="contact-info">
-                                <li><span
-                                        class="color-primary">Andreas M. Schwickert</span><br
-                                    />Nikolausstraße 4<br>
-                                    56422 Wirges
-                                </li>
-                                <li><span
-                                        class="color-primary">Telefonnummer:</span><br
-                                    />02602 959730</li>
-                                <li><span
-                                        class="color-primary">Fax:</span><br
-                                    />02602 959731</li>
-                                <li><span
-                                        class="color-primary">E-Mail:</span><br
-                                    />info@fachwerk4.de</li>
-                            </ul>
-                            <div
-                                class="soc-ico">
-                                <p
-                                    class="assistive-text">Find us on:</p>
-                                <a
-                                    title="Facebook" href="https://www.facebook.com/fachwerk4" target="_blank" class="facebook"><span
-                                        class="assistive-text">Facebook</span></a><a
-                                    title="Twitter" href="https://twitter.com/fachwerk4" target="_blank" class="twitter"><span
-                                        class="assistive-text">Twitter</span></a><a
-                                    title="Google+" href="https://plus.google.com/+Fachwerk4DeArchitektenBDA" target="_blank" class="google"><span
-                                        class="assistive-text">Google+</span></a><a
-                                    title="Rss" href="http://feeds.feedburner.com/Fachwerk4" target="_blank" class="rss"><span
-                                        class="assistive-text">Rss</span></a>
-                            </div>
-                        </section>
-                        <section
-                            id="presscore-blog-posts-16" class="widget widget_presscore-blog-posts">
-                            <div
-                                class="widget-title">Neue Nachrichten</div>
-                            <ul
-                                class="recent-posts">
-                                <li>
-                                    <article
-                                        class="post-format-standard">
-                                        <div
-                                            class="wf-td"><a
-                                                class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/gartendesigner-des-jahres-ausgezeichnet/" ><img
-                                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-120x120.jpg 120w" width="60" height="60"  alt="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de" /></a></div>
-                                        <div
-                                            class="post-content"><a
-                                                href="https://www.fachwerk4.de/gartendesigner-des-jahres-ausgezeichnet/">&#8222;Gartendesigner des Jahres&#8220; ausgezeichnet</a><br
-                                            /><time
-                                                class="text-secondary" datetime="2016-11-07T17:24:01+00:00">7. November 2016</time></div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article
-                                        class="post-format-standard">
-                                        <div
-                                            class="wf-td"><a
-                                                class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/" ><img
-                                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                                        <div
-                                            class="post-content"><a
-                                                href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/">Azubi-Blog: Baustellenpraktikum oder &#8222;Stein auf Stein&#8220;</a><br
-                                            /><time
-                                                class="text-secondary" datetime="2016-10-12T12:38:17+00:00">12. Oktober 2016</time></div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article
-                                        class="post-format-standard">
-                                        <div
-                                            class="wf-td"><a
-                                                class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/ein-weiteres-jubilaeum/" ><img
-                                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                                        <div
-                                            class="post-content"><a
-                                                href="https://www.fachwerk4.de/ein-weiteres-jubilaeum/">Ein weiteres Jubiläum, das wir gefeiert haben</a><br
-                                            /><time
-                                                class="text-secondary" datetime="2016-10-10T09:17:03+00:00">10. Oktober 2016</time></div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article
-                                        class="post-format-standard">
-                                        <div
-                                            class="wf-td"><a
-                                                class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/architektur-buch-15-jahre/" ><img
-                                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                                        <div
-                                            class="post-content"><a
-                                                href="https://www.fachwerk4.de/architektur-buch-15-jahre/">15 Jahre Fachwerk4 auf 190 Seiten</a><br
-                                            /><time
-                                                class="text-secondary" datetime="2016-09-27T07:30:37+00:00">27. September 2016</time></div>
-                                    </article>
-                                </li>
-                            </ul>
-                        </section>
-                        <section
-                            id="text-17" class="widget widget_text">
-                            <div
-                                class="widget-title">Downloads</div>
-                            <div
-                                class="textwidget">
-                                <section
-                                    id="benefits-grid-4" class="benefits-grid wf-container benefits-style-two icons-bg light-bg accent-hover-bg accent-icon-color light-icon-hover-color" data-width="180px" data-columns="1">
-                                    <style type="text/css">#benefits-grid-4.icons-bg .benefits-grid-ico { height: 44px; line-height: 44px; width: 44px;-webkit-border-radius: 100px;-moz-border-radius: 100px;-ms-border-radius: 100px;-o-border-radius: 100px;border-radius: 100px; }#benefits-grid-4.icons-bg .benefits-grid-ico > .fa { font-size: 24px; line-height: 44px; }</style>
-                                    <div
-                                        class="wf-cell">
-                                        <div>
-                                            <div
-                                                class="text-small">
-                                                <div
-                                                    class="wf-table">
-                                                    <div
-                                                        class="wf-td"><span
-                                                            class="benefits-grid-ico"><i
-                                                                class="fa icon-attach"></i></span></div>
-                                                    <div
-                                                        class="wf-td benefits-inner">
-                                                        <h6>Ausgewählte Projekte als PDF</h6>
-                                                        <p><em>Download demnächst verfügbar</em></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="wf-cell">
-                                        <div>
-                                            <div
-                                                class="text-small">
-                                                <div
-                                                    class="wf-table">
-                                                    <div
-                                                        class="wf-td"><span
-                                                            class="benefits-grid-ico"><i
-                                                                class="fa icon-attach"></i></span></div>
-                                                    <div
-                                                        class="wf-td benefits-inner">
-                                                        <h6>Flyer von Fachwerk4 | Architekten BDA</h6>
-                                                        <p><em>Download demnächst verfügbar</em></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </section>
-                    </div>
+                <aside id="sidebar" class="sidebar">
+                    <?php get_template_part('templates/aside/sidebar'); ?>
                 </aside>
             </div>
         </div>

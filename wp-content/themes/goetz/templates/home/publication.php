@@ -1,5 +1,6 @@
 <?php
 
+use Rsu\Helper\View;
 use Rsu\Models\Publication;
 
 ?>
@@ -45,27 +46,7 @@ use Rsu\Models\Publication;
                                     <section id="benefits-grid-1" class="benefits-grid wf-container benefits-style-two light-bg light-hover-bg accent-icon-color light-icon-hover-color" data-width="100px" data-columns="1">
                                         <style type="text/css">#benefits-grid-1 .benefits-grid-ico > .fa { font-size: 35px; line-height: 35px; }</style>
 
-                                        <?php
-                                        $my_query = (new Publication)->own();
-                                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                        ?>
-                                        <div class="wf-cell">
-                                            <div>
-                                                <div class="text-normal">
-                                                    <div class="wf-table">
-                                                        <div class="wf-td"><a href="<?= the_field('pdf_file') ?>" class="benefits-grid-ico" target="_blank"><i class="<?= the_field('icon') ?>"></i></a></div>
-                                                        <div class="wf-td benefits-inner">
-                                                            <h6 class="benefit-title"> <a href="<?= the_field('pdf_file') ?>" target="_blank"><?= the_title() ?></a> </h6>
-                                                            <p><?= the_field('detail') ?></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php
-                                        endwhile;
-                                        wp_reset_query();
-                                        ?>
+                                        <?= View::wfCell((new Publication)->own(), 'h6', 'text-normal') ?>
 
                                     </section>
                                     <div class="vc_empty_space"  style="height: 42px" ><span class="vc_empty_space_inner"></span></div>
@@ -85,27 +66,7 @@ use Rsu\Models\Publication;
                                     <section id="benefits-grid-2" class="benefits-grid wf-container benefits-style-two light-bg light-hover-bg accent-icon-color light-icon-hover-color" data-width="100px" data-columns="1">
                                         <style type="text/css">#benefits-grid-2 .benefits-grid-ico > .fa { font-size: 35px; line-height: 35px; }</style>
 
-                                        <?php
-                                        $my_query = (new Publication)->newspaper();
-                                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                        ?>
-                                        <div class="wf-cell">
-                                            <div>
-                                                <div class="text-normal">
-                                                    <div class="wf-table">
-                                                        <div class="wf-td"><a href="<?= the_field('pdf_file') ?>" class="benefits-grid-ico" target="_blank"><i class="<?= the_field('icon') ?>"></i></a></div>
-                                                        <div class="wf-td benefits-inner">
-                                                            <h6 class="benefit-title"> <a href="<?= the_field('pdf_file') ?>" target="_blank"><?= the_title() ?></a> </h6>
-                                                            <p><?= the_field('detail') ?></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php
-                                        endwhile;
-                                        wp_reset_query();
-                                        ?>
+                                        <?= View::wfCell((new Publication)->newspaper(), 'h6', 'text-normal') ?>
 
                                     </section>
                                     <div class="vc_empty_space"  style="height: 42px" ><span class="vc_empty_space_inner"></span></div>
@@ -125,27 +86,7 @@ use Rsu\Models\Publication;
                                     <section id="benefits-grid-3" class="benefits-grid wf-container benefits-style-two light-bg light-hover-bg accent-icon-color light-icon-hover-color" data-width="100px" data-columns="1">
                                         <style type="text/css">#benefits-grid-3 .benefits-grid-ico > .fa { font-size: 35px; line-height: 35px; }</style>
 
-                                        <?php
-                                        $my_query = (new Publication)->special();
-                                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                                        ?>
-                                        <div class="wf-cell">
-                                            <div>
-                                                <div class="text-normal">
-                                                    <div class="wf-table">
-                                                        <div class="wf-td"><a href="<?= the_field('pdf_file') ?>" class="benefits-grid-ico" target="_blank"><i class="<?= the_field('icon') ?>"></i></a></div>
-                                                        <div class="wf-td benefits-inner">
-                                                            <h6 class="benefit-title"> <a href="<?= the_field('pdf_file') ?>" target="_blank"><?= the_title() ?></a> </h6>
-                                                            <p><?= the_field('detail') ?></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php
-                                        endwhile;
-                                        wp_reset_query();
-                                        ?>
+                                        <?= View::wfCell((new Publication)->special(), 'h6', 'text-normal') ?>
 
                                     </section>
                                     <div class="vc_empty_space"  style="height: 42px" ><span class="vc_empty_space_inner"></span></div>

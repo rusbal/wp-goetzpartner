@@ -146,4 +146,30 @@ class View
                 </div>
             </div>';
     }
+
+    public static function wfCell($query, $headerStyle = 'h6', $class = 'text-big')
+    {
+        $outHtml = '';
+
+        while ($query->have_posts()) : $query->the_post();
+            $outHtml .= '
+            <div class="wf-cell">
+                <div>
+                    <div class="' . $class . '">
+                        <div class="wf-table">
+                            <div class="wf-td"><a href="' . get_field('pdf_file') . '" class="benefits-grid-ico" target="_blank"><i class="' . get_field('icon') . '"></i></a></div>
+                            <div class="wf-td benefits-inner">
+                                <' . $headerStyle . ' class="benefit-title"> <a href="' . get_field('pdf_file') . '" target="_blank">' . get_the_title() . '</a> </' . $headerStyle . '>
+                                <p>' . get_field('detail') . '</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>';
+        endwhile;
+
+        wp_reset_query();
+
+        return $outHtml;
+    }
 }
