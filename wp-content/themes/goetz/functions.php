@@ -38,6 +38,7 @@ add_filter('show_admin_bar', '__return_false');
  * Custom Post Types
  */
 new Rsu\PostType\Team;
+new Rsu\PostType\Publication;
 
 /**
  * Register Settings
