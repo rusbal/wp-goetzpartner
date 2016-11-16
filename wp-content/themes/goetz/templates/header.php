@@ -21,6 +21,9 @@ use Rsu\Settings\Option;
     </div>
     <header class="header-bar">
         <div class="branding">
+            <a href="/" class="sticky-logo">
+                <?= wp_get_attachment_image( Option::get('header_logo'), 'full', false, ['class' => 'preload-me']) ?>
+            </a>
             <a href="/">
                 <?= wp_get_attachment_image( Option::get('header_logo'), 'full', false, ['class' => 'preload-me']) ?>
                 <?= wp_get_attachment_image( Option::get('header_logo'), 'full', false, ['class' => 'mobile-logo preload-me']) ?>
