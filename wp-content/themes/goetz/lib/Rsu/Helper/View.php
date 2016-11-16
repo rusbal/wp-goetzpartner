@@ -5,16 +5,22 @@ namespace Rsu\Helper;
 
 class View
 {
-    public static function sliderImages($field)
+    public static function sliderImages($field, $slug = null)
     {
         $outHtml = '';
 
-        if (have_rows($field)):
+        if ($slug) {
+            $post = get_page_by_path( $slug, OBJECT, 'page' );
+        } else {
+            $post = new \stdClass();
+        }
+
+        if (have_rows($field, $post->ID)):
 
             $outHtml .= '
                 <ul id="main-slideshow-content" class="rsHomePorthole">';
 
-            while (have_rows($field)) : the_row();
+            while (have_rows($field, $post->ID)) : the_row();
                 $image = get_sub_field('image');
                 $outHtml .= '
                     <li>
