@@ -43,8 +43,10 @@
             var pathname = window.location.pathname;
             if (pathname == '/') {
                 $('#primary-menu').find('li:first').addClass('act');
+                $('#mobile-menu').find('li:first').addClass('act');
             } else if (pathname == '/publication/') {
                 $('#primary-menu').find('li:nth-child(5n)').addClass('act');
+                $('#mobile-menu').find('li:nth-child(5n)').addClass('act');
             }
         });
     </script>

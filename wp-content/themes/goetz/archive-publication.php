@@ -12,55 +12,7 @@ use Rsu\Helper\View;
     <div class="load-wrap"></div>
 </div>
 <div id="page" class="boxed">
-    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
     <?php get_template_part('templates/header'); ?>
-    <div class='dt-close-mobile-menu-icon'><span></span></div>
-    <div class='dt-mobile-header'>
-        <ul
-            id="mobile-menu" class="mobile-main-nav" role="menu">
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14990 first"><a
-                    href='https://www.fachwerk4.de/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Home</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-17160"><a
-                    href='http://www.fachwerk4.de/#!/Aktuelles' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Aktuelles</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14992"><a
-                    href='http://www.fachwerk4.de/#!/Leistungen' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Leistungen</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15047 dt-mega-menu mega-auto-width mega-column-3"><a
-                    href='https://www.fachwerk4.de/portfolio/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Realisierte Projekte</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-15558 current_page_item menu-item-15565 act dt-mega-menu mega-auto-width mega-column-3"><a
-                    href='https://www.fachwerk4.de/publikationen/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Publikationen</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14995"><a
-                    href='http://www.fachwerk4.de/#!/Team' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Team</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17776"><a
-                    href='https://www.fachwerk4.de/presse/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Presse</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14996"><a
-                    href='http://www.fachwerk4.de/#!/Kontakt' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Kontakt</span></span></a></li>
-        </ul>
-        <div class='mobile-mini-widgets-in-menu'></div>
-    </div>
     <div id="main-slideshow" data-width="1250" data-height="380" data-autoslide="5000" data-scale="fit" data-paused="false"></div>
     <div id="main" class="sidebar-right">
         <div class="main-gradient"></div>

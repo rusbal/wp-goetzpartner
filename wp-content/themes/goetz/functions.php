@@ -10,8 +10,6 @@
  * @link https://github.com/roots/sage/pull/1042
  */
 
-use Rsu\Settings\Register;
-
 require 'vendor/autoload.php';
 
 $sage_includes = [
