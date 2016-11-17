@@ -172,4 +172,131 @@ class View
 
         return $outHtml;
     }
+
+    public static function featuredImage($id)
+    {
+        return '
+        <a href="' . get_the_post_thumbnail_url($id, 'full' ) . '" class="alignnone rollover rollover-zoom dt-single-mfp-popup dt-mfp-item mfp-image layzr-bg"
+           title="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de"
+           data-dt-img-description="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de">
+            ' . get_the_post_thumbnail($id, 'large', ['class' => 'preload-me'] ) . '
+        </a>';
+    }
+
+    public static function dayLink()
+    {
+        $link = get_day_link( get_the_time('Y'), get_the_time('m'), get_the_time('d') );
+        $hourMinute = get_the_time('h:i');
+        $datetime = get_the_time('c');
+        $humanDate = get_the_time('d. F Y');
+
+        return '
+        <a href="' . $link . '" title="' . $hourMinute . '" class="data-link" rel="bookmark">
+            <time class="entry-date updated" datetime="' . $datetime . '">' . $humanDate . '</time>
+        </a>';
+    }
+
+    public static function authorLink()
+    {
+        global $authordata;
+        if ( ! is_object( $authordata ) ) {
+            return;
+        }
+
+        return sprintf(
+            '<a class="author vcard" href="%1$s" title="%2$s" rel="author">By <span class="fn">%3$s</span></a>',
+            esc_url( get_author_posts_url( $authordata->ID, $authordata->user_nicename ) ),
+            esc_attr( sprintf( __( 'View all posts by %s' ), get_the_author() ) ),
+            get_the_author()
+        );
+    }
+
+    public static function articleTopBar()
+    {
+        return '
+            <div class="article-top-bar disabled-bg">
+                <div class="wf-wrap">
+                    <div class="wf-container-top">
+                        <div class="entry-meta">
+                            ' . self::dayLink() . '
+                            ' . self::authorLink() . '
+                        </div>
+                        <div class="navigation-inner">
+                            <div class="single-navigation-wrap">
+                                <a class="prev-post disabled" href="javascript:void(0);"></a>
+                                <a class="back-to-list" href="/blog/"></a>
+                                <a class="next-post" href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/" rel="prev"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>';
+    }
+
+    public static function authorInfoDiv()
+    {
+        return '
+            <div class="dt-fancy-separator title-left fancy-author-title">
+                    <div class="dt-fancy-title">Über den Autor<span class="separator-holder separator-right"></span></div>
+                </div>
+                <div class="entry-author wf-table">
+                    <div class="wf-td entry-author-img">
+                        <a href="' . get_the_author_meta('url') . '" class="alignleft">
+                            ' . get_avatar(get_the_author_meta('id'), 85, '', '', ['class' => 'avatar avatar-85 photo']) . '
+                        </a>
+                    </div>
+                <div class="wf-td entry-author-info">
+                    <p class="h5-size">' . get_the_author_meta('display_name') . '</p>
+                    <p class="text-normal">' . get_the_author_meta('description') . '</p>
+                </div>
+            </div>';
+    }
+
+    public static function socialShareLink($site)
+    {
+        $link = get_permalink();
+        $title = get_the_title();
+
+        if ($site == 'facebook') {
+            return '
+                <a href="http://www.facebook.com/sharer.php?u=' . $link . '/' . $title
+                . '" class="facebook" target="_blank" title="Facebook"><span class="assistive-text">Facebook</span></a>';
+        }
+        if ($site == 'google') {
+            return '
+                <a href="https://plus.google.com/share?url=' . $link . '/' . $title
+                . '" class="google" target="_blank" title="Google+"><span class="assistive-text">Google+</span></a>';
+        }
+        if ($site == 'twitter') {
+            return '
+                <a href="https://twitter.com/share?text=' . $title . '&#038;url=' . $link
+                . '" class="twitter" target="_blank" title="Twitter"><span class="assistive-text">Twitter</span></a>';
+        }
+    }
+
+    public static function facebookShareLink() { return self::socialShareLink('facebook'); }
+    public static function googleShareLink() { return self::socialShareLink('google'); }
+    public static function twitterShareLink() { return self::socialShareLink('twitter'); }
+
+    public static function spacer($height = 32, $class = 'vc_empty_space')
+    {
+        return '<div class="' . $class . '"  style="height: ' . $height . 'px" ><span class="vc_empty_space_inner"></span></div>';
+    }
+
+    public static function imageForPost($imagePath)
+    {
+        return '
+            <div class="vc_grid-item vc_clearfix vc_col-sm-6 vc_grid-term-1">
+                <div class="vc_grid-item-mini vc_clearfix ">
+                    <div class="vc_gitem-animated-block ">
+                        <div class="vc_gitem-zone vc_gitem-zone-a vc-gitem-zone-height-mode-auto vc-gitem-zone-height-mode-auto-1-1 vc_gitem-is-link" style="background-image: url(' . $imagePath . ') !important;">
+                            <a href="' . $imagePath . '" title="15 Jahre elegante und moderne Architektur: Was für ein Fest!"  data-rel="prettyPhoto[rel--998290976]" data-vc-gitem-zone="prettyphotoLink" class="vc_gitem-link prettyphoto vc-zone-link vc-prettyphoto-link" ></a>	
+                            <img src="' . $imagePath . '" class="vc_gitem-zone-img" alt="">	
+                            <div class="vc_gitem-zone-mini"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vc_clearfix"></div>
+            </div>';
+    }
 }

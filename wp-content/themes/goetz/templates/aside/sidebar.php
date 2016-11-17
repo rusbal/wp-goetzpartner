@@ -1,12 +1,15 @@
 <?php
 
+use Rsu\Helper\Template;
 use Rsu\Helper\View;
+use Rsu\Helper\Widget;
 use Rsu\Models\Publication;
 use Rsu\Settings\Option;
 
 ?>
 <div class="sidebar-content">
     <section id="presscore-contact-info-widget-16" class="widget widget_presscore-contact-info-widget">
+        <h1><?= Template::$type ?></h1>
         <div class="widget-title"><?= Option::get('company_name') ?> | <?= Option::get('company_description') ?></div>
         <ul class="contact-info">
             <li><span class="color-primary">Telefonnummer:</span><br /><?= Option::get('telephone') ?></li>
@@ -50,15 +53,7 @@ use Rsu\Settings\Option;
 <!--            </li>-->
 <!--        </ul>-->
 <!--    </section>-->
-    <section id="text-17" class="widget widget_text">
-        <div class="widget-title">Downloads</div>
-        <div class="textwidget">
-            <section id="benefits-grid-4" class="benefits-grid wf-container benefits-style-two icons-bg light-bg accent-hover-bg accent-icon-color light-icon-hover-color" data-width="180px" data-columns="1">
-                <style type="text/css">#benefits-grid-4.icons-bg .benefits-grid-ico { height: 44px; line-height: 44px; width: 44px;-webkit-border-radius: 100px;-moz-border-radius: 100px;-ms-border-radius: 100px;-o-border-radius: 100px;border-radius: 100px; }#benefits-grid-4.icons-bg .benefits-grid-ico > .fa { font-size: 24px; line-height: 44px; }</style>
 
-                <?= View::wfCell((new Publication)->own(), 'h6', 'text-small') ?>
+    <?= Widget::show(Template::$type); ?>
 
-            </section>
-        </div>
-    </section>
 </div>

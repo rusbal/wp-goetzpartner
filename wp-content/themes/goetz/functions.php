@@ -33,13 +33,10 @@ unset($file, $filepath);
 add_filter('show_admin_bar', '__return_false');
 
 /**
- * Custom Post Types
+ * Instantiate classes
  */
 new Rsu\PostType\Team;
 new Rsu\PostType\Publication;
-
-/**
- * Register Settings
- */
 new Rsu\Settings\Register;
-
+new Rsu\Shortcodes\Shortcode;
+new Rsu\Ajax\Post;

@@ -3,6 +3,7 @@
  * Archive: Publication
  */
 
+use Rsu\Helper\Template;
 use Rsu\Models\Publication;
 use Rsu\Helper\View;
 
@@ -122,7 +123,7 @@ use Rsu\Helper\View;
                     </div>
                 </div>
                 <aside id="sidebar" class="sidebar">
-                    <?php get_template_part('templates/aside/sidebar'); ?>
+                    <?php Template::part('publication', 'templates/aside/sidebar'); ?>
                 </aside>
             </div>
         </div>
