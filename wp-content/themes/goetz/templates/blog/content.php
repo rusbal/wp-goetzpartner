@@ -46,61 +46,7 @@ $id = get_the_ID();
 
         <?= View::authorInfoDiv() ?>
 
-        <div class="dt-fancy-separator title-left fancy-posts-title">
-            <div class="dt-fancy-title">Weitere Nachrichten<span class="separator-holder separator-right"></span></div>
-        </div>
-        <section class="items-grid wf-container">
-            <div class="wf-cell wf-1-2">
-                <div class="borders">
-                    <article class="post-format-aside">
-                        <div class="wf-td">
-                            <a class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/wohnhaus-s-heinze-architekten-award/" ><img
-                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/03/heinze-architekten-award-fachwerk4-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/03/heinze-architekten-award-fachwerk4-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/03/heinze-architekten-award-fachwerk4-120x120.jpg 120w" width="60" height="60"  alt="Teilnahme am Heinze ArchitektenAWARD | Fachwerk4" /></a>
-                        </div>
-                        <div class="post-content">
-                            <a href="https://www.fachwerk4.de/wohnhaus-s-heinze-architekten-award/">Wohnhaus S im Voting für den Heinze ArchitektenAWARD</a><br /><time class="text-secondary" datetime="2016-03-23T11:36:00+00:00">23. März 2016</time>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="wf-cell wf-1-2">
-                <div class="borders">
-                    <article class="post-format-standard">
-                        <div class="wf-td">
-                            <a class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/mehr-effizienz-architektur-und-energieeffizienz/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/08/Mehr-Effizienz-Architektur-Energieeffizienz-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/08/Mehr-Effizienz-Architektur-Energieeffizienz-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2015/08/Mehr-Effizienz-Architektur-Energieeffizienz-120x120.jpg 120w" width="60" height="60"  alt="Mehr Effizienz | Architektur und Energieeffizienz | © Architektenkammer Rheinland Pfalz | Fachwerk4 | Architekten BDA" /></a>
-                        </div>
-                        <div class="post-content">
-                            <a href="https://www.fachwerk4.de/mehr-effizienz-architektur-und-energieeffizienz/">Mehr Effizienz! Architektur und Energieeffizienz</a><br /><time class="text-secondary" datetime="2015-08-03T17:47:28+00:00">3. August 2015</time>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="wf-cell wf-1-2">
-                <div class="borders">
-                    <article class="post-format-standard">
-                        <div class="wf-td">
-                            <a class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/mehrfamilienhaus-himmelfeld-im-buch-haeuser-des-jahres-2012-callwey/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2012/10/haeuser_des_jahres_callwey_011-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2012/10/haeuser_des_jahres_callwey_011-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2012/10/haeuser_des_jahres_callwey_011-120x120.jpg 120w" width="60" height="60"  alt="Fachwerk4 | Architekten BDA, Callwey: Häuser des Jahres, Die Jury bei der Auswahl" /></a>
-                        </div>
-                        <div class="post-content">
-                            <a href="https://www.fachwerk4.de/mehrfamilienhaus-himmelfeld-im-buch-haeuser-des-jahres-2012-callwey/">Mehrfamilienhaus Himmelfeld im Buch Häuser des Jahres 2012, Callwey-Verlag</a><br />
-                            <time class="text-secondary" datetime="2012-10-04T11:55:46+00:00">4. Oktober 2012</time>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="wf-cell wf-1-2">
-                <div class="borders">
-                    <article class="post-format-standard">
-                        <div class="wf-td">
-                            <a class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/tag-der-architektur-2012/" ><img
-                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2012/05/tda12-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2012/05/tda12-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2012/05/tda12-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                        <div class="post-content">
-                            <a href="https://www.fachwerk4.de/tag-der-architektur-2012/">Rückschau: Tag der Architektur 2012</a><br />
-                            <time class="text-secondary" datetime="2012-06-24T21:39:39+00:00">24. Juni 2012</time>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <?= View::otherBlogPosts() ?>
+
     </article>
 </div>

@@ -3,6 +3,8 @@
 namespace Rsu\Helper;
 
 
+use Rsu\Helper\Widget\View as WidgetView;
+use Rsu\Models\Post;
 use Rsu\Models\Publication;
 
 class Widget
@@ -23,64 +25,26 @@ class Widget
 
     public static function project()
     {
+        $recentPosts = Post::recentPosts(4);
+
+        $links = '';
+
+        foreach ($recentPosts as $post) {
+            $links .= WidgetView::sidebarLinkToBlog($post);
+        }
+
         return <<<STRING
         <section id="presscore-blog-posts-3" class="widget widget_presscore-blog-posts">
             <div class="widget-title">Neue Nachrichten</div>
             <ul class="recent-posts">
                 <li>
-                    <article class="post-format-standard">
-                        <div class="wf-td">
-                            <a class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/gartendesigner-des-jahres-ausgezeichnet/" ><img class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-120x120.jpg 120w" width="60" height="60"  alt="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de" /></a>
-                        </div>
-                        <div class="post-content">
-                            <a href="https://www.fachwerk4.de/gartendesigner-des-jahres-ausgezeichnet/">&#8222;Gartendesigner des Jahres&#8220; ausgezeichnet</a><br /><time class="text-secondary" datetime="2016-11-07T17:24:01+00:00">7. November 2016</time>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article
-                        class="post-format-standard">
-                        <div
-                            class="wf-td"><a
-                                class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/" ><img
-                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                        <div
-                            class="post-content"><a
-                                href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/">Azubi-Blog: Baustellenpraktikum oder &#8222;Stein auf Stein&#8220;</a><br
-                            /><time
-                                class="text-secondary" datetime="2016-10-12T12:38:17+00:00">12. Oktober 2016</time></div>
-                    </article>
-                </li>
-                <li>
-                    <article
-                        class="post-format-standard">
-                        <div
-                            class="wf-td"><a
-                                class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/ein-weiteres-jubilaeum/" ><img
-                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                        <div
-                            class="post-content"><a
-                                href="https://www.fachwerk4.de/ein-weiteres-jubilaeum/">Ein weiteres Jubiläum, das wir gefeiert haben</a><br
-/><time
-                                class="text-secondary" datetime="2016-10-10T09:17:03+00:00">10. Oktober 2016</time></div>
-                    </article>
-                </li>
-                <li>
-                    <article
-                        class="post-format-standard">
-                        <div
-                            class="wf-td"><a
-                                class="alignleft post-rollover layzr-bg" href="https://www.fachwerk4.de/architektur-buch-15-jahre/" ><img
-                                    class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                        <div
-                            class="post-content"><a
-                                href="https://www.fachwerk4.de/architektur-buch-15-jahre/">15 Jahre Fachwerk4 auf 190 Seiten</a><br
-/><time
-                                class="text-secondary" datetime="2016-09-27T07:30:37+00:00">27. September 2016</time></div>
-                    </article>
+                    $links
                 </li>
             </ul>
         </section>
+STRING;
+
+        $project = <<<PROJECT
         <section
             id="presscore-portfolio-2" class="widget widget_presscore-portfolio">
             <div
@@ -98,7 +62,8 @@ class Widget
                         class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 150 150'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-150x150.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-150x150.jpg 150w, https://www.fachwerk4.de/wp-content/uploads/2015/03/Fachwerk4-Moderne-Architektur-Reisebuero-03-300x300.jpg 300w" width="150" height="150"  alt="Fachwerk4 | Architekten BDA, Reisebüro, Montabaur, Wartebereich" /></a>
             </div>
         </section>
-STRING;
+PROJECT;
+
     }
 
     public static function show($type)

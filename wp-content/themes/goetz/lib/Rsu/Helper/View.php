@@ -2,6 +2,8 @@
 
 namespace Rsu\Helper;
 
+use Rsu\Helper\Widget\View as WidgetView;
+use Rsu\Models\Post;
 
 class View
 {
@@ -298,5 +300,27 @@ class View
                 </div>
                 <div class="vc_clearfix"></div>
             </div>';
+    }
+
+    public static function otherBlogPosts()
+    {
+        $recentPosts = Post::recentPosts(4);
+
+        $postsHtml = '';
+
+        foreach ($recentPosts as $post) {
+            $postsHtml .= '
+                <div class="wf-cell wf-1-2">
+                    ' . WidgetView::sidebarLinkToBlog($post, 'div', ['borders']) . '
+                </div>';
+        }
+
+        return '
+            <div class="dt-fancy-separator title-left fancy-posts-title">
+                <div class="dt-fancy-title">Weitere Nachrichten<span class="separator-holder separator-right"></span></div>
+            </div>
+            <section class="items-grid wf-container">
+                ' . $postsHtml . '
+            </section>';
     }
 }
