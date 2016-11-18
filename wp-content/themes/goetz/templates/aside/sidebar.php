@@ -9,7 +9,6 @@ use Rsu\Settings\Option;
 ?>
 <div class="sidebar-content">
     <section id="presscore-contact-info-widget-16" class="widget widget_presscore-contact-info-widget">
-        <h1><?= Template::$type ?></h1>
         <div class="widget-title"><?= Option::get('company_name') ?> | <?= Option::get('company_description') ?></div>
         <ul class="contact-info">
             <li><span class="color-primary">Telefonnummer:</span><br /><?= Option::get('telephone') ?></li>
