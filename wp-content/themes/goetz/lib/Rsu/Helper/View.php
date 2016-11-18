@@ -192,8 +192,8 @@ class View
     {
         return '
         <a href="' . get_the_post_thumbnail_url($id, 'full' ) . '" class="alignnone rollover rollover-zoom dt-single-mfp-popup dt-mfp-item mfp-image layzr-bg"
-           title="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de"
-           data-dt-img-description="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de">
+           title="About image here"
+           data-dt-img-description="About image here">
             ' . get_the_post_thumbnail($id, 'large', ['class' => 'preload-me'] ) . '
         </a>';
     }
