@@ -4,6 +4,7 @@ namespace Rsu\Helper;
 
 use Rsu\Helper\Widget\View as WidgetView;
 use Rsu\Models\Post;
+use Rsu\Settings\Option;
 
 class View
 {
@@ -334,5 +335,44 @@ class View
             <section class="items-grid wf-container">
                 ' . $postsHtml . '
             </section>';
+    }
+
+    public static function largeButtonSeparatorBlog()
+    {
+        $companyName = Option::get('company_name');
+        $companyDesc = Option::get('company_description');
+
+        $title = "Aktuelle Nachrichten von $companyName | $companyDesc";
+        $value = strtoupper("$companyName BLOG");
+        $url = get_permalink( get_option( 'page_for_posts' ) );
+
+        return self::largeButtonSeparator($title, $value, $url);
+    }
+
+    public static function largeButtonSeparator($title, $value, $url)
+    {
+        return <<<STR
+            <div class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
+                <div class="wpb_column vc_column_container vc_col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class=" ubtn-ctn-center ">
+                                <a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-large " href="$url" target='' >
+                                    <button type="button" id="ubtn-7782" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-large ubtn-no-hover-bg  none  ubtn-center   tooltip-5829113b8be6b ubtn-tooltip top" data-toggle="tooltip" data-placement="top" 
+                                            title="$title" 
+                                            data-hover="" data-border-color="#ffffff" data-bg="rgba(255,255,255,0.01)" data-hover-bg="" data-border-hover="#ffffff" 
+                                            data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow=""  data-ultimate-target='#ubtn-7782'  
+                                            data-responsive-json-new='{"font-size":"","line-height":""}'  style="font-weight:bold;border-radius:1px;border-width:1px;border-color:#ffffff;border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;">
+                                        <span class="ubtn-hover" style="background-color:"></span>
+                                        <span class="ubtn-data ubtn-text">$value</span>
+                                    </button>
+                                </a>
+                            </div>
+                            <script>jQuery(function () { jQuery(".tooltip-5829113b8be6b").bsf_tooltip(); }) </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+STR;
     }
 }
