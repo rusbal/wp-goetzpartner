@@ -375,4 +375,18 @@ class View
             </div>
 STR;
     }
+
+    public static function fancyHeader()
+    {
+        $imageUrl = get_the_post_thumbnail_url();
+
+        return <<<STR
+            <header id="fancy-header" class="fancy-header titles-off breadcrumbs-off title-left" style="background-color: #ffffff; background-size: cover; background-repeat: no-repeat; 
+                background-image: url($imageUrl); background-position: center center; min-height: 380px" >
+                <div class="wf-wrap">
+                    <div class="wf-table" style="height: 380px;"></div>
+                </div>
+            </header>
+STR;
+    }
 }
