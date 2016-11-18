@@ -21,10 +21,10 @@ class Post
 
         $id = $_POST['vc_post_id'];
 
-        if (have_rows('home_slider_images', $id)):
+        if (have_rows('images', $id)):
             $imagesDiv = '';
 
-            while (have_rows('home_slider_images', $id)) : the_row();
+            while (have_rows('images', $id)) : the_row();
                 $image = get_sub_field('image');
                 $imagesDiv .= View::imageForPost($image['url']);
             endwhile;
