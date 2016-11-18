@@ -16,7 +16,9 @@ class Post
         $recent_posts = wp_get_recent_posts( $args );
 
         return array_filter($recent_posts, function($post) use ($currentId) {
-            return $post['ID'] > $currentId;
+            // TODO: Change condition so that "recentPosts" will show posts that are the most recent
+            // and "otherPosts" will show other posts that are not on "recentPosts" list.
+            return $post['ID'] != $currentId;
         });
     }
 }
