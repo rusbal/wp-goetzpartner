@@ -18,178 +18,28 @@ use Rsu\Helper\View;
         <div class="wf-wrap">
             <div class="wf-container-main">
                 <div id="content" class="content" role="main">
-                    <div id="Aktuelles" data-anchor="#Aktuelles" class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
-                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12 vc_col-xs-12">
+
+                    <?php get_template_part('templates/home/aktuelles'); ?>
+
+                    <div class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
                             <div class="vc_column-inner ">
                                 <div class="wpb_wrapper">
-                                    <div class="vc_empty_space"  style="height: 18px" ><span class="vc_empty_space_inner"></span></div>
-                                    <div id="ultimate-heading-49955829113b84adb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-49955829113b84adb uvc-3154 " data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="1" data-hborder_color="#ccc" data-icon_width="32" data-hfixer="10"  data-halign="center" style="text-align:center">
-                                        <div class="uvc-heading-spacer line_with_icon" style="topheight:32px;">
-                                            <div class="ult-just-icon-wrapper  ">
-                                                <div class="align-icon" style="text-align:center;">
-                                                    <div class="aio-icon none "  style="color:#d20a11;font-size:32px;display:inline-block;">
-                                                        <i class="Defaults-home"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class=" ubtn-ctn-center ">
+                                        <a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-large " href = "http://www.fachwerk4.de/blog/" target='' >
+                                            <button type="button" id="ubtn-7782" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-large ubtn-no-hover-bg  none  ubtn-center   tooltip-5829113b8be6b ubtn-tooltip top" data-toggle="tooltip" data-placement="top" title="Aktuelle Nachrichten von Fachwerk4 | Architekten BDA" data-hover="" data-border-color="#ffffff" data-bg="rgba(255,255,255,0.01)" data-hover-bg="" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow=""  data-ultimate-target='#ubtn-7782'  data-responsive-json-new='{"font-size":"","line-height":""}'  style="font-weight:bold;border-radius:1px;border-width:1px;border-color:#ffffff;border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text " >FACHWERK4 BLOG</span></button>
+                                        </a>
                                     </div>
-                                    <div class="vc_empty_space"  style="height: 24px" ><span class="vc_empty_space_inner"></span></div>
-                                    <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                                        <div class="wpb_column vc_column_container vc_col-sm-8">
-                                            <div class="vc_column-inner ">
-                                                <div class="wpb_wrapper">
-                                                    <div class="vc_empty_space"  style="height: 12px" ><span class="vc_empty_space_inner"></span></div>
-                                                    <div class="wpb_single_image wpb_content_element vc_align_left">
-                                                        <figure class="wpb_wrapper vc_figure">
-                                                            <div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="https://www.fachwerk4.de/wp-content/uploads/2015/02/Kleinigkeiten-Perfektion-Architekt-Fw4-e1429352500773.png" width="738" height="150" alt="Unser Leitbild | Fachwerk4 | Architekten BDA" title="Unser Leitbild | Fachwerk4 | Architekten BDA" /></div>
-                                                        </figure>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 32px" ><span class="vc_empty_space_inner"></span></div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p><span style="color: #2d2d2d;"><strong>Mit viel Engagement und Liebe zum Detail widmet sich das Team von Fachwerk4 der Architektur.</strong></span></p>
-                                                            <p><span style="color: #4c4c4c;">Moderne Einfamilienhäuser, Mehrfamilienhäuser, aber auch Industrie- und Verwaltungsbauten sowie Innenausbau stehen dabei im Zentrum unserer Arbeit. In unserem <a
-                                                                        style="color: #4c4c4c;" title="Projektübersicht" href="/portfolio/">Portfolio</a> stellen wir Ihnen eine <a
-                                                                        style="color: #4c4c4c;" href="#Portfolio">Auswahl unserer Projekte</a> vor.</span></p>
-                                                            <p><span style="color: #4c4c4c;">Neben Neubauten planen und realisieren wir Gebäudesanierungen, Umbauten und Anbauten für unsere Kunden. Dabei ist die Berücksichtigung von aktuellen Anforderungen an energie- und ressourcenschonendes Bauen ebenso selbstverständlich für uns, wie die adäquate Gestaltung der Räume.</span></p>
-                                                            <p><span style="color: #4c4c4c;">Zusätzlich übernehmen wir auch interdisziplinäre Aufträge aus den Bereichen Lichtgestaltung, Möbeldesign und Corporate Identity für Sie.</span></p>
-                                                            <p><span style="color: #4c4c4c;">Haben Sie Fragen zu unserer Arbeit? Dann freuen wir uns über eine <a
-                                                                        style="color: #4c4c4c;" href="#Kontakt">Nachricht oder einen Anruf</a> von Ihnen.</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div class="vc_column-inner ">
-                                                <div class="wpb_wrapper">
-                                                    <div class="ult-spacer spacer-5829113b8617f" data-id="5829113b8617f" data-height="0" data-height-mobile="32" data-height-tab="" data-height-tab-portrait="" data-height-mobile-landscape="32" style="clear:both;display:block;"></div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><a href="/blog">Aktuelle Nachrichten</a></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 20px" ><span class="vc_empty_space_inner"></span></div>
-                                                    <section class="items-grid wf-container">
-                                                        <div class="wf-cell wf-1">
-                                                            <div class="borders">
-                                                                <article class="post-format-standard">
-                                                                    <div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="/gartendesigner-des-jahres-ausgezeichnet/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/11/Preisverleihung-Gartendesigner-des-Jahres-Taspo-120x120.jpg 120w" width="60" height="60"  alt="GartenLandschaft Berg, Gewinner TASPO Award, Foto: © Andreas Schwarz, taspoawards.de" /></a></div>
-                                                                    <div class="post-content"><a href="/gartendesigner-des-jahres-ausgezeichnet/">&#8222;Gartendesigner des Jahres&#8220; ausgezeichnet</a><br /><time
-                                                                            class="text-secondary" datetime="2016-11-07T17:24:01+00:00">7. November 2016</time></div>
-                                                                </article>
-                                                            </div>
-                                                        </div>
-                                                        <div class="wf-cell wf-1">
-                                                            <div class="borders">
-                                                                <article class="post-format-standard">
-                                                                    <div class="wf-td"><a class="alignleft post-rollover layzr-bg" href="/azubi-blog-baustellenpraktikum/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/baustelle-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                                                                    <div class="post-content"><a href="/azubi-blog-baustellenpraktikum/">Azubi-Blog: Baustellenpraktikum oder &#8222;Stein auf Stein&#8220;</a><br /><time
-                                                                            class="text-secondary" datetime="2016-10-12T12:38:17+00:00">12. Oktober 2016</time></div>
-                                                                </article>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="wf-cell wf-1">
-                                                            <div
-                                                                class="borders">
-                                                                <article
-                                                                    class="post-format-standard">
-                                                                    <div
-                                                                        class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="/ein-weiteres-jubilaeum/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/10/10jahre-ik-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                                                                    <div
-                                                                        class="post-content"><a
-                                                                            href="/ein-weiteres-jubilaeum/">Ein weiteres Jubiläum, das wir gefeiert haben</a><br
-                                                                        /><time
-                                                                            class="text-secondary" datetime="2016-10-10T09:17:03+00:00">10. Oktober 2016</time></div>
-                                                                </article>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="wf-cell wf-1">
-                                                            <div
-                                                                class="borders">
-                                                                <article
-                                                                    class="post-format-standard">
-                                                                    <div
-                                                                        class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="/architektur-buch-15-jahre/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-60x60.jpg 60w, https://www.fachwerk4.de/wp-content/uploads/2016/09/architekturbuch-fachwerk4-120x120.jpg 120w" width="60" height="60"  alt="" /></a></div>
-                                                                    <div
-                                                                        class="post-content"><a
-                                                                            href="/architektur-buch-15-jahre/">15 Jahre Fachwerk4 auf 190 Seiten</a><br
-                                                                        /><time
-                                                                            class="text-secondary" datetime="2016-09-27T07:30:37+00:00">27. September 2016</time></div>
-                                                                </article>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="wf-cell wf-1">
-                                                            <div
-                                                                class="borders">
-                                                                <article
-                                                                    class="post-format-aside">
-                                                                    <div
-                                                                        class="wf-td"><a
-                                                                            class="alignleft post-rollover layzr-bg" href="/video-spaetsommerfest-2016/" ><img
-                                                                                class="lazy-load preload-me" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 60 60'%2F%3E" data-src="https://www.fachwerk4.de/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-60x60.png" data-srcset="https://www.fachwerk4.de/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-60x60.png 60w, https://www.fachwerk4.de/wp-content/uploads/2016/09/spaetsommerfest-fachwerk4-120x120.png 120w" width="60" height="60"  alt="Spätsommerfest 2016 | Fachwerk4.de" /></a></div>
-                                                                    <div
-                                                                        class="post-content"><a
-                                                                            href="/video-spaetsommerfest-2016/">Video Spätsommerfest 2016</a><br
-                                                                        /><time
-                                                                            class="text-secondary" datetime="2016-09-22T14:32:26+00:00">22. September 2016</time></div>
-                                                                </article>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="vc_empty_space"  style="height: 32px" ><span
-                                            class="vc_empty_space_inner"></span></div>
+                                    <script>jQuery(function () { jQuery(".tooltip-5829113b8be6b").bsf_tooltip(); }) </script>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
-                        <div
-                            class="wpb_column vc_column_container vc_col-sm-12">
-                            <div
-                                class="vc_column-inner ">
-                                <div
-                                    class="wpb_wrapper">
-                                    <div
-                                        class=" ubtn-ctn-center "><a
-                                            class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-large " href = "http://www.fachwerk4.de/blog/" target='' ><button
-                                                type="button" id="ubtn-7782" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-large ubtn-no-hover-bg  none  ubtn-center   tooltip-5829113b8be6b ubtn-tooltip top" data-toggle="tooltip" data-placement="top" title="Aktuelle Nachrichten von Fachwerk4 | Architekten BDA" data-hover="" data-border-color="#ffffff" data-bg="rgba(255,255,255,0.01)" data-hover-bg="" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow=""  data-ultimate-target='#ubtn-7782'  data-responsive-json-new='{"font-size":"","line-height":""}'  style="font-weight:bold;border-radius:1px;border-width:1px;border-color:#ffffff;border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span
-                                                    class="ubtn-hover" style="background-color:"></span><span
-                                                    class="ubtn-data ubtn-text " >FACHWERK4 BLOG</span></button></a></div>
-                                    <script>jQuery(function () {
-                                            jQuery(".tooltip-5829113b8be6b").bsf_tooltip();
-                                        })
-                                    </script>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="upb_color" data-bg-override="full" data-bg-color="#d20a11" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="4.11.2.1"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div>
-                    <div
-                        id="Leistungen" data-anchor="#Leistungen" class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
-                        <div
-                            class="wpb_column vc_column_container vc_col-sm-12">
-                            <div
-                                class="vc_column-inner ">
-                                <div
-                                    class="wpb_wrapper"></div>
+                    <div class="upb_color" data-bg-override="full" data-bg-color="#d20a11" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false"  data-custom-vc-row=""  data-vc="4.11.2.1"  data-is_old_vc=""  data-theme-support=""   data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""    ></div>
+                    <div id="Leistungen" data-anchor="#Leistungen" class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper"></div>
                             </div>
                         </div>
                     </div>

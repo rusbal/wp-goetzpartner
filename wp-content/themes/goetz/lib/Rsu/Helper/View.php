@@ -120,6 +120,18 @@ class View
         return $outHtml;
     }
 
+    public static function aktuellesImage()
+    {
+        $outHtml = '';
+        $image = get_field('news_image');
+
+        if ($image) {
+            $outHtml .= wp_get_attachment_image($image['id'], 'large', false, ['class' => 'vc_single_image-img']);
+        }
+
+        return $outHtml;
+    }
+
     public static function kontakt()
     {
         $phone = get_field('phone');

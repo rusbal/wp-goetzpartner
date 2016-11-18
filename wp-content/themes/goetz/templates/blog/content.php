@@ -21,13 +21,13 @@ $id = get_the_ID();
                             </div>
                         </div>
                         <?= View::spacer() ?>
-<!--                                        <div class="wpb_text_column wpb_content_element ">-->
-<!--                                            <div class="wpb_wrapper">-->
-<!--                                                <p>Beitragsfoto: © Andreas Schwarz, <a href="http://taspoawards.de" target="_blank">taspoawards.de<br />-->
-<!--                                                    </a>Projekt-Fotos: [1] © <a href="http://volkermichael.com" target="_blank">Volker Michael</a> und [2 + 3] © <a href="http://christian-eblenkamp.de" target="_blank">Christian Eblenkamp</a>-->
-<!--                                                </p>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
+<!--                        <div class="wpb_text_column wpb_content_element ">-->
+<!--                            <div class="wpb_wrapper">-->
+<!--                                <p>Beitragsfoto: © Andreas Schwarz, <a href="http://taspoawards.de" target="_blank">taspoawards.de<br />-->
+<!--                                    </a>Projekt-Fotos: [1] © <a href="http://volkermichael.com" target="_blank">Volker Michael</a> und [2 + 3] © <a href="http://christian-eblenkamp.de" target="_blank">Christian Eblenkamp</a>-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>

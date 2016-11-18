@@ -23,6 +23,26 @@ class Widget
             </section>';
     }
 
+    public static function aktuelles()
+    {
+        $recentPosts = Post::recentPosts(5);
+
+        $links = '';
+
+        foreach ($recentPosts as $post) {
+            $links .= '
+                <div class="wf-cell wf-1">
+                    <div class="borders">
+                    ' . WidgetView::sidebarLinkToBlog($post) . '
+                    </div>
+                </div>';
+        }
+
+        return <<<STR
+            <section class="items-grid wf-container">$links</section>
+STR;
+    }
+
     public static function project()
     {
         $recentPosts = Post::recentPosts(4);
