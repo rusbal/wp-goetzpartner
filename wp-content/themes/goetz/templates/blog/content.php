@@ -20,8 +20,7 @@ $id = get_the_ID();
                                 <?= the_content(); ?>
                             </div>
                         </div>
-                        <?//= View::spacer() ?>
-                        <?//= View::spacer() ?>
+                        <?= View::spacer() ?>
 <!--                                        <div class="wpb_text_column wpb_content_element ">-->
 <!--                                            <div class="wpb_wrapper">-->
 <!--                                                <p>Beitragsfoto: © Andreas Schwarz, <a href="http://taspoawards.de" target="_blank">taspoawards.de<br />-->

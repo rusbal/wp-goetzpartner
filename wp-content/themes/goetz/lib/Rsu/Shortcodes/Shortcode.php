@@ -38,7 +38,6 @@ class Shortcode {
                     data-vc-post-id="' . $id . '" data-vc-public-nonce="0">
                 </div>
             </div>';
-        $outHtml .= View::spacer();
 
         return $outHtml;
     }
