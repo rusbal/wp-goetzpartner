@@ -56,3 +56,6 @@ function asset_path($filename) {
     return $dist_path . $directory . $file;
   }
 }
+
+wp_enqueue_style('pretty_photo', get_template_directory_uri() . '/bower_components/pretty-photo/css/prettyPhoto.css');
+wp_enqueue_script('pretty_photo', get_template_directory_uri() . '/bower_components/pretty-photo/js/jquery.prettyPhoto.js', ['jquery'], null, false);

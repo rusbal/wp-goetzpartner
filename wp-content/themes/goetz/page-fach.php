@@ -31,128 +31,9 @@ use Rsu\Helper\View;
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
-                        <div
-                            class="wpb_column vc_column_container vc_col-sm-12">
-                            <div
-                                class="vc_column-inner ">
-                                <div
-                                    class="wpb_wrapper">
-                                    <div
-                                        class="vc_empty_space"  style="height: 42px" ><span
-                                            class="vc_empty_space_inner"></span></div>
-                                    <div
-                                        id="ultimate-heading-36075829113b8ca71" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-36075829113b8ca71 uvc-6322 " data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="1" data-hborder_color="#ccc" data-icon_width="32" data-hfixer="10"  data-halign="center" style="text-align:center">
-                                        <div
-                                            class="uvc-main-heading ult-responsive"  data-ultimate-target='.uvc-heading.ultimate-heading-36075829113b8ca71 h3'  data-responsive-json-new='{"font-size":"","line-height":""}' >
-                                            <h3 style="font-weight:normal;">Leistungen</h3>
-                                        </div>
-                                        <div
-                                            class="uvc-heading-spacer line_with_icon" style="topheight:32px;">
-                                            <div
-                                                class="ult-just-icon-wrapper  ">
-                                                <div
-                                                    class="align-icon" style="text-align:center;">
-                                                    <div
-                                                        class="aio-icon none "  style="color:#d20a11;font-size:32px;display:inline-block;">
-                                                        <i
-                                                            class="Defaults-cog"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="vc_empty_space"  style="height: 24px" ><span
-                                            class="vc_empty_space_inner"></span></div>
-                                    <div
-                                        class="vc_row wpb_row vc_inner vc_row-fluid">
-                                        <div
-                                            class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div
-                                                class="vc_column-inner ">
-                                                <div
-                                                    class="wpb_wrapper">
-                                                    <div
-                                                        class="vc_grid-container-wrapper vc_clearfix">
-                                                        <div
-                                                            class="vc_grid-container vc_clearfix wpb_content_element vc_media_grid" data-initial-loading-animation="fadeIn" data-vc-grid-settings="{&quot;page_id&quot;:8,&quot;style&quot;:&quot;all&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1477858760024-193a818f-cd32-9&quot;,&quot;tag&quot;:&quot;vc_media_grid&quot;}" data-vc-request="https://www.fachwerk4.de/wp-admin/admin-ajax.php" data-vc-post-id="8" data-vc-public-nonce="01f24c3ac0"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div
-                                                class="vc_column-inner ">
-                                                <div
-                                                    class="wpb_wrapper">
-                                                    <div
-                                                        class="ult-spacer spacer-5829113b8e7fb" data-id="5829113b8e7fb" data-height="0" data-height-mobile="32" data-height-tab="" data-height-tab-portrait="" data-height-mobile-landscape="32" style="clear:both;display:block;"></div>
-                                                    <div
-                                                        class="wpb_text_column wpb_content_element ">
-                                                        <div
-                                                            class="wpb_wrapper">
-                                                            <h5>Alle Leistungsphasen nach HOAI:</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="vc_empty_space"  style="height: 12px" ><span
-                                                            class="vc_empty_space_inner"></span></div>
-                                                    <div
-                                                        class="standard-arrow bullet-top">
-                                                        <ul>
-                                                            <li>Grundlagenermittlung, Vorplanung</li>
-                                                            <li>Entwurfsplanung</li>
-                                                            <li>Genehmigungsplanung</li>
-                                                            <li>Werkplanung</li>
-                                                            <li>Vorbereitung der Vergabe, Mitwirkung bei der Vergabe</li>
-                                                            <li>Objektüberwachung</li>
-                                                            <li>Objektbetreuung und Dokumentation</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div
-                                                class="vc_column-inner ">
-                                                <div
-                                                    class="wpb_wrapper">
-                                                    <div
-                                                        class="ult-spacer spacer-5829113b8ec35" data-id="5829113b8ec35" data-height="0" data-height-mobile="32" data-height-tab="" data-height-tab-portrait="" data-height-mobile-landscape="32" style="clear:both;display:block;"></div>
-                                                    <div
-                                                        class="wpb_text_column wpb_content_element ">
-                                                        <div
-                                                            class="wpb_wrapper">
-                                                            <h5>Besondere Leistungen:</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="vc_empty_space"  style="height: 12px" ><span
-                                                            class="vc_empty_space_inner"></span></div>
-                                                    <div
-                                                        class="standard-arrow bullet-top">
-                                                        <ul>
-                                                            <li>Innenausbau, Möbeldesign</li>
-                                                            <li>Bühnen, Messebau, temporäre Bauten</li>
-                                                            <li>corporate architecture, Lichtdesign</li>
-                                                            <li>Sicherheits- und Gesundheitskoordinator (SiGeKo)</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="vc_empty_space"  style="height: 32px" ><span
-                                            class="vc_empty_space_inner"></span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <?php get_template_part('templates/home/leistungen'); ?>
+
                     <div
                         id="Portfolio" data-anchor="#Portfolio" class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
                         <div
@@ -801,7 +682,6 @@ use Rsu\Helper\View;
 <div style="display:none"></div>
 <?= View::sliderImages('home_slider_images') ?>
 <link rel='stylesheet' id='ultimate-tooltip-css'  href='/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/tooltip.min.css?ver=3.16.1' type='text/css' media='all' />
-<link rel='stylesheet' id='prettyphoto-css'  href='/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=4.11.2.1' type='text/css' media='all' />
 <link rel='stylesheet' id='vc_pageable_owl-carousel-css-css'  href='/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=4.11.2.1' type='text/css' media='' />
 <link rel='stylesheet' id='animate-css-css'  href='/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=4.11.2.1' type='text/css' media='' />
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/themes/dt-the7/js/main.min.js?ver=1.0.0'></script>
@@ -822,14 +702,13 @@ use Rsu\Helper\View;
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.11.2.1'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/tooltip.min.js?ver=3.16.1'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=4.11.2.1'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=4.11.2.1'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=4.6.1'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=4.11.2.1'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=4.11.2.1'></script>
 <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&#038;render=explicit&#038;ver=2.0'></script>
-<script type='text/javascript' src='https://stats.wp.com/e-201646.js' async defer></script>
+<!--<script type='text/javascript' src='https://stats.wp.com/e-201646.js' async defer></script>-->
 <script type='text/javascript'>
 //    _stq = window._stq || [];
 //    _stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'103843918',post:'8',tz:'1',srv:'www.fachwerk4.de'} ]);

@@ -4,6 +4,7 @@ namespace Rsu\Helper;
 
 
 use Rsu\Helper\Widget\View as WidgetView;
+use Rsu\Models\Leistungen;
 use Rsu\Models\Post;
 use Rsu\Models\Publication;
 
@@ -84,6 +85,44 @@ STRING;
         </section>
 PROJECT;
 
+    }
+
+    public static function services()
+    {
+        $s = '';
+        $rows = Leistungen::getData();
+
+        foreach ($rows as $title => $services):
+
+            $serviceItems = implode('',
+                array_map(function($service){
+                    return "
+                        <li>$service</li>";
+                }, $services)
+            );
+
+            $s .= <<<HTML
+            <div class="wpb_column vc_column_container vc_col-sm-4">
+                <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                        <div class="ult-spacer spacer-5829113b8e7fb" data-id="5829113b8e7fb" data-height="0" data-height-mobile="32" data-height-tab="" data-height-tab-portrait="" data-height-mobile-landscape="32" style="clear:both;display:block;"></div>
+                        <div class="wpb_text_column wpb_content_element ">
+                            <div class="wpb_wrapper">
+                                <h5>$title:</h5>
+                            </div>
+                        </div>
+                        <div class="vc_empty_space"  style="height: 12px" ><span class="vc_empty_space_inner"></span></div>
+                        <div class="standard-arrow bullet-top">
+                            <ul>$serviceItems</ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+HTML;
+
+        endforeach;
+
+        return $s;
     }
 
     public static function show($type)

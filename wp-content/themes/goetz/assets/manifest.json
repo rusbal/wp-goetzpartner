@@ -22,6 +22,12 @@
         "styles/custom-f53d8aad69.css"
       ]
     },
+    "prettyPhoto.css": {
+      "files": [
+        "bower_components/pretty-photo/css/prettyPhoto.css"
+      ],
+      "external": true
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

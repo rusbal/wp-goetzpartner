@@ -22,4 +22,14 @@ class Option
         }
         return self::$settings[$key];
     }
+
+    public static function implode($glue, $keys)
+    {
+        return implode(
+            $glue,
+            array_map(function($key){
+                return self::get($key);
+            }, $keys)
+        );
+    }
 }
