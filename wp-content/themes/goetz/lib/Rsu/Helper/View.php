@@ -542,7 +542,7 @@ STR;
     public static function projectsArchive()
     {
         $outHtml = '';
-        $query = Project::all();
+        $query = Project::allForThisPage();
 
         while ( $query->have_posts() ): $query->the_post();
 
