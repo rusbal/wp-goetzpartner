@@ -25,62 +25,27 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    id="content" class="content" role="main">
-                    <article
-                        id="post-16383" class="project-post post-16383 dt_portfolio type-dt_portfolio status-publish has-post-thumbnail dt_portfolio_category-ausgewaehlte-projekte dt_portfolio_category-einfamilienhaeuser-mehrfamilienhaeuser dt_portfolio_category-innenausbau-und-moebeldesign description-off">
-                        <div
-                            class="wf-container">
-                            <div
-                                class="wf-cell wf-1-3 project-content">
-                                <div
-                                    class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
-                                    <div
-                                        class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div
-                                            class="vc_column-inner ">
-                                            <div
-                                                class="wpb_wrapper">
-                                                <div
-                                                    class="wpb_text_column wpb_content_element ">
-                                                    <div
-                                                        class="wpb_wrapper">
-                                                        <h3>
-                                                            <strong>Haus Eifel</strong>
-                                                        </h3>
+                <div id="content" class="content" role="main">
+                    <article id="post-16383" class="project-post post-16383 dt_portfolio type-dt_portfolio status-publish has-post-thumbnail dt_portfolio_category-ausgewaehlte-projekte dt_portfolio_category-einfamilienhaeuser-mehrfamilienhaeuser dt_portfolio_category-innenausbau-und-moebeldesign description-off">
+                        <div class="wf-container">
+                            <div class="wf-cell wf-1-3 project-content">
+                                <div class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h3> <strong><?= get_the_title() ?></strong> </h3>
                                                         <p>
-                                                            <strong>Ort:</strong> Bad Münstereifel
-                                                            <br
-                                                            />
-                                                            <strong>Realisierung:</strong> 2014
-                                                            <br
-                                                            />
-                                                            <strong>Leistungen:</strong> LPH 1-9, Innenausbau
-                                                            <br
-                                                            />
-                                                            <strong>Bauweise:</strong> massiv
-                                                            <br
-                                                            />
-                                                            <strong>Nutzfläche:</strong> 350 m²
+                                                            <?= View::projectValuePairData() ?>
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="vc_empty_space"  style="height: 24px" >
-														<span
-                                                            class="vc_empty_space_inner"></span>
-                                                </div>
-                                                <div
-                                                    class="wpb_text_column wpb_content_element ">
-                                                    <div
-                                                        class="wpb_wrapper">
-                                                        <p>
-                                                            <strong>Klar strukturiertes Wohnhaus in Hanglage</strong>
-                                                        </p>
-                                                        <p>Auf einem Hanggrundstück in Bad Münstereifel haben wir 2014 ein modernes Einfamilienhaus errichtet.</p>
-                                                        <p>Das L-förmige Wohnhaus ist klar strukturiert: Es besteht aus einem zweigeschossigen Hauptflügel und einem eingeschossigen Seitenflügel. Zur Hangseite wird der Hauptflügel von einem dritten Baukörper eingefasst, der optisch einen klaren Akzent setzt und den Eingangsbereich sowie die Garagen beherbergt.</p>
-                                                        <p>Im Wohnhaus haben wir die Erschließungsflächen konsequent zu den beiden Hangseiten ausgerichtet. Die privaten Räume der Familie sind im Untergeschoss, im Erdgeschoss befindet sich ein großzügiger Wohn-/Essbereich mit offener Küche. Eine einseitig offene Treppe verbindet nicht nur beide Ebenen, sondern trennt im Erdgeschoss den Wohn- vom Eingangsbereich ab und sorgt im Untergeschoss für Tageslicht.</p>
-                                                        <p>Natürliche Materialien, klare Linien und Formen bestimmen eine elegante und moderne Atmosphäre im Haus. Die großformatigen Fensterflächen öffnen die Wohnbereiche zum Garten und in die Landschaft. Vom Erdgeschoss hat man Zugang zur Dachterrasse mit Wasserfläche und einem wunderbaren Ausblick in die Eifel.</p>
+                                                <div class="vc_empty_space"  style="height: 24px" > <span class="vc_empty_space_inner"></span> </div>
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <p> <strong><?= get_field('description_title') ?></strong> </p>
+                                                        <?= get_field('description_text') ?>
                                                     </div>
                                                 </div>
 
@@ -91,29 +56,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div
-                                    class="project-content-btn">
-                                    <div
-                                        class="project-share-overlay allways-visible-icons">
-                                        <a
-                                            href="#" class="share-button entry-share h5-size">Teilen Sie dieses Projekt!</a>
-                                        <div
-                                            class="soc-ico">
-                                            <a
-                                                href="http://www.facebook.com/sharer.php?u=https://www.fachwerk4.de/projekt/haus-eifel/&#038;t=Haus%20Eifel" class="facebook" target="_blank" title="Facebook">
-													<span
-                                                        class="assistive-text">Facebook</span>
-                                            </a>
-                                            <a
-                                                href="https://twitter.com/share?text=Haus%20Eifel&#038;url=https://www.fachwerk4.de/projekt/haus-eifel/" class="twitter" target="_blank" title="Twitter">
-													<span
-                                                        class="assistive-text">Twitter</span>
-                                            </a>
-                                            <a
-                                                href="https://plus.google.com/share?url=https://www.fachwerk4.de/projekt/haus-eifel/&#038;title=Haus+Eifel" class="google" target="_blank" title="Google+">
-													<span
-                                                        class="assistive-text">Google+</span>
-                                            </a>
+                                <div class="project-content-btn">
+                                    <div class="project-share-overlay allways-visible-icons">
+                                        <a href="#" class="share-button entry-share h5-size">Teilen Sie dieses Projekt!</a>
+                                        <div class="soc-ico">
+                                            <?= View::facebookShareLink() ?>
+                                            <?= View::twitterShareLink() ?>
+                                            <?= View::googleShareLink() ?>
                                         </div>
                                     </div>
                                 </div>

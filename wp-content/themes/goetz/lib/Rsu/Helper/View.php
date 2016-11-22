@@ -271,16 +271,16 @@ class View
     public static function socialShareLink($site)
     {
         $link = get_permalink();
-        $title = get_the_title();
+        $title = urlencode(get_the_title());
 
         if ($site == 'facebook') {
             return '
-                <a href="http://www.facebook.com/sharer.php?u=' . $link . '/' . $title
+                <a href="http://www.facebook.com/sharer.php?u=' . $link . '&t=' . $title
                 . '" class="facebook" target="_blank" title="Facebook"><span class="assistive-text">Facebook</span></a>';
         }
         if ($site == 'google') {
             return '
-                <a href="https://plus.google.com/share?url=' . $link . '/' . $title
+                <a href="https://plus.google.com/share?url=' . $link . '&title=' . $title
                 . '" class="google" target="_blank" title="Google+"><span class="assistive-text">Google+</span></a>';
         }
         if ($site == 'twitter') {
@@ -505,5 +505,26 @@ HTML;
                 <div class="wpb_wrapper">$creditLinks</div>
             </div>
 STR;
+    }
+
+    public static function projectValuePairData()
+    {
+        $data = get_field('value_pair_data');
+
+        if ($data) {
+            $aData = explode("\n", $data);
+
+            $formatted = array_map(function($line){
+                list($caption, $value) = explode(':', $line);
+                $value = trim(str_replace(['&lt;value&gt;', '<br />'], '', $value));
+                if ($value) {
+                    return "<strong>$caption:</strong> $value<br>";
+                }
+            }, $aData);
+
+            return implode('', $formatted);
+        }
+
+        return '';
     }
 }
