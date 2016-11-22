@@ -23,6 +23,11 @@ class Option
         return self::$settings[$key];
     }
 
+    public static function companyNameDesc()
+    {
+        return self::implode(' | ', ['company_name', 'company_description']);
+    }
+
     public static function implode($glue, $keys)
     {
         return implode(

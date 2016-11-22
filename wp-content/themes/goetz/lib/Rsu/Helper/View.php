@@ -3,6 +3,8 @@
 namespace Rsu\Helper;
 
 use Rsu\Helper\Widget\View as WidgetView;
+use Rsu\Models\Category;
+use Rsu\Models\Image;
 use Rsu\Models\Post;
 use Rsu\Models\Project;
 use Rsu\Settings\Option;
@@ -199,9 +201,13 @@ class View
         </a>';
     }
 
-    public static function dayLink()
+    public static function dayLink($withLink = true)
     {
-        $link = get_day_link( get_the_time('Y'), get_the_time('m'), get_the_time('d') );
+        if ($withLink) {
+            $link = get_day_link( get_the_time('Y'), get_the_time('m'), get_the_time('d') );
+        } else {
+            $link = 'javascript:void(0);';
+        }
         $hourMinute = get_the_time('h:i');
         $datetime = get_the_time('c');
         $humanDate = get_the_time('d. F Y');
@@ -417,14 +423,19 @@ HTML;
 
     public static function projectItem()
     {
-        $projectImage = '';
-        if ( have_rows('projekt_images') ) : the_row();
-            $projectImage = wp_get_attachment_image(
-                get_sub_field('projekt_image'),
-                'height-300',
-                ['class' => 'lazy-load preload-me']
-            );
-        endif;
+//        $projectImage = '';
+//        if ( have_rows('projekt_images') ) : the_row();
+//            $projectImage = wp_get_attachment_image(
+//                get_sub_field('projekt_image'),
+//                'height-300',
+//                ['class' => 'lazy-load preload-me']
+//            );
+//        endif;
+        $projectImage = wp_get_attachment_image(
+            Project::firstImage(),
+            'height-300',
+            ['class' => 'lazy-load preload-me']
+        );
 
         $projectUrl = get_permalink();
         $title = get_the_title();
@@ -526,5 +537,62 @@ STR;
         }
 
         return '';
+    }
+
+    public static function projectsArchive()
+    {
+        $outHtml = '';
+        $query = Project::all();
+
+        while ( $query->have_posts() ): $query->the_post();
+
+            $imgId = Project::firstImage();
+            $title = get_the_title();
+            $projectImage = wp_get_attachment_image(
+                $imgId,
+                '625x417',
+                ['class' => 'iso-lazy-load preload-me']
+            );
+            $projectImageUrl = wp_get_attachment_url($imgId);
+            $url = get_permalink();
+
+            $outHtml .= '
+            <div class="wf-cell iso-item" data-post-id="16383" data-date="2015-05-31T22:23:52+00:00" data-name="' . $title . '">
+                <article class="post post-16383 dt_portfolio type-dt_portfolio status-publish has-post-thumbnail hentry dt_portfolio_category-ausgewaehlte-projekte dt_portfolio_category-einfamilienhaeuser-mehrfamilienhaeuser dt_portfolio_category-innenausbau-und-moebeldesign bg-on fullwidth-img">
+                    <div class="project-list-media">
+                        <figure class="buttons-on-img ">
+                            <a href="' . $url . '" class="alignnone rollover layzr-bg" title="' . $title . ' | Fachwerk4 | Architekten BDA" >
+                                ' . $projectImage . '
+                            </a>
+                            <figcaption class="rollover-content">
+                                <div class="links-container">
+                                    <a href="' . $projectImageUrl . '" class="project-zoom dt-mfp-item dt-single-mfp-popup mfp-image" 
+                                        title="' . $title . ' | ' . Option::companyNameDesc() . '" 
+                                        data-dt-img-description="' . Image::title($imgId) . '">Zoom</a>
+                                    <a href="' . $url . '" class="project-details">Details</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-list-content">
+                        <h3 class="entry-title">
+                            <a href="https://www.fachwerk4.de/projekt/haus-eifel/" title="' . $title . '" rel="bookmark">' . $title . '</a>
+                        </h3>
+                        <p>' . get_field('description_title') . '</p>
+                        <div class="entry-meta portfolio-categories">
+                            ' . self::dayLink(false) . '
+                            <span class="category-link">
+                                ' . Category::implodeLinks(', ') . '
+                            </span>
+                            ' . View::authorLink() . '
+                        </div>
+                    </div>
+                </article>
+            </div>';
+        endwhile;
+
+        wp_reset_postdata();
+
+        return $outHtml;
     }
 }

@@ -16,4 +16,11 @@ class Project
 
         return new \WP_Query($args);
     }
+
+    public static function firstImage()
+    {
+        if ( have_rows('projekt_images') ) : the_row();
+            return get_sub_field('projekt_image');
+        endif;
+    }
 }

@@ -46,5 +46,6 @@ new Rsu\Ajax\Post;
  * Define image sizes
  */
 add_image_size( 'height-300', 9999, 300, false); // height: 300 x autoWidth
-add_image_size( '600x600', 300, 300, false); // height: 300 x autoWidth
-add_image_size( '300x300', 300, 300, false); // height: 300 x autoWidth
+add_image_size( '600x600', 300, 300, false);
+add_image_size( '300x300', 300, 300, false);
+add_image_size( '625x417', 625, 417, false);
