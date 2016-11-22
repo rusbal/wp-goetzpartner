@@ -13,4 +13,23 @@ class Category
             }, get_the_category())
         );
     }
+
+    /**
+     * @return array
+     */
+    public static function getObject($excludeUncategorized = true)
+    {
+        $categories = get_terms('category', array(
+            'post_type' => ['produkt'],
+            'fields' => 'all'
+        ));
+        $arr = [];
+        foreach ($categories as $cat) {
+            if ($excludeUncategorized && $cat->slug == 'uncategorized') {
+                continue;
+            }
+            $arr[] = $cat;
+        }
+        return $arr;
+    }
 }

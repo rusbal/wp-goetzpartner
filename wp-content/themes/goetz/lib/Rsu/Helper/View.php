@@ -539,6 +539,52 @@ STR;
         return '';
     }
 
+    public static function portfolioArchive()
+    {
+        $outHtml = '';
+        $query = Project::allForThisPage();
+
+        while ( $query->have_posts() ): $query->the_post();
+
+            $imgId = Project::firstImage();
+            $title = get_the_title();
+            $projectImage = wp_get_attachment_image(
+                $imgId,
+                '546x364',
+                ['class' => 'iso-lazy-load preload-me']
+            );
+            $projectImageUrl = wp_get_attachment_url($imgId);
+            $url = get_permalink();
+
+            $outHtml .= '
+                <div class="wf-cell category-50 category-38 category-43" data-post-id="16383" data-date="2015-05-31T22:23:52+00:00" data-name="' . $title . '">
+                    <article class="post post-16383 dt_portfolio type-dt_portfolio status-publish has-post-thumbnail hentry dt_portfolio_category-ausgewaehlte-projekte dt_portfolio_category-einfamilienhaeuser-mehrfamilienhaeuser dt_portfolio_category-innenausbau-und-moebeldesign text-centered">
+                        <figure class="rollover-project rollover-active">
+                            <a href="' . $url . '" class="layzr-bg" title="' . $title . ' | ' . Option::companyNameDesc() . '" >
+                                ' . $projectImage . '
+                            </a>
+                            <figcaption class="rollover-content">
+                                <div class="links-container">
+                                    <a href="' . $url . '" class="project-details">Details</a>
+                                </div>
+                                <div class="rollover-content-container">
+                                    <h3 class="entry-title">
+                                        <a href="' . $url . '" title="' . $title . '" rel="bookmark">' . $title . '</a>
+                                    </h3>
+                                    <p>' . get_field('description_title') . '</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>';
+            
+        endwhile;
+
+        wp_reset_postdata();
+
+        return $outHtml;
+    }
+
     public static function projectsArchive()
     {
         $outHtml = '';
@@ -594,5 +640,20 @@ STR;
         wp_reset_postdata();
 
         return $outHtml;
+    }
+
+    public static function projectAjaxLinks()
+    {
+        $links = '<a href="?term=&orderby=date&order=DESC" class="show-all act" data-filter="*">View all</a>';
+
+        foreach (Category::getObject() as $category) {
+            $links .= "<a href='?term=$category->slug&orderby=date&order=DESC' data-filter='.category-$category->term_id'>$category->name</a>";
+        }
+
+        return <<<LINKS
+            <div class="filter with-ajax extras-off">
+                <div class="filter-categories">$links</div>
+            </div>
+LINKS;
     }
 }
