@@ -1,29 +1,30 @@
+<?php
+
+use Rsu\Helper\View;
+
+?>
 <body class="archive post-type-archive post-type-archive-dt_portfolio layout-masonry description-under-image large-hover-icons boxed-layout overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">
 <div id="load" class="ring-loader">
     <div class="load-wrap"></div>
 </div>
 <div id="page" class="boxed">
 
-    <?php use Rsu\Helper\View;
+    <?php get_template_part('templates/header'); ?>
 
-    get_template_part('templates/header'); ?>
-
-    <div
-        class="page-title title-left disabled-bg breadcrumbs-off" style="min-height: 120px;">
-        <div
-            class="wf-wrap">
-            <div
-                class="wf-container-title">
-                <div
-                    class="wf-table" style="height: 120px;">
-                    <div
-                        class="wf-td hgroup">
-                        <h1 class="h3-size">Archives:</h1>
+    <?php if (! isset($hideArchiveTitle) || ! $hideArchiveTitle): ?>
+        <div class="page-title title-left disabled-bg breadcrumbs-off" style="min-height: 120px;">
+            <div class="wf-wrap">
+                <div class="wf-container-title">
+                    <div class="wf-table" style="height: 120px;">
+                        <div class="wf-td hgroup">
+                            <h1 class="h3-size">Archives:</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    <?php endif; ?>
+
     <div id="main" class="sidebar-none">
         <div class="main-gradient"></div>
         <div class="wf-wrap">
