@@ -576,7 +576,7 @@ STR;
                     </div>
                     <div class="project-list-content">
                         <h3 class="entry-title">
-                            <a href="https://www.fachwerk4.de/projekt/haus-eifel/" title="' . $title . '" rel="bookmark">' . $title . '</a>
+                            <a href="' . $url . '" title="' . $title . '" rel="bookmark">' . $title . '</a>
                         </h3>
                         <p>' . get_field('description_title') . '</p>
                         <div class="entry-meta portfolio-categories">
