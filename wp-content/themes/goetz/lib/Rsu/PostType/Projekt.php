@@ -41,6 +41,7 @@ class Projekt
             'hierarchical'       => false,
             'menu_position'      => null,
             'menu_icon'          => 'dashicons-media-document',
+            'taxonomies'         => array( 'category' ),
         );
 
         register_post_type( 'projekt', $args );
