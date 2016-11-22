@@ -37,6 +37,12 @@ add_filter('show_admin_bar', '__return_false');
  */
 new Rsu\PostType\Team;
 new Rsu\PostType\Publication;
+new Rsu\PostType\Projekt;
 new Rsu\Settings\Register;
 new Rsu\Shortcodes\Shortcode;
 new Rsu\Ajax\Post;
+
+/**
+ * Define image sizes
+ */
+add_image_size( 'height-300', 9999, 300, false); // height: 300 x autoWidth

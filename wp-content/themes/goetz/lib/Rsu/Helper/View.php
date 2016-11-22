@@ -4,6 +4,7 @@ namespace Rsu\Helper;
 
 use Rsu\Helper\Widget\View as WidgetView;
 use Rsu\Models\Post;
+use Rsu\Models\Project;
 use Rsu\Settings\Option;
 
 class View
@@ -388,5 +389,67 @@ STR;
                 </div>
             </header>
 STR;
+    }
+
+    public static function projectSlider()
+    {
+        $items = '';
+
+        $query = Project::all();
+        while ( $query->have_posts() ): $query->the_post();
+            $items .= self::projectItem();
+        endwhile;
+
+        wp_reset_postdata();
+
+        return <<<HTML
+            <div class="dt-portfolio-shortcode slider-wrapper arrows-accent description-on-hover hover-style-two hover-fade content-align-centre" data-padding-side="15" data-autoslide="false" data-delay="0" data-loop="true">
+                <div class="frame fullwidth-slider">
+                    <ul class="clearfix">
+                        $items
+                    </ul>
+                </div>
+                <div class="prev"><i></i></div>
+                <div class="next"><i></i></div>
+            </div>
+HTML;
+    }
+
+    public static function projectItem()
+    {
+        $projectImage = '';
+        if ( have_rows('projekt_images') ) : the_row();
+            $projectImage = wp_get_attachment_image(
+                get_sub_field('projekt_image'),
+                'height-300',
+                ['class' => 'lazy-load preload-me']
+            );
+        endif;
+
+        $projectUrl = get_permalink();
+        $title = get_the_title();
+        $companyName = Option::get('company_name');
+        $companyDesc = Option::get('company_description');
+        $subTitle = get_field('description_title');
+
+        return <<<STR
+            <li class="fs-entry">
+                <article class="post post-16383 dt_portfolio type-dt_portfolio status-publish has-post-thumbnail hentry dt_portfolio_category-ausgewaehlte-projekte dt_portfolio_category-einfamilienhaeuser-mehrfamilienhaeuser dt_portfolio_category-innenausbau-und-moebeldesign text-centered">
+                    <figure class="rollover-project rollover-active">
+                        <a href="$projectUrl" class="layzr-bg" title="$title | $companyName | $companyDesc" >
+                            $projectImage
+                        </a>
+                        <figcaption class="rollover-content">
+                            <div class="links-container"><a href="$projectUrl" class="project-details">Details</a></div>
+                            <div class="rollover-content-container">
+                                <h3 class="entry-title"><a href="$projectUrl" title="$title" rel="bookmark">$title</a></h3>
+                                <p>$subTitle</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </article>
+            </li>
+STR;
+
     }
 }
