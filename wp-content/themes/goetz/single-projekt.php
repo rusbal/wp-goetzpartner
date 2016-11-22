@@ -1,12 +1,16 @@
+<?php
+
+use Rsu\Helper\Template;
+use Rsu\Helper\View;
+
+?>
 <body class="single single-portfolio postid-16383 no-comments title-off large-hover-icons boxed-layout overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">
 <div id="load" class="ring-loader">
     <div class="load-wrap"></div>
 </div>
 <div id="page" class="boxed">
 
-    <?php use Rsu\Helper\View;
-
-    get_template_part('templates/header'); ?>
+    <?php get_template_part('templates/header'); ?>
 
     <div id="main" class="sidebar-right">
         <div class="main-gradient"></div>
@@ -74,6 +78,7 @@
                     </article>
                 </div>
                 <aside id="sidebar" class="sidebar">
+                    <?php Template::part('project', 'templates/aside/sidebar'); ?>
                 </aside>
             </div>
         </div>
