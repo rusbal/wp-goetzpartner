@@ -450,6 +450,60 @@ HTML;
                 </article>
             </li>
 STR;
+    }
 
+    public static function projectImages()
+    {
+        $imagesLink = '';
+
+        $isEven = count(get_field('projekt_images')) % 2 == 0;
+
+        while ( have_rows('projekt_images') ) : the_row();
+            $imgId = get_sub_field('projekt_image');
+            $imgUrl = wp_get_attachment_url($imgId);
+
+            $size = $isEven || $imagesLink ? '300x300' : '600x600';
+
+            $imagesLink .= '
+            <a href="' . $imgUrl . '"
+               class="rollover rollover-zoom dt-mfp-item mfp-image big-img layzr-bg"
+               title="' . get_the_title() . ' | ' . Option::implode(' | ', ['company_name', 'company_description']) . '"
+               data-dt-img-description="' . get_post($imgId)->post_title . '">
+            ' . wp_get_attachment_image( $imgId, $size, ['class' => 'lazy-load preload-me'] ) . '
+            </a>';
+        endwhile;
+
+        return <<<HTML
+            <div class="wf-cell wf-2-3 project-slider">
+                <div class="images-container">
+                    <div class="dt-format-gallery gallery-col-2 dt-gallery-container">
+                        $imagesLink
+                    </div>
+                </div>
+            </div>
+HTML;
+    }
+
+    public static function projectCredits()
+    {
+        $creditLinks = '';
+
+        while ( have_rows('credits') ) : the_row();
+
+            $creditsOn = get_sub_field('credits_on');
+            $creditsUrl = get_sub_field('credits_url');
+            $creditsTo = get_sub_field('credits_to');
+
+            $creditLinks .= '<p> <strong>' . $creditsOn . ': <br /> </strong>';
+            $creditLinks .= $creditsUrl ? '<a href="' . $creditsUrl . '" target="_blank">' . $creditsTo . '</a>' : $creditsTo;
+            $creditLinks .= '</p>';
+        endwhile;
+
+        return <<<STR
+            <div class="vc_empty_space" style="height: 24px"> <span class="vc_empty_space_inner"></span> </div>
+            <div class="wpb_text_column wpb_content_element ">
+                <div class="wpb_wrapper">$creditLinks</div>
+            </div>
+STR;
     }
 }

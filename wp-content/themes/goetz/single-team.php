@@ -6,88 +6,23 @@
 use Rsu\Helper\View;
 
 ?>
-<body
-    class="single single-dt_team postid-28 no-comments title-off large-hover-icons boxed-layout overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">
-<div
-    id="load" class="ring-loader">
-    <div
-        class="load-wrap"></div>
-</div>
+<body class="single single-dt_team postid-28 no-comments title-off large-hover-icons boxed-layout overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">
+<div id="load" class="ring-loader"> <div class="load-wrap"></div> </div>
 <div id="page" class="boxed">
-    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
     <?php get_template_part('templates/header'); ?>
-    <div
-        class='dt-close-mobile-menu-icon'><span></span></div>
-    <div
-        class='dt-mobile-header'>
-        <ul
-            id="mobile-menu" class="mobile-main-nav" role="menu">
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14990 first"><a
-                    href='https://www.fachwerk4.de/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Home</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-17160"><a
-                    href='http://www.fachwerk4.de/#!/Aktuelles' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Aktuelles</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14992"><a
-                    href='http://www.fachwerk4.de/#!/Leistungen' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Leistungen</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15047 dt-mega-menu mega-auto-width mega-column-3"><a
-                    href='https://www.fachwerk4.de/portfolio/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Realisierte Projekte</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15565 dt-mega-menu mega-auto-width mega-column-3"><a
-                    href='https://www.fachwerk4.de/publikationen/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Publikationen</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14995"><a
-                    href='http://www.fachwerk4.de/#!/Team' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Team</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17776"><a
-                    href='https://www.fachwerk4.de/presse/' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Presse</span></span></a></li>
-            <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14996"><a
-                    href='http://www.fachwerk4.de/#!/Kontakt' data-level='1'><span
-                        class="menu-item-text"><span
-                            class="menu-text">Kontakt</span></span></a></li>
-        </ul>
-        <div
-            class='mobile-mini-widgets-in-menu'></div>
-    </div>
-    <div
-        id="main" class="sidebar-none">
-        <div
-            class="main-gradient"></div>
-        <div
-            class="wf-wrap">
-            <div
-                class="wf-container-main">
-                <div
-                    id="content" class="content" role="main">
-                    <article
-                        id="post-28" class="post-28 dt_team type-dt_team status-publish has-post-thumbnail dt_team_category-inhaber description-off">
-                        <div
-                            class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
-                            <div
-                                class="wpb_column vc_column_container vc_col-sm-4">
-                                <div
-                                    class="vc_column-inner ">
-                                    <div
-                                        class="wpb_wrapper">
-                                        <div
-                                            class="wpb_single_image wpb_content_element vc_align_center">
+
+    <div id="main" class="sidebar-none">
+        <div class="main-gradient"></div>
+        <div class="wf-wrap">
+            <div class="wf-container-main">
+                <div id="content" class="content" role="main">
+                    <article id="post-28" class="post-28 dt_team type-dt_team status-publish has-post-thumbnail dt_team_category-inhaber description-off">
+                        <div class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
+                            <div class="wpb_column vc_column_container vc_col-sm-4">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_single_image wpb_content_element vc_align_center">
                                             <figure class="wpb_wrapper vc_figure">
                                                 <div class="vc_single_image-wrapper vc_box_circle  vc_box_border_grey">
 

@@ -98,6 +98,5 @@ use Rsu\Settings\Option;
             <a href='/#!/Kontakt' data-level='1'><span class="menu-item-text"><span class="menu-text">Kontakt</span></span></a>
         </li>
     </ul>
-    <div
-        class='mobile-mini-widgets-in-menu'></div>
+    <div class='mobile-mini-widgets-in-menu'></div>
 </div>
