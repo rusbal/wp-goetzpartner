@@ -1,5 +1,6 @@
 <?php
 
+use Rsu\Helper\View;
 use Rsu\Settings\Option;
 
 ?>
@@ -37,10 +38,10 @@ use Rsu\Settings\Option;
                 <a href='/' data-level='1'><span class="menu-item-text"><span class="menu-text">Home</span></span></a>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17159">
-                <a href='/#!/Aktuelles' data-level='1'><span class="menu-item-text"><span class="menu-text">Aktuelles</span></span></a>
+                <a href='<?= View::linkToAnchor('#!/Aktuelles') ?>' data-level='1'><span class="menu-item-text"><span class="menu-text">Aktuelles</span></span></a>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23">
-                <a href='/#!/Leistungen' data-level='1'><span class="menu-item-text"><span class="menu-text">Leistungen</span></span></a>
+                <a href='<?= View::linkToAnchor('#!/Leistungen') ?>' data-level='1'><span class="menu-item-text"><span class="menu-text">Leistungen</span></span></a>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15951 dt-mega-menu mega-auto-width mega-column-3">
                 <a href='/portfolio/' data-level='1'><span class="menu-item-text"><span class="menu-text">Realisierte Projekte</span></span></a>
@@ -49,13 +50,13 @@ use Rsu\Settings\Option;
                 <a href='/publication/' data-level='1'><span class="menu-item-text"><span class="menu-text">Publikationen</span></span></a>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24">
-                <a href='/#!/Team' data-level='1'><span class="menu-item-text"><span class="menu-text">Team</span></span></a>
+                <a href='<?= View::linkToAnchor('#!/Team') ?>' data-level='1'><span class="menu-item-text"><span class="menu-text">Team</span></span></a>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17775">
                 <a href='/presse/' data-level='1'><span class="menu-item-text"><span class="menu-text">Presse</span></span></a>
             </li>
             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26">
-                <a href='#!/Kontakt' data-level='1'><span class="menu-item-text"><span class="menu-text">Kontakt</span></span></a>
+                <a href='<?= View::linkToAnchor('#!/Kontakt') ?>' data-level='1'><span class="menu-item-text"><span class="menu-text">Kontakt</span></span></a>
             </li>
         </ul>
         <div class="mini-widgets">

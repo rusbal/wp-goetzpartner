@@ -723,4 +723,10 @@ LINKS;
                 </article>
             </div>';
     }
+
+    public static function linkToAnchor($anchor)
+    {
+        $isHome = '/' == $_SERVER['REQUEST_URI'];
+        return $isHome ? $anchor : '/' . $anchor;
+    }
 }
