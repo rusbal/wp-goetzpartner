@@ -34,15 +34,16 @@ use Rsu\Helper\View;
                     <div class="full-width-wrap">
                         <?php get_template_part('templates/blog/index'); ?>
                     </div>
-                    <div
-                        class="paginator paginator-more-button with-ajax">
-                        <a
-                            class="button-load-more button-lazy-loading" href="javascript:void(0);" data-dt-page="1" ><span
-                                class="stick"></span><span
-                                class="stick"></span><span
-                                class="stick"></span><span
-                                class="h5-size button-caption">Lade...</span></a>
-                    </div>
+
+<!--                    <div class="paginator paginator-more-button with-ajax">-->
+<!--                        <a class="button-load-more button-lazy-loading" href="javascript:void(0);" data-dt-page="1" >-->
+<!--                            <span class="stick"></span>-->
+<!--                            <span class="stick"></span>-->
+<!--                            <span class="stick"></span>-->
+<!--                            <span class="h5-size button-caption">Lade...</span>-->
+<!--                        </a>-->
+<!--                    </div>-->
+
                 </div>
             </div>
         </div>
