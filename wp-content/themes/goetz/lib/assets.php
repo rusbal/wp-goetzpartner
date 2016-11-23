@@ -59,3 +59,5 @@ function asset_path($filename) {
 
 wp_enqueue_style('pretty_photo', asset_path('styles/prettyPhoto.css'));
 wp_enqueue_script('pretty_photo', get_template_directory_uri() . '/assets/scripts/jquery.prettyPhoto.js', ['jquery'], null, false);
+
+wp_enqueue_script('foot', asset_path('scripts/foot.js'), ['jquery'], null, true);

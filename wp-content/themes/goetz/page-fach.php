@@ -438,37 +438,36 @@ use Rsu\Helper\View;
 </script>
 <div style="display:none"></div>
 <?= View::sliderImages('home_slider_images') ?>
-<link rel='stylesheet' id='ultimate-tooltip-css'  href='/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/tooltip.min.css?ver=3.16.1' type='text/css' media='all' />
-<link rel='stylesheet' id='vc_pageable_owl-carousel-css-css'  href='/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=4.11.2.1' type='text/css' media='' />
-<link rel='stylesheet' id='animate-css-css'  href='/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=4.11.2.1' type='text/css' media='' />
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/themes/dt-the7/js/main.min.js?ver=1.0.0'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>/*  */
-    var _wpcf7 = {"loaderUrl":"https:\/\/www.fachwerk4.de\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Bitte best\u00e4tige, dass du nicht eine Maschine bist."}},"sending":"Senden ...","cached":"1"};
-    /*  */
-</script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>
-<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201646'></script>
-<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2016Novaa'></script>
-<script type='text/javascript'>/*  */
-    var WPGroHo = {"my_hash":""};
-    /*  */
-</script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.6.1'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/themes/dt-the7/js/post-type.js?ver=1.0.0'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.11.2.1'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/tooltip.min.js?ver=3.16.1'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=4.11.2.1'></script>
-<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=4.6.1'></script>
+<!--<link rel='stylesheet' id='ultimate-tooltip-css'  href='/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/tooltip.min.css?ver=3.16.1' type='text/css' media='all' />-->
+<!--<link rel='stylesheet' id='vc_pageable_owl-carousel-css-css'  href='/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/assets/owl.min.css?ver=4.11.2.1' type='text/css' media='' />-->
+<!--<link rel='stylesheet' id='animate-css-css'  href='/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=4.11.2.1' type='text/css' media='' />-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/themes/dt-the7/js/main.min.js?ver=1.0.0'></script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>-->
+<!--<script type='text/javascript'>/*  */-->
+<!--    var _wpcf7 = {"loaderUrl":"https:\/\/www.fachwerk4.de\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Bitte best\u00e4tige, dass du nicht eine Maschine bist."}},"sending":"Senden ...","cached":"1"};-->
+<!--    /*  */-->
+<!--</script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>-->
+<!--<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201646'></script>-->
+<!--<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2016Novaa'></script>-->
+<!--<script type='text/javascript'>/*  */-->
+<!--    var WPGroHo = {"my_hash":""};-->
+<!--    /*  */-->
+<!--</script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.6.1'></script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/themes/dt-the7/js/post-type.js?ver=1.0.0'></script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.11.2.1'></script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/Ultimate_VC_Addons/assets/min-js/tooltip.min.js?ver=3.16.1'></script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/owl-carousel2-dist/owl.carousel.min.js?ver=4.11.2.1'></script>-->
+<!--<script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js?ver=4.6.1'></script>-->
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js?ver=4.11.2.1'></script>
 <script type='text/javascript' src='https://www.fachwerk4.de/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=4.11.2.1'></script>
-<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&#038;render=explicit&#038;ver=2.0'></script>
+<!--<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=recaptchaCallback&#038;render=explicit&#038;ver=2.0'></script>-->
 <!--<script type='text/javascript' src='https://stats.wp.com/e-201646.js' async defer></script>-->
 <script type='text/javascript'>
 //    _stq = window._stq || [];
 //    _stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'103843918',post:'8',tz:'1',srv:'www.fachwerk4.de'} ]);
 //    _stq.push([ 'clickTrackerInit', '103843918', '8' ]);
 </script>
-</body>

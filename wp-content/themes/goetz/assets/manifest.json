@@ -12,9 +12,11 @@
       ],
       "main": true
     },
-    "customizer.js": {
+    "customizer.js": { "files": [ "scripts/customizer.js" ] },
+    "foot.js": {
       "files": [
-        "scripts/customizer.js"
+        "scripts/foot/main.js",
+        "scripts/foot/post-type.js"
       ]
     },
     "custom.css": {

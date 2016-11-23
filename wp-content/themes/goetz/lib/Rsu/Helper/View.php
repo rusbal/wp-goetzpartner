@@ -401,7 +401,7 @@ STR;
     {
         $items = '';
 
-        $query = Project::all();
+        $query = Project::allForThisPage();
         while ( $query->have_posts() ): $query->the_post();
             $items .= self::projectItem();
         endwhile;

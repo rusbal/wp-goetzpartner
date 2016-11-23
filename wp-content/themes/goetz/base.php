@@ -57,5 +57,7 @@ use Roots\Sage\Wrapper;
 
 include Wrapper\template_path();
 
+wp_footer();
 ?>
+</body>
 </html>
