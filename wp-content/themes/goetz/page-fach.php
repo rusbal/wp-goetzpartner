@@ -153,227 +153,26 @@ use Rsu\Settings\Option;
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                        class="vc_empty_space"  style="height: 24px" ><span
-                                            class="vc_empty_space_inner"></span></div>
-                                    <div
-                                        class="vc_row wpb_row vc_inner vc_row-fluid">
-                                        <div
-                                            class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div
-                                                class="vc_column-inner ">
-                                                <div
-                                                    class="wpb_wrapper">
-                                                    <div
-                                                        class="wpb_text_column wpb_content_element ">
-                                                        <div
-                                                            class="wpb_wrapper">
+                                    <div class="vc_empty_space"  style="height: 24px" ><span class="vc_empty_space_inner"></span></div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
                                                             <h4>Senden Sie uns eine Nachricht:</h4>
                                                         </div>
                                                     </div>
-                                                    <div
-                                                        class="vc_empty_space"  style="height: 24px" ><span
-                                                            class="vc_empty_space_inner"></span></div>
-                                                    <div
-                                                        role="form" class="wpcf7" id="wpcf7-f10-p8-o1" lang="de-DE" dir="ltr">
-                                                        <div
-                                                            class="screen-reader-response"></div>
-                                                        <form
-                                                            action="/#wpcf7-f10-p8-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                                                            <div
-                                                                style="display: none;">
-                                                                <input
-                                                                    type="hidden" name="_wpcf7" value="10" />
-                                                                <input
-                                                                    type="hidden" name="_wpcf7_version" value="4.5.1" />
-                                                                <input
-                                                                    type="hidden" name="_wpcf7_locale" value="de_DE" />
-                                                                <input
-                                                                    type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f10-p8-o1" />
-                                                                <input
-                                                                    type="hidden" name="_wpnonce" value="12861530fc" />
-                                                            </div>
-                                                            <p>Ihr Name (Pflichtfeld)<br
-                                                                />
-                                                                <span
-                                                                    class="wpcf7-form-control-wrap your-name"><input
-                                                                        type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span>
-                                                            </p>
-                                                            <p>Ihre E-Mail-Adresse (Pflichtfeld)<br
-                                                                />
-                                                                <span
-                                                                    class="wpcf7-form-control-wrap your-email"><input
-                                                                        type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span>
-                                                            </p>
-                                                            <p>Betreff<br
-                                                                />
-                                                                <span
-                                                                    class="wpcf7-form-control-wrap your-subject"><input
-                                                                        type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span>
-                                                            </p>
-                                                            <p>Ihre Nachricht<br
-                                                                />
-                                                                <span
-                                                                    class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span>
-                                                            </p>
-                                                            <div
-                                                                class="wpcf7-form-control-wrap">
-                                                                <div
-                                                                    data-sitekey="6LdPGhgTAAAAAC9lug2AdS-RhlKmycpFKEGXIsk4" data-size="compact" class="wpcf7-form-control g-recaptcha wpcf7-recaptcha"></div>
-                                                                <noscript>
-                                                                    <div
-                                                                        style="width: 302px; height: 422px;">
-                                                                        <div
-                                                                            style="width: 302px; height: 422px; position: relative;">
-                                                                            <div
-                                                                                style="width: 302px; height: 422px; position: absolute;">
-                                                                                <iframe
-                                                                                    src="https://www.google.com/recaptcha/api/fallback?k=6LdPGhgTAAAAAC9lug2AdS-RhlKmycpFKEGXIsk4" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;">
-                                                                                </iframe>
-                                                                            </div>
-                                                                            <div
-                                                                                style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;"><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;">
-                                                                     </textarea>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </noscript>
-                                                            </div>
-                                                            <p><input
-                                                                    type="submit" value="Senden" class="wpcf7-form-control wpcf7-submit" /></p>
-                                                            <div
-                                                                class="wpcf7-response-output wpcf7-display-none"></div>
-                                                        </form>
-                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 24px" ><span class="vc_empty_space_inner"></span></div>
+
+                                                    <?= do_shortcode('[contact-form-7 id="7" title="Contact form 1"]') ?>
+
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div
-                                                class="vc_column-inner ">
-                                                <div
-                                                    class="wpb_wrapper">
-                                                    <div
-                                                        class="ult-spacer spacer-5829113ba7f6f" data-id="5829113ba7f6f" data-height="0" data-height-mobile="32" data-height-tab="" data-height-tab-portrait="" data-height-mobile-landscape="32" style="clear:both;display:block;"></div>
-                                                    <div
-                                                        class="wpb_text_column wpb_content_element ">
-                                                        <div
-                                                            class="wpb_wrapper">
-                                                            <h4>So finden Sie uns:</h4>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="vc_empty_space"  style="height: 24px" ><span
-                                                            class="vc_empty_space_inner"></span></div>
-                                                    <div
-                                                        id='wrap_map_5829113ba819e' class='ultimate-map-wrapper ult-adjust-bottom-margin ' style=' height:300px;'>
-                                                        <div
-                                                            id='map_5829113ba819e' data-map_override='0' class='ultimate_google_map wpb_content_element page_margin_top' style='width:100%;height:300px;'></div>
-                                                    </div>
-                                                    <script type='text/javascript'>/*<![CDATA[*/(function($) {
-                                                            'use strict';
-                                                            var map_latitude = parseFloat('<?= Option::get('map_latitude'); ?>');
-                                                            var map_longitude = parseFloat('<?= Option::get('map_longitude'); ?>');
-                                                            var map_map_5829113ba819e = null;
-                                                            var coordinate_map_5829113ba819e;
-                                                            var isDraggable = $(document).width() > 641 ? true : true;
-                                                            try
-                                                            {
-                                                                var map_map_5829113ba819e = null;
-                                                                var coordinate_map_5829113ba819e;
-                                                                coordinate_map_5829113ba819e=new google.maps.LatLng(map_latitude, map_longitude);
-                                                                var mapOptions=
-                                                                {
-                                                                    zoom: 12,
-                                                                    center: coordinate_map_5829113ba819e,
-                                                                    scaleControl: true,
-                                                                    streetViewControl: false,
-                                                                    mapTypeControl: false,
-                                                                    panControl: false,
-                                                                    zoomControl: false,
-                                                                    scrollwheel: true,
-                                                                    draggable: isDraggable,
-                                                                    zoomControlOptions: {
-                                                                        style: google.maps.ZoomControlStyle.SMALL
-                                                                    },mapTypeId: google.maps.MapTypeId.ROADMAP,};var map_map_5829113ba819e = new google.maps.Map(document.getElementById('map_5829113ba819e'),mapOptions);
-                                                                var x = 'infowindow_open_value';
-                                                                var marker_map_5829113ba819e = new google.maps.Marker({
-                                                                    position: new google.maps.LatLng(map_latitude, map_longitude),
-                                                                    animation:  google.maps.Animation.DROP,
-                                                                    map: map_map_5829113ba819e,
-                                                                    icon: ''
-                                                                });
-                                                                google.maps.event.addListener(marker_map_5829113ba819e, 'click', toggleBounce);
-                                                                var infowindow = new google.maps.InfoWindow();
-                                                                infowindow.setContent('<div class="map_info_text" style=\'color:#000;\'><?= Option::companyNameDesc() ?></div>');
-                                                                google.maps.event.addListener(marker_map_5829113ba819e, 'click', function() {
-                                                                infowindow.open(map_map_5829113ba819e,marker_map_5829113ba819e);
-                                                            });}
-                                                            catch(e){};
-                                                            jQuery(document).ready(function($){
-                                                                google.maps.event.trigger(map_map_5829113ba819e, 'resize');
-                                                                $(window).resize(function(){
-                                                                    google.maps.event.trigger(map_map_5829113ba819e, 'resize');
-                                                                    if(map_map_5829113ba819e!=null)
-                                                                        map_map_5829113ba819e.setCenter(coordinate_map_5829113ba819e);
-                                                                });
-                                                                $('.ui-tabs').bind('tabsactivate', function(event, ui) {
-                                                                    if($(this).find('.ultimate-map-wrapper').length > 0)
-                                                                    {
-                                                                        setTimeout(function(){
-                                                                            $(window).trigger('resize');
-                                                                        },200);
-                                                                    }
-                                                                });
-                                                                $('.ui-accordion').bind('accordionactivate', function(event, ui) {
-                                                                    if($(this).find('.ultimate-map-wrapper').length > 0)
-                                                                    {
-                                                                        setTimeout(function(){
-                                                                            $(window).trigger('resize');
-                                                                        },200);
-                                                                    }
-                                                                });
-                                                                $(window).load(function(){
-                                                                    setTimeout(function(){
-                                                                        $(window).trigger('resize');
-                                                                    },200);
-                                                                });
-                                                                $('.ult_exp_section').select(function(){
-                                                                    if($(map_map_5829113ba819e).parents('.ult_exp_section'))
-                                                                    {
-                                                                        setTimeout(function(){
-                                                                            $(window).trigger('resize');
-                                                                        },200);
-                                                                    }
-                                                                });
-                                                                $(document).on('onUVCModalPopupOpen', function(){
-                                                                    if($(map_map_5829113ba819e).parents('.ult_modal-content'))
-                                                                    {
-                                                                        setTimeout(function(){
-                                                                            $(window).trigger('resize');
-                                                                        },200);
-                                                                    }
-                                                                });
-                                                                $(document).on('click','.ult_tab_li',function(){
-                                                                    $(window).trigger('resize');
-                                                                    setTimeout(function(){
-                                                                        $(window).trigger('resize');
-                                                                    },200);
-                                                                });
-                                                            });
-                                                            function toggleBounce() {
-                                                                if (marker_map_5829113ba819e.getAnimation() != null) {
-                                                                    marker_map_5829113ba819e.setAnimation(null);
-                                                                } else {
-                                                                    marker_map_5829113ba819e.setAnimation(google.maps.Animation.BOUNCE);
-                                                                }
-                                                            }
-                                                        })(jQuery);/*]]>*/
-                                                    </script>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                                        <?php get_template_part('templates/home/map'); ?>
+
                                         <div class="wpb_column vc_column_container vc_col-sm-4">
                                             <div class="vc_column-inner ">
                                                 <?php get_template_part('templates/kontaktdaten'); ?>
