@@ -656,4 +656,71 @@ STR;
             </div>
 LINKS;
     }
+
+    public static function blogItem($includedFrom)
+    {
+        $method = 'blogItem_' . $includedFrom;
+        return self::$method();
+    }
+
+    public static function blogItem_author()
+    {
+        return '
+            <div class="wf-cell iso-item" data-post-id="17287" data-date="2016-11-20T16:12:32+00:00" data-name="' . get_the_title() . '">
+                <article class="post post-17287 type-post status-publish format-standard has-post-thumbnail hentry category-team bg-on fullwidth-img description-off">
+                    <div class="blog-media wf-td">
+                        <p>
+                            <a href="' . get_the_permalink() . '" class="alignnone rollover layzr-bg" >
+                                ' . get_the_post_thumbnail(null, '625x417', ['class' => 'preload-me']) . '
+                            </a>
+                        </p>
+                    </div>
+                    <div class="blog-content wf-td">
+                        <h3 class="entry-title">
+                            <a href="' . get_the_permalink() . '" title="' . get_the_title() . '" rel="bookmark">' . get_the_title() . '</a>
+                        </h3>
+                        ' . get_the_excerpt() . '
+                        <div class="entry-meta">
+                            ' . View::dayLink() . '
+                            <a href="' . get_the_permalink() . '#respond" class="comment-link" >Kommentare</a>
+                            
+                            <!-- Category Links -->
+                            <!-- <span class="category-link"> <a href="https://www.fachwerk4.de/category/team/" >Team</a> </span> -->
+                            
+                            <a class="author vcard" href="' . get_author_posts_url(get_the_author_meta('ID')) . '" title="View all posts by ' . get_the_author() . '" rel="author">
+                                By <span class="fn">' . get_the_author() . '</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>';
+    }
+
+    public static function blogItem_blog()
+    {
+        return '
+            <div class="wf-cell iso-item category-66" 
+                data-post-id="17779" 
+                data-date="2016-11-07T17:24:01+00:00" 
+                data-name="' . get_the_title() . '">
+                <article class="post post-17779 type-post status-publish format-standard has-post-thumbnail hentry category-preise-und-auszeichnungen bg-on description-off">
+                    <div class="blog-media wf-td">
+                        <p><a href="' . get_the_permalink() . '" class="alignnone rollover layzr-bg" >
+                            ' . get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'preload-me']) . '
+                        </a></p>
+                    </div>
+                    <div class="blog-content wf-td">
+                        <h3 class="entry-title">
+                            <a href="' . get_the_permalink() . '" title="' . get_the_title() . '" rel="bookmark">' . get_the_title() . '</a>
+                        </h3>
+                        ' . get_the_excerpt() . '
+                        <a href="' . get_the_permalink() . '" class="details more-link" rel="nofollow">Details</a>
+                        <div class="entry-meta">
+                            ' . View::dayLink() . '
+                            <a class="author vcard" href="' . get_author_posts_url(get_the_author_meta('ID')) . '" title="View all posts by ' . get_the_author() . '" rel="author">By <span class="fn">' . get_the_author() . '</span></a>
+                        </div>
+                    </div>
+                </article>
+            </div>';
+    }
 }

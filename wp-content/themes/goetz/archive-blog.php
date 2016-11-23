@@ -1,5 +1,6 @@
 <?php
 
+use Rsu\Helper\Template;
 use Rsu\Helper\View;
 
 ?>
@@ -21,18 +22,30 @@ use Rsu\Helper\View;
         <div class="wf-wrap">
             <div class="wf-container-main">
                 <div id="content" class="content" role="main">
-                    <div class="filter with-ajax extras-off">
-                        <div class="filter-categories">
-                            <a href="/blog/?term=&#038;orderby=date&#038;order=DESC" class="show-all act" data-filter="*">View all</a>
-                            <a href="/blog/?term=1&#038;orderby=date&#038;order=DESC"  data-filter=".category-1">Allgemein</a>
-                            <a href="/blog/?term=66&#038;orderby=date&#038;order=DESC"  data-filter=".category-66">Preise &amp; Auszeichnungen</a>
-                            <a href="/blog/?term=59&#038;orderby=date&#038;order=DESC"  data-filter=".category-59">Projekte &amp; Baustellen</a>
-                            <a href="/blog/?term=53&#038;orderby=date&#038;order=DESC"  data-filter=".category-53">Publikationen &amp; Veröffentlichungen</a>
-                            <a href="/blog/?term=54&#038;orderby=date&#038;order=DESC"  data-filter=".category-54">Team</a>
+
+                    <?php if (! isset($includedFrom)): ?>
+
+                        <div class="filter with-ajax extras-off">
+                            <div class="filter-categories">
+                                <a href="/blog/?term=&#038;orderby=date&#038;order=DESC" class="show-all act" data-filter="*">View all</a>
+                                <a href="/blog/?term=1&#038;orderby=date&#038;order=DESC"  data-filter=".category-1">Allgemein</a>
+                                <a href="/blog/?term=66&#038;orderby=date&#038;order=DESC"  data-filter=".category-66">Preise &amp; Auszeichnungen</a>
+                                <a href="/blog/?term=59&#038;orderby=date&#038;order=DESC"  data-filter=".category-59">Projekte &amp; Baustellen</a>
+                                <a href="/blog/?term=53&#038;orderby=date&#038;order=DESC"  data-filter=".category-53">Publikationen &amp; Veröffentlichungen</a>
+                                <a href="/blog/?term=54&#038;orderby=date&#038;order=DESC"  data-filter=".category-54">Team</a>
+                            </div>
                         </div>
-                    </div>
+
+                    <?php endif; ?>
+
                     <div class="full-width-wrap">
-                        <?php get_template_part('templates/blog/index'); ?>
+                        <?php
+
+                        Template::include_part('templates/blog/index', [
+                            'includedFrom' => $includedFrom ?: 'blog'
+                        ]);
+
+                        ?>
                     </div>
 
 <!--                    <div class="paginator paginator-more-button with-ajax">-->
