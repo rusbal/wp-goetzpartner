@@ -4,6 +4,7 @@
  */
 
 use Rsu\Helper\View;
+use Rsu\Settings\Option;
 
 ?>
 <body class="home page page-id-8 page-template page-template-template-microsite page-template-template-microsite-php one-page-row transparent light-preset-color slideshow-on large-hover-icons boxed-layout overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">
@@ -272,6 +273,8 @@ use Rsu\Helper\View;
                                                     </div>
                                                     <script type='text/javascript'>/*<![CDATA[*/(function($) {
                                                             'use strict';
+                                                            var map_latitude = parseFloat('<?= Option::get('map_latitude'); ?>');
+                                                            var map_longitude = parseFloat('<?= Option::get('map_longitude'); ?>');
                                                             var map_map_5829113ba819e = null;
                                                             var coordinate_map_5829113ba819e;
                                                             var isDraggable = $(document).width() > 641 ? true : true;
@@ -279,7 +282,7 @@ use Rsu\Helper\View;
                                                             {
                                                                 var map_map_5829113ba819e = null;
                                                                 var coordinate_map_5829113ba819e;
-                                                                coordinate_map_5829113ba819e=new google.maps.LatLng(50.47272, 7.80201);
+                                                                coordinate_map_5829113ba819e=new google.maps.LatLng(map_latitude, map_longitude);
                                                                 var mapOptions=
                                                                 {
                                                                     zoom: 12,
@@ -296,13 +299,15 @@ use Rsu\Helper\View;
                                                                     },mapTypeId: google.maps.MapTypeId.ROADMAP,};var map_map_5829113ba819e = new google.maps.Map(document.getElementById('map_5829113ba819e'),mapOptions);
                                                                 var x = 'infowindow_open_value';
                                                                 var marker_map_5829113ba819e = new google.maps.Marker({
-                                                                    position: new google.maps.LatLng(50.47272, 7.80201),
+                                                                    position: new google.maps.LatLng(map_latitude, map_longitude),
                                                                     animation:  google.maps.Animation.DROP,
                                                                     map: map_map_5829113ba819e,
                                                                     icon: ''
                                                                 });
-                                                                google.maps.event.addListener(marker_map_5829113ba819e, 'click', toggleBounce);var infowindow = new google.maps.InfoWindow();
-                                                                infowindow.setContent('<div class="map_info_text" style=\'color:#000;\'>Architekturbüro Fachwerk4</div>');google.maps.event.addListener(marker_map_5829113ba819e, 'click', function() {
+                                                                google.maps.event.addListener(marker_map_5829113ba819e, 'click', toggleBounce);
+                                                                var infowindow = new google.maps.InfoWindow();
+                                                                infowindow.setContent('<div class="map_info_text" style=\'color:#000;\'><?= Option::companyNameDesc() ?></div>');
+                                                                google.maps.event.addListener(marker_map_5829113ba819e, 'click', function() {
                                                                 infowindow.open(map_map_5829113ba819e,marker_map_5829113ba819e);
                                                             });}
                                                             catch(e){};

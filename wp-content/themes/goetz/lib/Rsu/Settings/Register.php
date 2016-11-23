@@ -74,6 +74,14 @@ class Register
                         'description' => [ 'type' => 'tinymce', 'title' => 'Description' ],
                     ],
                 ],
+                [
+                    'tab_title' => 'Goggle Maps',
+                    'fields' => [
+                        'google_api_key' => [ 'type' => 'text', 'title' => 'Google API Key' ],
+                        'map_latitude' => [ 'type' => 'text', 'title' => 'Map Latitude' ],
+                        'map_longitude' => [ 'type' => 'text', 'title' => 'Map Longitude' ],
+                    ],
+                ],
             ]
         ];
         return $options_page;
