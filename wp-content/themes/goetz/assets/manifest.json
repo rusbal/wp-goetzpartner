@@ -16,7 +16,8 @@
     "foot.js": {
       "files": [
         "scripts/foot/main.js",
-        "scripts/foot/post-type.js"
+        "scripts/foot/post-type.js",
+        "scripts/jquery.prettyPhoto.js"
       ]
     },
     "custom.css": {
