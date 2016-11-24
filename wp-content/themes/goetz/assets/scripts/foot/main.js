@@ -3776,7 +3776,7 @@ and dependencies (minified).
 	var _rjs=typeof define==="function" && define.amd, /* RequireJS */
 		_njs=typeof module !== "undefined" && module.exports, /* NodeJS */
 		_dlp=("https:"==document.location.protocol) ? "https:" : "http:", /* location protocol */
-		_url= dtLocal.themeUrl + "/js/atoms/plugins/jquery.mousewheel.min.js";
+		_url= dtLocal.themeUrl + "assets/scripts/jquery.mousewheel.min.js";
 		
 	if(!_rjs){
 		if(_njs){

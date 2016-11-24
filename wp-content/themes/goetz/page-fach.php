@@ -4,7 +4,6 @@
  */
 
 use Rsu\Helper\View;
-use Rsu\Settings\Option;
 
 ?>
 <body class="home page page-id-8 page-template page-template-template-microsite page-template-template-microsite-php one-page-row transparent light-preset-color slideshow-on large-hover-icons boxed-layout overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">

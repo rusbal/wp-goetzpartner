@@ -64,9 +64,10 @@ wp_enqueue_script('foot_main', get_template_directory_uri() . '/assets/scripts/f
 wp_enqueue_script('foot_main_onload', get_template_directory_uri() . '/assets/scripts/foot/main.onload.js', ['foot_main'], '1.0', true);
 wp_enqueue_script('foot', asset_path('scripts/foot.js'), ['foot_main_onload'], null, true);
 
-wp_localize_script('foot', 'dtLocal', [
+wp_localize_script('jquery', 'dtLocal', [
     "postID" => get_the_ID(),
     "ajaxurl" => "/wp-admin/admin-ajax.php",
+    "themeUrl" => "/wp-content/themes/goetz/",
     "pageData" => [
 //        "type" => "page",
         "template" => Request::object(),
