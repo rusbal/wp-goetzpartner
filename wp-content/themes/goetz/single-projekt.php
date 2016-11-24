@@ -16,19 +16,9 @@ use Rsu\Helper\View;
         <div class="main-gradient"></div>
         <div class="wf-wrap">
             <div class="wf-container-main">
-                <div class="article-top-bar disabled-bg post-meta-disabled">
-                    <div class="wf-wrap">
-                        <div class="wf-container-top">
-                            <div class="navigation-inner">
-                                <div class="single-navigation-wrap">
-                                    <a class="prev-post disabled" href="javascript:void(0);"></a>
-                                    <a class="back-to-list" href="https://www.fachwerk4.de/portfolio/"></a>
-                                    <a class="next-post" href="https://www.fachwerk4.de/projekt/innenarchitektur-physiotherapiepraxis/" rel="prev"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <?= View::portfolioNavigation() ?>
+
                 <div id="content" class="content" role="main">
                     <article id="post-16383" class="project-post post-16383 dt_portfolio type-dt_portfolio status-publish has-post-thumbnail dt_portfolio_category-ausgewaehlte-projekte dt_portfolio_category-einfamilienhaeuser-mehrfamilienhaeuser dt_portfolio_category-innenausbau-und-moebeldesign description-off">
                         <div class="wf-container">

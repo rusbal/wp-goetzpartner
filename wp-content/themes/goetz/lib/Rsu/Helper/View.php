@@ -736,4 +736,33 @@ LINKS;
         $isHome = '/' == $_SERVER['REQUEST_URI'];
         return $isHome ? $anchor : '/' . $anchor;
     }
+
+    public static function portfolioNavigation()
+    {
+        $prevId = get_adjacent_post(false,'',true)->ID;
+        $nextId = get_adjacent_post(false,'',false)->ID;
+
+        $prevDisabled = is_null($prevId) ? 'disabled' : '';
+        $nextDisabled = is_null($nextId) ? 'disabled' : '';
+
+        $prev = get_permalink( $prevId );
+        $list = '/portfolio/';
+        $next = get_permalink( $nextId );
+
+        return <<<HTML
+            <div class="article-top-bar disabled-bg post-meta-disabled">
+                <div class="wf-wrap">
+                    <div class="wf-container-top">
+                        <div class="navigation-inner">
+                            <div class="single-navigation-wrap">
+                                <a class="prev-post $prevDisabled" href="$prev"></a>
+                                <a class="back-to-list" href="$list"></a>
+                                <a class="next-post $nextDisabled" href="$next" rel="prev"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+HTML;
+    }
 }
