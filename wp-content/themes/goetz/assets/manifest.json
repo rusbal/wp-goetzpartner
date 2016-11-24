@@ -15,7 +15,6 @@
     "customizer.js": { "files": [ "scripts/customizer.js" ] },
     "foot.js": {
       "files": [
-        "scripts/foot/main.js",
         "scripts/foot/post-type.js",
         "scripts/jquery.prettyPhoto.js"
       ]
