@@ -61,7 +61,7 @@ use Rsu\Settings\Option;
         </ul>
         <div class="mini-widgets">
             <div class="mini-search show-on-desktop near-logo-first-switch in-menu-second-switch">
-                <form class="searchform" role="search" method="get" action="https://www.fachwerk4.de/">
+                <form class="searchform" role="search" method="get" action="/">
                     <input type="text" class="field searchform-s" name="s" value="" placeholder="Type and hit enter &hellip;" />
                     <input type="submit" class="assistive-text searchsubmit" value="Go!" />
                     <a href="#go" id="trigger-overlay" class="submit text-disable">&nbsp;</a>

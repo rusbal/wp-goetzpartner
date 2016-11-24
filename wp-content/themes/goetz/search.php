@@ -1,14 +1,49 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php
 
-<?php if (!have_posts()) : ?>
-  <div class="alert alert-warning">
-    <?php _e('Sorry, no results were found.', 'sage'); ?>
-  </div>
-  <?php get_search_form(); ?>
-<?php endif; ?>
+use Rsu\Helper\View;
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/content', 'search'); ?>
-<?php endwhile; ?>
+?>
+<body class="page page-id-13 page-template page-template-template-blog-masonry page-template-template-blog-masonry-php blog layout-masonry description-under-image fancy-header-on large-hover-icons boxed-layout overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">
+<div id="load" class="ring-loader">
+    <div class="load-wrap"></div>
+</div>
+<div id="page" class="boxed">
 
-<?php the_posts_navigation(); ?>
+    <?php get_template_part('templates/header'); ?>
+
+    <div id="main" class="sidebar-right">
+        <div class="main-gradient"></div>
+        <div class="wf-wrap">
+            <div class="wf-container-main">
+                <div id="content" class="content" role="main">
+                    <div class="vc_row wpb_row vc_row-fluid dt-default" style="margin-top: 0px;margin-bottom: 0px">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <?php get_template_part('templates/page', 'header'); ?>
+
+                                    <?php if (!have_posts()) : ?>
+                                        <div class="alert alert-warning">
+                                            <?php _e('Sorry, no results were found.', 'sage'); ?>
+                                        </div>
+                                        <?php get_search_form(); ?>
+                                    <?php endif; ?>
+
+                                    <?php while (have_posts()) : the_post(); ?>
+                                        <?php get_template_part('templates/content', 'search'); ?>
+                                    <?php endwhile; ?>
+
+                                    <?php the_posts_navigation(); ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php get_template_part('templates/footer'); ?>
+    <a href="#" class="scroll-top"></a>
+</div>
+<div style="display:none"></div>
