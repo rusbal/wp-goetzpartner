@@ -7,7 +7,9 @@
 </div>
 <div id="page" class="boxed">
 
-    <?php get_template_part('templates/header'); ?>
+    <?php use Rsu\Helper\Template;
+
+    get_template_part('templates/header'); ?>
 
     <div id="main" class="sidebar-right">
         <div class="main-gradient"></div>
@@ -36,6 +38,9 @@
                         </div>
                     </div>
                 </div>
+                <aside id="sidebar" class="sidebar">
+                    <?php Template::part('project', 'templates/aside/sidebar'); ?>
+                </aside>
             </div>
         </div>
     </div>
