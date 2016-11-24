@@ -15,7 +15,7 @@ use Rsu\Settings\Option;
                     </div>
                     <div class="wf-td"></div>
                     <div class="wf-td bottom-text-block">
-                        <p>© 2016 <?= Option::get('company_name') ?>. Alle Rechte vorbehalten. | <a href="http://www.fachwerk4.de/impressum">Impressum</a> | <a href="http://www.fachwerk4.de/datenschutz">Datenschutz</a></p>
+                        <p>© 2016 <?= Option::get('company_name') ?>. Alle Rechte vorbehalten. | <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutz</a></p>
                     </div>
                 </div>
             </div>
