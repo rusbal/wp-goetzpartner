@@ -235,6 +235,8 @@ class View
 
     public static function articleTopBar()
     {
+        $adjacent = WordPress::adjacentPostsPermalink();
+
         return '
             <div class="article-top-bar disabled-bg">
                 <div class="wf-wrap">
@@ -245,9 +247,9 @@ class View
                         </div>
                         <div class="navigation-inner">
                             <div class="single-navigation-wrap">
-                                <a class="prev-post disabled" href="javascript:void(0);"></a>
+                                <a class="prev-post ' . $adjacent->prev_disabled . '" href="' . $adjacent->prev_permalink . '"></a>
                                 <a class="back-to-list" href="/blog/"></a>
-                                <a class="next-post" href="https://www.fachwerk4.de/azubi-blog-baustellenpraktikum/" rel="prev"></a>
+                                <a class="next-post ' . $adjacent->next_disabled . '" href="' . $adjacent->next_permalink . '" rel="prev"></a>
                             </div>
                         </div>
                     </div>
@@ -802,15 +804,8 @@ LINK;
 
     public static function portfolioNavigation()
     {
-        $prevId = get_adjacent_post(false,'',true)->ID;
-        $nextId = get_adjacent_post(false,'',false)->ID;
-
-        $prevDisabled = is_null($prevId) ? 'disabled' : '';
-        $nextDisabled = is_null($nextId) ? 'disabled' : '';
-
-        $prev = get_permalink( $prevId );
+        $adjacent = WordPress::adjacentPostsPermalink();
         $list = '/portfolio/';
-        $next = get_permalink( $nextId );
 
         return <<<HTML
             <div class="article-top-bar disabled-bg post-meta-disabled">
@@ -818,9 +813,9 @@ LINK;
                     <div class="wf-container-top">
                         <div class="navigation-inner">
                             <div class="single-navigation-wrap">
-                                <a class="prev-post $prevDisabled" href="$prev"></a>
+                                <a class="prev-post $adjacent->prev_disabled" href="$adjacent->prev_permalink"></a>
                                 <a class="back-to-list" href="$list"></a>
-                                <a class="next-post $nextDisabled" href="$next" rel="prev"></a>
+                                <a class="next-post $adjacent->next_disabled" href="$adjacent->next_permalink" rel="prev"></a>
                             </div>
                         </div>
                     </div>
