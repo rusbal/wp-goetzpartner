@@ -539,21 +539,29 @@ STR;
         return '';
     }
 
-    public static function portfolioArchive()
+    /**
+     * Called by Ajax/Post::presscore_template_ajax
+     * @param null $termId
+     * @return string
+     */
+    public static function portfolioArchive($termId = null)
     {
         $outHtml = '';
-        $query = Project::allForThisPage();
+        $query = Project::allForThisPage($termId);
 
         while ( $query->have_posts() ): $query->the_post();
 
             $imgId = Project::firstImage();
             $title = get_the_title();
-            $projectImage = wp_get_attachment_image(
-                $imgId,
-                '546x364',
-                ['class' => 'iso-lazy-load preload-me']
-            );
-            $projectImageUrl = wp_get_attachment_url($imgId);
+
+            if (is_null($termId)) {
+                $projectImage = wp_get_attachment_image($imgId, 'height-203', false, ['class' => 'preload-me']);
+            } else {
+                // Ajax
+                list($src, $width, $height) = wp_get_attachment_image_src($imgId, 'height-203');
+                $projectImage = Html::tag('img', ['src' => $src, 'class' => 'preload-me'], ['width' => $width, 'height' => $height]);
+            }
+
             $url = get_permalink();
 
             $outHtml .= '
@@ -577,7 +585,6 @@ STR;
                         </figure>
                     </article>
                 </div>';
-            
         endwhile;
 
         wp_reset_postdata();
@@ -647,7 +654,7 @@ STR;
         $links = '<a href="?term=&orderby=date&order=DESC" class="show-all act" data-filter="*">View all</a>';
 
         foreach (Category::getObject() as $category) {
-            $links .= "<a href='?term=$category->slug&orderby=date&order=DESC' data-filter='.category-$category->term_id'>$category->name</a>";
+            $links .= "<a href='?term=$category->term_id&orderby=date&order=DESC' data-filter='.category-$category->term_id'>$category->name</a>";
         }
 
         return <<<LINKS

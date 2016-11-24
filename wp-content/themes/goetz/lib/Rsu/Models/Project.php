@@ -5,7 +5,7 @@ namespace Rsu\Models;
 
 class Project
 {
-    public static function allForThisPage()
+    public static function allForThisPage($termId = null)
     {
         $type = 'projekt';
 
@@ -14,10 +14,14 @@ class Project
             'post_status' => 'publish',
         ];
 
-        $urlParts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-        if ($urlParts[0] == 'category' && isset($urlParts[1])) {
-            $idObj = get_category_by_slug($urlParts[1]);
-            $args['cat'] = $idObj->term_id;
+        if ($termId) {
+            $args['cat'] = (int) $termId;
+        } else {
+            $urlParts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+            if ($urlParts[0] == 'category' && isset($urlParts[1])) {
+                $idObj = get_category_by_slug($urlParts[1]);
+                $args['cat'] = $idObj->term_id;
+            }
         }
 
         return new \WP_Query($args);

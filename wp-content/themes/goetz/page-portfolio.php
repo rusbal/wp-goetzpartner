@@ -1,7 +1,6 @@
 <?php
 
 use Rsu\Helper\View;
-use Rsu\Models\Category;
 
 ?>
 <body class="page page-id-15032 page-template page-template-template-portfolio-jgrid page-template-template-portfolio-jgrid-php portfolio layout-grid grid-text-hovers description-on-hover fancy-header-on large-hover-icons boxed-layout justified-grid overlay-cursor-on srcset-enabled btn-flat custom-btn-color custom-btn-hover-color shadow-element-decoration filter-style-material contact-form-minimal large-fancy-datas blur-page outlines-bullets light-icons phantom-sticky phantom-shadow-decoration phantom-custom-logo-on sticky-mobile-header top-header first-switch-logo-center first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive accent-portfolio-icons album-minuatures-style-2">

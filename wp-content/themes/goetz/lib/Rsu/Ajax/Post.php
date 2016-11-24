@@ -10,15 +10,41 @@ class Post
 {
     public function __construct()
     {
-        add_action( 'wp_ajax_vc_get_vc_grid_data', [$this, 'route'] );
+        $actions = [
+            'vc_get_vc_grid_data',
+            'presscore_template_ajax'
+        ];
+
+        foreach ($actions as $action) {
+            add_action( 'wp_ajax_' . $action, [$this, 'route'] );
+        }
     }
 
     public function route()
     {
-        $this->$_POST['data']['action']();
+        $action = isset($_POST['data']['action']) ? $_POST['data']['action'] : $_POST['action'];
+        $this->$action();
+        wp_die();
     }
 
-    public function load_image() {
+    private function presscore_template_ajax()
+    {
+        $html = View::portfolioArchive($_POST['term']);
+
+        $var = [
+            'success' => true,
+            'html' => $html,
+            'itemsToDelete' => [],
+            'order' => "desc",
+            'orderby' => "date",
+            'nextPage' => 0,
+            'currentPage' => 1,
+            'paginationType' => "more",
+        ];
+        echo json_encode($var);
+    }
+
+    private function load_image() {
         $imgUrl = wp_get_attachment_url($_POST['data']['page_id']);
         $company = Option::implode(' | ', ['company_name', 'company_description']);
 
@@ -43,10 +69,9 @@ class Post
                 </div>
             </div>
 HTML;
-        wp_die();
     }
 
-    public function get_post_images() {
+    private function get_post_images() {
 
         $id = $_POST['vc_post_id'];
 
@@ -65,7 +90,5 @@ HTML;
                     </div>
                 </div>';
         endif;
-
-        wp_die();
     }
 }
