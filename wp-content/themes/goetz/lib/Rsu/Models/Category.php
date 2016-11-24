@@ -19,17 +19,17 @@ class Category
      */
     public static function getObject($excludeUncategorized = true)
     {
-        $categories = get_terms('category', array(
+        $categories = get_terms('project_category', array(
             'post_type' => ['produkt'],
             'fields' => 'all'
         ));
-        $arr = [];
-        foreach ($categories as $cat) {
+
+        return array_map(function($cat) use ($excludeUncategorized) {
             if ($excludeUncategorized && $cat->slug == 'uncategorized') {
-                continue;
+                // Exclude
+            } else {
+                return $cat;
             }
-            $arr[] = $cat;
-        }
-        return $arr;
+        }, $categories);
     }
 }

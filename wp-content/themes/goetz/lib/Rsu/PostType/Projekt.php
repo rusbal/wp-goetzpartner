@@ -6,7 +6,20 @@ namespace Rsu\PostType;
 class Projekt
 {
     public function __construct() {
-        add_action( 'init', array( $this, 'projekt_init' ) );
+        add_action( 'init', [$this, 'projekt_init'] );
+        add_action( 'init', [$this, 'create_project_category'] );
+    }
+
+    function create_project_category() {
+        register_taxonomy(
+            'project_category',
+            'projekt',
+            array(
+                'label' => __( 'Category' ),
+                'rewrite' => array( 'slug' => 'project-category' ),
+                'hierarchical' => true,
+            )
+        );
     }
 
     function projekt_init() {
@@ -41,7 +54,7 @@ class Projekt
             'hierarchical'       => false,
             'menu_position'      => null,
             'menu_icon'          => 'dashicons-media-document',
-            'taxonomies'         => array( 'category' ),
+            'taxonomies'         => array( 'project_category' ),
         );
 
         register_post_type( 'projekt', $args );
