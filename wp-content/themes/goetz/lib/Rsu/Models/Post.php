@@ -21,4 +21,32 @@ class Post
             return $post['ID'] != $currentId;
         });
     }
+
+    public static function allForThisPage($termId = null)
+    {
+        $type = 'post';
+
+        $args = [
+            'post_type' => $type,
+            'post_status' => 'publish',
+        ];
+
+        if (! $termId) {
+            $urlParts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+            if ($urlParts[0] == 'category' && isset($urlParts[1])) {
+                $idObj = get_category_by_slug($urlParts[1]);
+                $termId = $idObj->term_id;
+            }
+        }
+
+        if ($termId) {
+            $args['tax_query'] = [[
+                'taxonomy' => 'category',
+                'field' => 'term_id',
+                'terms' => $termId
+            ]];
+        }
+
+        return new \WP_Query($args);
+    }
 }

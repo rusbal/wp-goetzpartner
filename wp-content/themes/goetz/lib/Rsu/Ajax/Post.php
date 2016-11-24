@@ -29,7 +29,13 @@ class Post
 
     private function presscore_template_ajax()
     {
-        $html = View::portfolioArchive($_POST['term']);
+        $postType = $_POST['contentType'];
+
+        if ($postType == 'blog') {
+            $html = View::blogArchive($_POST['term']);
+        } else {
+            $html = View::portfolioArchive($_POST['term']);
+        }
 
         $var = [
             'success' => true,

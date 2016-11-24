@@ -544,6 +544,54 @@ STR;
      * @param null $termId
      * @return string
      */
+    public static function blogArchive($termId = null)
+    {
+        $outHtml = '';
+        $query = Post::allForThisPage($termId);
+
+        while ( $query->have_posts() ): $query->the_post();
+
+            $imgId = wp_get_attachment_image();
+            $title = get_the_title();
+            $url = get_permalink();
+            $projectImage = wp_get_attachment_image($imgId, 'height-203', false, ['class' => 'iso-lazy-load preload-me']);
+
+            $outHtml .=  '
+            <div class="wf-cell iso-item category-66" 
+                data-post-id="17779" 
+                data-date="2016-11-07T17:24:01+00:00" 
+                data-name="' . get_the_title() . '">
+                <article class="post post-17779 type-post status-publish format-standard has-post-thumbnail hentry category-preise-und-auszeichnungen bg-on description-off">
+                    <div class="blog-media wf-td">
+                        <p><a href="' . get_the_permalink() . '" class="alignnone rollover layzr-bg" >
+                            ' . get_the_post_thumbnail(null, 'post-thumbnail', ['class' => 'preload-me']) . '
+                        </a></p>
+                    </div>
+                    <div class="blog-content wf-td">
+                        <h3 class="entry-title">
+                            <a href="' . get_the_permalink() . '" title="' . get_the_title() . '" rel="bookmark">' . get_the_title() . '</a>
+                        </h3>
+                        ' . get_the_excerpt() . '
+                        <a href="' . get_the_permalink() . '" class="details more-link" rel="nofollow">Details</a>
+                        <div class="entry-meta">
+                            ' . View::dayLink() . '
+                            <a class="author vcard" href="' . get_author_posts_url(get_the_author_meta('ID')) . '" title="View all posts by ' . get_the_author() . '" rel="author">By <span class="fn">' . get_the_author() . '</span></a>
+                        </div>
+                    </div>
+                </article>
+            </div>';
+        endwhile;
+
+        wp_reset_postdata();
+
+        return $outHtml;
+    }
+
+    /**
+     * Called by Ajax/Post::presscore_template_ajax
+     * @param null $termId
+     * @return string
+     */
     public static function portfolioArchive($termId = null)
     {
         $outHtml = '';
@@ -653,7 +701,7 @@ STR;
     {
         $links = '<a href="?term=&orderby=date&order=DESC" class="show-all act" data-filter="*">View all</a>';
 
-        foreach (Category::getObject() as $category) {
+        foreach (Category::getProjectCategories() as $category) {
             $links .= "<a href='?term=$category->term_id&orderby=date&order=DESC' data-filter='.category-$category->term_id'>$category->name</a>";
         }
 
@@ -662,6 +710,21 @@ STR;
                 <div class="filter-categories">$links</div>
             </div>
 LINKS;
+    }
+
+    public static function blogAjaxLinks()
+    {
+        $links = '<a href="?term=&orderby=date&order=DESC" class="show-all act" data-filter="*">View all</a>';
+
+        foreach (Category::getBlogCategories() as $category) {
+            $links .= "<a href='?term=$category->term_id&orderby=date&order=DESC' data-filter='.category-$category->term_id'>$category->name</a>";
+        }
+
+        return <<<LINK
+            <div class="filter with-ajax extras-off">
+                <div class="filter-categories">$links</div>
+            </div>
+LINK;
     }
 
     public static function blogItem($includedFrom)

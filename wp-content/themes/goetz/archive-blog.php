@@ -17,7 +17,7 @@ use Rsu\Helper\View;
 
     <?= View::fancyHeader() ?>
 
-    <div id="main" class="sidebar-none">
+    <div id="main" class="sidebar-none clearfix"><!-- clearfix by Raymond -->
         <div class="main-gradient"></div>
         <div class="wf-wrap">
             <div class="wf-container-main">
@@ -25,16 +25,7 @@ use Rsu\Helper\View;
 
                     <?php if (! isset($includedFrom)): ?>
 
-                        <div class="filter with-ajax extras-off">
-                            <div class="filter-categories">
-                                <a href="/blog/?term=&#038;orderby=date&#038;order=DESC" class="show-all act" data-filter="*">View all</a>
-                                <a href="/blog/?term=1&#038;orderby=date&#038;order=DESC"  data-filter=".category-1">Allgemein</a>
-                                <a href="/blog/?term=66&#038;orderby=date&#038;order=DESC"  data-filter=".category-66">Preise &amp; Auszeichnungen</a>
-                                <a href="/blog/?term=59&#038;orderby=date&#038;order=DESC"  data-filter=".category-59">Projekte &amp; Baustellen</a>
-                                <a href="/blog/?term=53&#038;orderby=date&#038;order=DESC"  data-filter=".category-53">Publikationen &amp; Veröffentlichungen</a>
-                                <a href="/blog/?term=54&#038;orderby=date&#038;order=DESC"  data-filter=".category-54">Team</a>
-                            </div>
-                        </div>
+                        <?= View::blogAjaxLinks() ?>
 
                     <?php endif; ?>
 
@@ -58,6 +49,7 @@ use Rsu\Helper\View;
 <!--                    </div>-->
 
                 </div>
+
             </div>
         </div>
     </div>

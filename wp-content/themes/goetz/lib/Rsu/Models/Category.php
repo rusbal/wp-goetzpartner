@@ -17,10 +17,26 @@ class Category
     /**
      * @return array
      */
-    public static function getObject($excludeUncategorized = true)
+    public static function getProjectCategories($excludeUncategorized = true)
     {
         $categories = get_terms('project_category', array(
             'post_type' => ['produkt'],
+            'fields' => 'all'
+        ));
+
+        return array_map(function($cat) use ($excludeUncategorized) {
+            if ($excludeUncategorized && $cat->slug == 'uncategorized') {
+                // Exclude
+            } else {
+                return $cat;
+            }
+        }, $categories);
+    }
+
+    public static function getBlogCategories($excludeUncategorized = true)
+    {
+        $categories = get_terms('category', array(
+            'post_type' => ['post'],
             'fields' => 'all'
         ));
 
