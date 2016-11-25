@@ -74,4 +74,3 @@ use Rsu\Helper\View;
 //    _stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'103843918',post:'15032',tz:'1',srv:'www.fachwerk4.de'} ]);
 //    _stq.push([ 'clickTrackerInit', '103843918', '15032' ]);
 </script>
-</body>

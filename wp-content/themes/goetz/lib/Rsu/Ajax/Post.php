@@ -16,6 +16,7 @@ class Post
         ];
 
         foreach ($actions as $action) {
+            add_action( 'wp_ajax_nopriv_' . $action, [$this, 'route'] );
             add_action( 'wp_ajax_' . $action, [$this, 'route'] );
         }
     }
